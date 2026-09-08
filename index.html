@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Karishma + Partha — Wedding</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- reusable icon sprite -->
+<svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+  <symbol id="icon-arrow" viewBox="0 0 100 100">
+    <path d="M12 50H84M65 30L85 50L65 70" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="icon-starburst" viewBox="0 0 100 100">
+    <path d="M50 4C54 29 58 35 82 23C62 42 62 47 92 50C62 54 59 59 79 80C58 66 54 70 50 96C46 70 42 66 21 80C41 59 38 54 8 50C38 47 38 42 18 23C42 35 46 29 50 4Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="icon-flower" viewBox="0 0 100 100">
+    <path d="M50 38C36 9 11 18 21 40C-3 42 5 69 29 62C25 88 55 94 59 68C78 88 98 65 76 51C99 33 80 10 59 34C58 15 44 16 50 38Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="icon-pin" viewBox="0 0 32 32">
+    <path d="M16 2a9 9 0 0 0-9 9c0 6.6 9 19 9 19s9-12.4 9-19a9 9 0 0 0-9-9zm0 12.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4z" fill="currentColor"/>
+  </symbol>
+  <symbol id="icon-calendar" viewBox="0 0 32 32">
+    <rect x="4" y="7" width="24" height="21" rx="4" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M4 13h24M10 4v5M22 4v5M16 18v6M13 21h6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="icon-plane-lines" viewBox="0 0 40 40">
+    <path d="M6 24L1 31M16 21L14 32M25 21L29 30" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="icon-car" viewBox="0 0 32 32">
+    <path d="M5 20v3M27 20v3" fill="none" stroke="#111" stroke-width="3.4" stroke-linecap="round"/>
+    <path d="M4 20v-4l2.6-5.4A2 2 0 0 1 8.4 9.5h15.2a2 2 0 0 1 1.8 1.1L28 16v4z" fill="none" stroke="#111" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M4 16h24" fill="none" stroke="#111" stroke-width="3.4" stroke-linecap="round"/>
+    <circle cx="9.5" cy="20" r="1.6" fill="#111"/>
+    <circle cx="22.5" cy="20" r="1.6" fill="#111"/>
+  </symbol>
+  <symbol id="icon-heart-doodle" viewBox="0 0 100 100">
+    <path d="M50 86C42 77 12 57 12 33C12 13 38 9 50 29C62 9 88 13 88 33C88 57 58 77 50 86Z" fill="none" stroke="#111" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+</svg>
+
+<div class="top-band">JULY &amp; AUGUST 2027</div>
+
+<!-- ===================== HERO ===================== -->
+<header class="section hero">
+  <div class="hero__grid">
+    <div class="hero__intro">
+      <h1 class="hero__title">Karishma<br>+ Partha</h1>
+      <p class="hero__lede">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+      <div class="hero__cta-row">
+        <a href="#rsvp" class="btn btn--pink">RSVP <svg class="icon-arrow" width="21" height="21" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+        <span class="hand hero__tag">Same people, bigger party</span>
+      </div>
+      <div class="hero__sticker hand">Better together ♥</div>
+    </div>
+
+    <div class="hero__photo">
+      <span class="hero__heart" aria-hidden="true">♥</span>
+      <div class="polaroid polaroid--hero">
+        <span class="tape tape--hero-1" aria-hidden="true"></span>
+        <span class="tape tape--hero-2" aria-hidden="true"></span>
+        <div class="placeholder placeholder--center">couple shot<br>4:5 portrait<br>polaroid frame</div>
+      </div>
+      <img class="hero__badge" src="icons/couple-badge.png" alt="" aria-hidden="true">
+      <div class="hero__note hand">Better<br>Together<br><span>♥</span></div>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== WELCOME ===================== -->
+<section class="section welcome">
+  <div class="eyebrow">Welcome</div>
+  <div class="welcome__grid">
+    <div>
+      <h2 class="welcome__title">We're getting married!</h2>
+      <p class="welcome__copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+    </div>
+    <div class="welcome__note-wrap">
+      <div class="welcome__note hand">Better together ♥</div>
+      <svg class="welcome__flower" width="48" height="48" aria-hidden="true" style="color:#36C86B"><use href="#icon-flower"/></svg>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== OUR STORY ===================== -->
+<section class="section our-story">
+  <div class="eyebrow">Our story</div>
+  <div class="story__grid">
+    <div class="story__photos">
+      <div class="story__photo-a">
+        <span class="tape" aria-hidden="true"></span>
+        <div class="placeholder placeholder--top-left">early photo<br>square</div>
+      </div>
+      <div class="story__photo-b">
+        <div class="placeholder placeholder--center">the proposal<br>3:4</div>
+      </div>
+    </div>
+    <div>
+      <h2 class="story__title">Our story</h2>
+      <p class="story__copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p class="story__copy">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat.</p>
+      <div class="story__caption hand">…and then there were two ♥</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== OUR JOURNEY ===================== -->
+<section class="section journey">
+  <div class="journey__head">
+    <div class="journey__kicker">Our story so far</div>
+    <div class="journey__rule" aria-hidden="true"></div>
+    <div class="journey__title-wrap">
+      <span class="journey__highlight" aria-hidden="true"></span>
+      <h2 class="journey__title">Our journey</h2>
+    </div>
+    <div class="journey__subline hand">Different places, same adventure ♡</div>
+  </div>
+
+  <div class="journey__row">
+    <div class="journey__note-left hand">Good<br>Food<br>Great<br>Company<br>Brighter<br>Days ♡</div>
+
+    <div class="journey__grid">
+      <div class="journey__photo">
+        <span class="tape" aria-hidden="true"></span>
+        <div class="placeholder placeholder--top-left">coast town</div>
+        <div class="journey__photo-caption hand">First trip together ♡</div>
+      </div>
+      <div class="journey__photo">
+        <span class="tape" aria-hidden="true"></span>
+        <div class="placeholder placeholder--top-left">city landmark</div>
+        <div class="journey__photo-caption hand">Exploring<br>new places</div>
+      </div>
+      <div class="journey__photo">
+        <span class="tape" aria-hidden="true"></span>
+        <div class="placeholder placeholder--top-left">mountain lake</div>
+        <div class="journey__photo-caption hand">Mountains,<br>memories ♡</div>
+      </div>
+      <div class="journey__photo">
+        <span class="tape" aria-hidden="true"></span>
+        <div class="placeholder placeholder--top-left">beach sunset</div>
+        <div class="journey__photo-caption hand">Chasing<br>sunsets</div>
+      </div>
+      <div class="journey__photo">
+        <span class="tape" aria-hidden="true"></span>
+        <div class="placeholder placeholder--top-left">river city</div>
+        <div class="journey__photo-caption hand">Good food,<br>better times ♡</div>
+      </div>
+      <div class="journey__photo">
+        <span class="tape" aria-hidden="true"></span>
+        <div class="placeholder placeholder--top-left">green hills</div>
+        <div class="journey__photo-caption hand">So many<br>more to come…</div>
+      </div>
+    </div>
+
+    <svg class="journey__mini-star" width="42" height="42" aria-hidden="true"><use href="#icon-starburst"/></svg>
+    <div class="journey__note-right hand">Better<br>Together<br>Always</div>
+  </div>
+
+  <div class="journey__foot">
+    <div class="journey__foot-left" style="display:flex;align-items:center;gap:22px">
+      <svg class="starburst" width="52" height="52" aria-hidden="true"><use href="#icon-starburst"/></svg>
+      <svg width="54" height="54" viewBox="0 0 100 100" aria-hidden="true" style="color:#F58BC1;display:block"><path d="M50 38C36 9 11 18 21 40C-3 42 5 69 29 62C25 88 55 94 59 68C78 88 98 65 76 51C99 33 80 10 59 34C58 15 44 16 50 38Z" fill="currentColor"/><circle cx="51" cy="52" r="8" fill="#FFD92F"/></svg>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== THE EVENTS ===================== -->
+<section class="section events">
+  <div class="events__head">
+    <h2 class="events__title">The events</h2>
+    <p class="events__intro">Three days, two countries, one big party. Here's the shape of the weekend.</p>
+  </div>
+
+  <div class="ticket-row">
+    <div class="ticket ticket--pink">
+      <div class="ticket__date">Fri 13 Aug</div>
+      <img class="ticket__icon" src="icons/note.png" alt="" aria-hidden="true" style="width:40px;height:38px">
+      <div class="ticket__name">Jago</div>
+      <div class="ticket__place-row">
+        <span class="ticket__place">Dublin · venue TBC</span>
+        <span class="ticket__place-arrow" aria-hidden="true"><svg class="icon-arrow" width="22" height="22"><use href="#icon-arrow"/></svg></span>
+      </div>
+    </div>
+
+    <div class="ticket ticket--yellow">
+      <div class="ticket__date">Sat 14 Aug</div>
+      <img class="ticket__icon" src="icons/disco.png" alt="" aria-hidden="true" style="width:31px;height:40px">
+      <div class="ticket__name">Sangeet</div>
+      <div class="ticket__place-row">
+        <span class="ticket__place">Martinstown House,<br>Co. Kildare</span>
+        <span class="ticket__place-arrow" aria-hidden="true"><svg class="icon-arrow" width="22" height="22"><use href="#icon-arrow"/></svg></span>
+      </div>
+    </div>
+
+    <div class="ticket ticket--purple">
+      <div class="ticket__date">Sun 15 Aug</div>
+      <img class="ticket__icon" src="icons/heart.png" alt="" aria-hidden="true" style="width:34px;height:38px">
+      <div class="ticket__name">Wedding</div>
+      <div class="ticket__place-row">
+        <span class="ticket__place">Martinstown House,<br>Co. Kildare</span>
+        <span class="ticket__place-arrow" aria-hidden="true"><svg class="icon-arrow" width="22" height="22"><use href="#icon-arrow"/></svg></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== THE WEDDING VENUE ===================== -->
+<section class="section venue">
+  <div class="venue__grid">
+    <div>
+      <div class="eyebrow" style="color:var(--ink)">The wedding venue</div>
+      <div class="venue__title-wrap">
+        <h2 class="venue__title">Martinstown<br>House</h2>
+        <svg class="venue__title-flower" width="38" height="38" aria-hidden="true"><use href="#icon-flower"/></svg>
+      </div>
+      <p class="venue__meta">The Curragh, County Kildare, Ireland · 14–15 August 2027</p>
+      <p class="venue__copy">Martinstown House is a family-operated country house set in the leafy landscape of the Curragh in County Kildare. It's set on a fully working farmyard that houses cattle, sheep, horses and two rescue donkeys, and the entire estate is a bird sanctuary.</p>
+
+      <div class="venue__notes">
+        <div class="venue__note-home hand">Our<br>wedding<br>home<br><span>♥</span></div>
+        <div class="venue__note-list hand">Countryside<br>Good times<br>Beautiful<br>people</div>
+      </div>
+    </div>
+
+    <div class="venue__photo-wrap">
+      <div class="venue__photo-tape" aria-hidden="true"></div>
+      <div class="venue__photo-frame">
+        <img class="venue__photo" src="images/martinstown-house.jpeg" alt="Martinstown House exterior">
+      </div>
+      <div class="venue__badge hand">Our<br>wedding<br>home<br><span>♥</span></div>
+      <span class="venue__starburst" aria-hidden="true"><svg width="110" height="110" viewBox="0 0 100 100" style="display:block"><path d="M50 38C36 9 11 18 21 40C-3 42 5 69 29 62C25 88 55 94 59 68C78 88 98 65 76 51C99 33 80 10 59 34C58 15 44 16 50 38Z" fill="currentColor"/><circle cx="51" cy="52" r="8" fill="#FFFDF8" stroke="currentColor" stroke-width="4"/></svg></span>
+      <div class="venue__circle hand" style="font-family:'DM Sans',sans-serif">A<br>truly<br>special<br>place<br><span style="font-size:1.15em">♥</span></div>
+    </div>
+  </div>
+
+  <div class="venue__grid" style="margin-top:0">
+    <div>
+      <div class="venue__map">
+        <div class="placeholder placeholder--top-left">embedded map<br>google maps pin</div>
+      </div>
+      <div class="venue__map-caption">
+        <svg class="icon-arrow" width="28" height="28" aria-hidden="true"><use href="#icon-arrow"/></svg>
+        <span class="hand">Right here<br>in the heart of Kildare</span>
+      </div>
+    </div>
+
+    <div class="poi">
+      <div class="poi__tape" aria-hidden="true"></div>
+      <div class="poi__panel">
+        <div class="poi__title-row">
+          <h3 class="poi__title">Points of interest</h3>
+        </div>
+        <div class="poi__list">
+          <div class="poi__row">
+            <span class="poi__dot" style="background:var(--pink)"><svg width="23" height="23" aria-hidden="true"><use href="#icon-car"/></svg></span>
+            <span class="poi__place">Dublin Airport</span>
+            <span class="poi__time">1 hr</span>
+          </div>
+          <div class="poi__row">
+            <span class="poi__dot" style="background:var(--yellow)"><svg width="23" height="23" aria-hidden="true"><use href="#icon-car"/></svg></span>
+            <span class="poi__place">The Curragh</span>
+            <span class="poi__time">5 min</span>
+          </div>
+          <div class="poi__row">
+            <span class="poi__dot" style="background:var(--purple)"><svg width="23" height="23" aria-hidden="true"><use href="#icon-car"/></svg></span>
+            <span class="poi__place">Kildare</span>
+            <span class="poi__time">15 min</span>
+          </div>
+        </div>
+        <div class="poi__foot">Driving times from the house</div>
+      </div>
+      <span class="poi__starburst" aria-hidden="true"><svg width="52" height="52" aria-hidden="true"><use href="#icon-starburst"/></svg></span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WEDDING WEEKEND SCHEDULE ===================== -->
+<section class="section schedule">
+  <div class="schedule__grid">
+    <div>
+      <h2 class="schedule__title">Wedding<br>weekend schedule</h2>
+      <div class="schedule__subline hand">Four moments. One unforgettable weekend.</div>
+    </div>
+    <div class="schedule__notes">
+      <div class="sticker-note sticker-note--pink hand">Good<br>food<br>Great company<br>Big celebrations<br><span>♥</span></div>
+      <svg class="starburst" width="60" height="60" aria-hidden="true"><use href="#icon-starburst"/></svg>
+      <div class="sticker-note sticker-note--underline hand">Same<br>people<br>Bigger<br>party</div>
+    </div>
+  </div>
+
+  <div class="schedule-cards">
+    <div class="schedule-card schedule-card--dublin">
+      <img class="schedule-card__icon" src="icons/ws-cocktail-t.png" alt="" aria-hidden="true" style="top:74px;right:14px;width:56px;height:60px">
+      <div class="schedule-card__head">
+        <span class="schedule-card__date">Fri 13th Aug 2027</span>
+        <span class="schedule-card__pill">Optional</span>
+      </div>
+      <h3 class="schedule-card__title">Informal gathering in Dublin</h3>
+      <div class="schedule-card__place"><svg width="16" height="16" aria-hidden="true"><use href="#icon-pin"/></svg>Dublin · venue TBC</div>
+      <p class="schedule-card__copy">We'll be in Dublin the night before heading to Kildare, so if you're around, come join us for a very informal get-together and ease yourself into the weekend. Completely optional, very relaxed, and a good chance to say hello before the wedding chaos properly begins.</p>
+      <div class="schedule-card__photo">
+        <div class="schedule-card__photo-tape" aria-hidden="true"></div>
+        <div class="placeholder placeholder--top-left">dublin photo</div>
+        <div class="schedule-card__photo-caption">Dublin ♥</div>
+      </div>
+      <a href="#" class="btn btn--ghost btn--block"><svg width="20" height="20" aria-hidden="true"><use href="#icon-calendar"/></svg>Add to calendar <svg class="icon-arrow" width="18" height="18" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+    </div>
+
+    <div style="display:grid;gap:18px">
+      <div class="schedule-card schedule-card--coach">
+        <img class="schedule-card__icon" src="icons/ws-bus-t.png" alt="" aria-hidden="true" style="top:60px;right:14px;width:59px;height:54px">
+        <div class="schedule-card__head">
+          <span class="schedule-card__date">Sat 14th Aug 2027</span>
+          <span class="schedule-card__pill">AM</span>
+        </div>
+        <h3 class="schedule-card__title">Coaches to Kildare</h3>
+        <div class="schedule-card__place"><svg width="16" height="16" aria-hidden="true"><use href="#icon-pin"/></svg>Dublin · pickup TBC</div>
+        <p class="schedule-card__copy">We'll be arranging coaches from Dublin to Kildare on Saturday morning for close family and friends, if you're reading this, they'll be a seat for you! Pick-up point and timings will be confirmed closer to the date. Don't be a Kevin and get left behind!</p>
+        <a href="#" class="btn btn--ghost btn--block"><svg width="20" height="20" aria-hidden="true"><use href="#icon-calendar"/></svg>Add to calendar <svg class="icon-arrow" width="18" height="18" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+      </div>
+
+      <div class="schedule-card schedule-card--sangeet">
+        <img class="schedule-card__icon" src="icons/ws-disco-t.png" alt="" aria-hidden="true" style="top:52px;right:14px;width:60px;height:54px">
+        <div class="schedule-card__head">
+          <span class="schedule-card__date">Sat 14th Aug 2027</span>
+          <span class="schedule-card__pill">PM</span>
+        </div>
+        <h3 class="schedule-card__title">Sangeet</h3>
+        <div class="schedule-card__place"><svg width="16" height="16" aria-hidden="true"><use href="#icon-pin"/></svg>Martinstown House</div>
+        <p class="schedule-card__copy">We're warming up for the wedding day with an evening of music, food and dancing. <b>We've secured Priya Dharni for a one-night-only Ireland exclusive DJ set</b>, so expect bangers, chaos and absolutely no guarantees about what gets played.</p>
+        <a href="#" class="btn btn--ghost btn--block"><svg width="20" height="20" aria-hidden="true"><use href="#icon-calendar"/></svg>Add to calendar <svg class="icon-arrow" width="18" height="18" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+      </div>
+    </div>
+
+    <div class="schedule-card schedule-card--wedding">
+      <img class="schedule-card__icon" src="icons/ws-hearts-t.png" alt="" aria-hidden="true" style="top:50px;right:14px;width:45px;height:58px">
+      <div class="schedule-card__head">
+        <span class="schedule-card__date">Sun 15th Aug 2027</span>
+      </div>
+      <h3 class="schedule-card__title">Wedding ceremony &amp; reception</h3>
+      <div class="schedule-card__place"><svg width="16" height="16" aria-hidden="true"><use href="#icon-pin"/></svg>Martinstown House</div>
+      <p class="schedule-card__copy">The main event! Join us for our wedding ceremony, followed by plenty of food, drinks, dancing and celebrations. We've done all the planning (or will have by then), so your only jobs are to turn up, look lovely and keep the dance floor full!</p>
+      <div class="schedule-card__photo">
+        <div class="schedule-card__photo-tape" aria-hidden="true"></div>
+        <img class="venue-photo" src="images/martinstown-house.jpeg" alt="Martinstown House">
+        <div class="schedule-card__photo-caption">Martinstown House ♥</div>
+      </div>
+      <a href="#" class="btn btn--ghost btn--block"><svg width="20" height="20" aria-hidden="true"><use href="#icon-calendar"/></svg>Add to calendar <svg class="icon-arrow" width="18" height="18" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+    </div>
+  </div>
+
+  <div class="schedule__foot">
+    <div class="schedule__foot-left">
+      <div class="schedule__foot-circle hand">Good<br>food<br>bright<br>people</div>
+      <svg width="40" height="40" aria-hidden="true"><use href="#icon-heart-doodle"/></svg>
+    </div>
+    <div class="schedule__foot-right">
+      <span class="schedule__foot-arrow" aria-hidden="true"><svg class="icon-arrow" width="32" height="32"><use href="#icon-arrow"/></svg></span>
+      <div class="schedule__foot-note hand">See you there? ♥</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TRAVEL ===================== -->
+<section class="section travel">
+  <div class="travel__head-row">
+    <h2 class="travel__title">Travel</h2>
+    <img class="travel__plane" src="icons/plane.png" alt="">
+    <svg class="icon-plane" width="28" height="28" aria-hidden="true"><use href="#icon-plane-lines"/></svg>
+  </div>
+  <div class="travel__subline hand">Getting here is part of the adventure.</div>
+
+  <div class="travel__head-notes">
+    <div class="sticker-note hand">Different<br>places<br>Same people<br>Bigger party<br><span style="font-family:'DM Sans',sans-serif">♥</span></div>
+    <svg class="starburst" width="50" height="50" aria-hidden="true" style="color:var(--yellow)"><use href="#icon-starburst"/></svg>
+  </div>
+
+  <div class="travel__grid">
+    <div>
+      <div class="airport-panel">
+        <span class="notch notch--l" aria-hidden="true"></span><span class="notch notch--r" aria-hidden="true"></span>
+        <div class="airport-panel__label">Nearest airport</div>
+        <h3 class="airport-panel__title">Dublin Airport<br>(DUB)<svg class="airport-panel__title-icon" width="34" height="34" aria-hidden="true"><use href="#icon-plane-lines"/></svg></h3>
+        <div class="airport-panel__meta"><svg width="20" height="20" fill="#111" aria-hidden="true"><use href="#icon-pin"/></svg><span>Around an hour's drive from the house.</span></div>
+        <a href="#" class="btn btn--yellow btn--block" style="margin-top:16px;justify-content:center">Directions <svg class="icon-arrow" width="20" height="20" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+      </div>
+
+      <div class="airport-photos">
+        <div class="airport-photo">
+          <span class="tape" aria-hidden="true"></span>
+          <div class="placeholder placeholder--top-left">dublin airport<br>terminal exterior</div>
+          <div class="airport-photo-caption">Dublin Airport <span style="font-family:'DM Sans',sans-serif">♥</span></div>
+        </div>
+        <img class="postmark-icon" src="icons/postmark.png" alt="">
+      </div>
+    </div>
+
+    <div>
+      <div class="getting-there">
+        <span class="notch notch--l" aria-hidden="true"></span><span class="notch notch--r" aria-hidden="true"></span>
+        <div class="getting-there__label-row">
+          <span class="getting-there__label">Getting there</span>
+          <svg class="icon-plane" width="24" height="24" aria-hidden="true"><use href="#icon-plane-lines"/></svg>
+        </div>
+        <div class="getting-there__list">
+          <a href="#" class="getting-there__link">Flights from Leeds Bradford<svg class="icon-arrow" width="22" height="22" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+          <a href="#" class="getting-there__link">Flights from Manchester<svg class="icon-arrow" width="22" height="22" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+          <a href="#" class="getting-there__link">Flights from all London airports<svg class="icon-arrow" width="22" height="22" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="travel__foot">
+    <svg class="starburst" width="38" height="38" aria-hidden="true" style="color:var(--yellow)"><use href="#icon-starburst"/></svg>
+    <div class="travel__foot-note hand">Same people<br>New adventures <span style="font-family:'DM Sans',sans-serif">♥</span></div>
+  </div>
+
+  <div class="suitcase-block">
+    <img class="suitcase-icon" src="icons/suitcase.png" alt="">
+    <div class="suitcase-note hand">Good<br>Flights<br>Good<br>Times <span style="font-family:'DM Sans',sans-serif">♥</span></div>
+  </div>
+</section>
+
+<!-- ===================== STAY ===================== -->
+<section class="section stay">
+  <div class="stay__grid">
+    <div>
+      <div class="stay__head-row">
+        <h2 class="stay__title">Stay</h2>
+        <img class="stay__bed-icon" src="icons/bed.png" alt="">
+      </div>
+      <div class="stay__subline hand">Rest. Recharge. Repeat.</div>
+    </div>
+    <div class="stay__notes">
+      <div class="sticker-note sticker-note--yellow hand">Same<br>roof<br>Bigger<br>memories ♥</div>
+      <svg width="76" height="76" viewBox="0 0 100 100" aria-hidden="true" style="color:#F58BC1;display:block;transform:rotate(-6deg)"><path d="M50 38C36 9 11 18 21 40C-3 42 5 69 29 62C25 88 55 94 59 68C78 88 98 65 76 51C99 33 80 10 59 34C58 15 44 16 50 38Z" fill="currentColor"/><circle cx="51" cy="52" r="8" fill="#FFD92F"/></svg>
+      <div class="sticker-note sticker-note--underline2 hand">Sleep<br>Eat<br>Dance<br>Repeat</div>
+    </div>
+  </div>
+
+  <div class="stay-cards">
+    <div class="stay-card stay-card--glamping">
+      <div class="stay-card__photo-wrap">
+        <div class="stay-card__photo-tape" aria-hidden="true"></div>
+        <div class="stay-card__photo">
+          <div class="placeholder placeholder--bottom">glamping tents</div>
+          <span class="stay-card__pill">At the venue</span>
+        </div>
+      </div>
+      <h3 class="stay-card__title">Glamping</h3>
+      <p class="stay-card__copy">Stay right in the heart of Martinstown House in the venue's Goa to Sleep glamping village. Tucked amongst the trees, the bell tents are a fun and comfortable way to make a proper weekend of the wedding.</p>
+      <ul class="stay-card__list">
+        <li>10 fully furnished bell tents</li>
+        <li>Proper beds, duvets, pillows and linen provided</li>
+        <li>Towels and extra blankets included</li>
+        <li>Lighting, USB charging and a heater in each tent</li>
+        <li><strong>Breakfast with the couple! (ps. probably just the Groom)</strong></li>
+      </ul>
+      <a href="#" class="btn btn--outline btn--block" style="margin-top:18px">Find out everything you need to know <svg class="icon-arrow" width="20" height="20" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+    </div>
+
+    <div class="stay-card stay-card--stables">
+      <div class="stay-card__photo-wrap">
+        <div class="stay-card__photo-tape" aria-hidden="true"></div>
+        <div class="stay-card__photo">
+          <div class="placeholder placeholder--bottom">stables bedroom</div>
+          <span class="stay-card__pill">At the venue</span>
+        </div>
+      </div>
+      <h3 class="stay-card__title">Stables</h3>
+      <p class="stay-card__copy">For those who prefer four walls and a proper bedroom, the converted Stables offer a cosy place to stay right at Martinstown House, so you can enjoy the celebrations without having far to wander at the end of the night.</p>
+      <ul class="stay-card__list">
+        <li>Five bedrooms in the converted stable block</li>
+        <li>Comfortable beds with luxury linen and duvets</li>
+        <li>Towels provided</li>
+        <li>Right at the venue, close to the celebrations</li>
+        <li><strong>Breakfast with the couple! (ps. probably just the Groom)</strong></li>
+      </ul>
+      <a href="#" class="btn btn--outline btn--block" style="margin-top:18px">Find out everything you need to know <svg class="icon-arrow" width="20" height="20" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+    </div>
+  </div>
+
+  <div class="shared-panel">
+    <div class="shared-panel__head">
+      <h3>Shared by the Stables and Glamping</h3>
+      <span class="shared-panel__tag">At the venue</span>
+    </div>
+    <p class="shared-panel__copy">Guests staying in the Stables and Glamping will have access to the facilities within Martinstown House's accommodation village. There's no need to bring bedding or towels, just settle in and enjoy being right at the heart of the weekend.</p>
+    <div class="amenities">
+      <div class="amenity"><img src="icons/am-showers-c.png" alt=""><span>Hot showers and toilets</span></div>
+      <div class="amenity"><img src="icons/am-breakfast-c.png" alt=""><span>Breakfast included</span></div>
+      <div class="amenity"><img src="icons/am-towels-c.png" alt=""><span>Towels and bedding provided</span></div>
+      <div class="amenity"><img src="icons/am-parking-c.png" alt=""><span>Parking on site</span></div>
+      <div class="amenity"><img src="icons/am-venue-c.png" alt=""><span>At the wedding venue</span></div>
+    </div>
+  </div>
+
+  <div class="hotels-card">
+    <div class="hotels-card__photo-wrap">
+      <div class="hotels-card__photo-tape" aria-hidden="true"></div>
+      <div class="hotels-card__photo">
+        <div class="placeholder placeholder--bottom">hotel exterior</div>
+      </div>
+    </div>
+    <h3 class="hotels-card__title">Nearby Hotels</h3>
+    <p class="hotels-card__copy">If glamping isn't quite your thing, there are plenty of lovely places to stay nearby. We've included a few options below that are within easy reach of Martinstown House. <b>Just remember that transport to and from the venue will need to be arranged separately.</b></p>
+    <ul class="hotels-card__list">
+      <li>A range of hotels within a short drive</li>
+      <li>Taxis back to Kildare town</li>
+      <li>Book early — August is busy</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===================== FAQS ===================== -->
+<section class="section faqs">
+  <div class="faqs__head">
+    <h2 class="faqs__title">FAQs</h2>
+    <span class="faqs__intro">Quick answers to the big (and small) questions.</span>
+  </div>
+  <div class="faq-list" id="faq-list"></div>
+</section>
+
+<!-- ===================== RSVP ===================== -->
+<div class="rsvp-wrap" id="rsvp">
+  <div class="rsvp-panel">
+    <div>
+      <h2 class="rsvp-panel__title">RSVP</h2>
+      <p class="rsvp-panel__copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor — by [date].</p>
+      <a href="#rsvp" class="btn btn--pink rsvp-panel__btn">Reply now <svg class="icon-arrow" width="22" height="22" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+    </div>
+    <div class="rsvp-panel__contact">
+      <div class="rsvp-panel__contact-label">Any questions?</div>
+      <div>[email address]</div>
+      <div>[phone number]</div>
+      <div class="rsvp-panel__contact-note hand">Just ask ♥</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <span>K + P</span><span>Good times ahead</span><span>2027</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
