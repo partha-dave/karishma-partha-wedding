@@ -710,7 +710,7 @@ a { color: inherit; }
 .schedule-card__photo .placeholder { aspect-ratio: 4/3; }
 .schedule-card__photo-tape { position: absolute; top: -10px; left: 50%; margin-left: -38px; width: 76px; height: 20px; background: var(--blue); opacity: .9; transform: rotate(-2deg); }
 .schedule-card__photo-caption {
-  position: absolute; left: 0; right: 0; bottom: 8px;
+  position: absolute; left: 0; right: 0; bottom: 2px;
   display: flex; justify-content: center; align-items: center; gap: 8px;
   font-family: var(--font-hand); font-weight: 700; font-size: 20px; letter-spacing: .06em; text-transform: uppercase;
 }
