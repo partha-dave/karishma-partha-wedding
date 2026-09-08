@@ -881,12 +881,14 @@ a { color: inherit; }
 @media (min-width: 960px) { .ask-panel__eyebrow { font-size: 12px; } }
 .ask-panel__lines { color: var(--ink); }
 
-.ask-panel__title { margin: 14px 0 0; font-family: var(--font-display); text-transform: uppercase; letter-spacing: -.03em; line-height: .88; font-size: 52px; }
+.ask-panel__title-row { margin-top: 14px; display: flex; align-items: center; gap: 16px; justify-content: space-between; }
+@media (min-width: 960px) { .ask-panel__title-row { margin-top: 0; display: block; } }
+.ask-panel__title { margin: 0; font-family: var(--font-display); text-transform: uppercase; letter-spacing: -.03em; line-height: .88; font-size: 52px; }
 @media (min-width: 960px) { .ask-panel__title { font-size: 68px; } }
 .ask-panel__heart { height: .62em; width: auto; display: inline-block; vertical-align: -0.06em; margin-left: 4px; }
 
 .ask-panel__badge { display: block; }
-.ask-panel__badge--mobile { width: 160px; margin: 20px 0 0; }
+.ask-panel__badge--mobile { width: 108px; flex: none; }
 @media (min-width: 960px) { .ask-panel__badge--mobile { display: none; } }
 .ask-panel__badge--desktop { display: none; }
 @media (min-width: 960px) { .ask-panel__badge--desktop { display: block; width: 150px; margin: 0 auto; } }
