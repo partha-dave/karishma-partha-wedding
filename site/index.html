@@ -51,6 +51,17 @@
   <symbol id="icon-heart-doodle" viewBox="0 0 100 100">
     <path d="M50 86C42 77 12 57 12 33C12 13 38 9 50 29C62 9 88 13 88 33C88 57 58 77 50 86Z" fill="none" stroke="#111" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
   </symbol>
+  <symbol id="icon-mail" viewBox="0 0 24 24">
+    <rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="icon-phone" viewBox="0 0 24 24">
+    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="icon-chat" viewBox="0 0 24 24">
+    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="8" cy="12" r="1" fill="currentColor"/><circle cx="12" cy="12" r="1" fill="currentColor"/><circle cx="16" cy="12" r="1" fill="currentColor"/>
+  </symbol>
 </svg>
 
 <div class="top-band">JULY &amp; AUGUST 2027</div>
@@ -538,19 +549,46 @@
   <div class="faq-list" id="faq-list"></div>
 </section>
 
-<!-- ===================== RSVP ===================== -->
+<!-- ===================== JUST ASK ===================== -->
 <div class="rsvp-wrap" id="rsvp">
-  <div class="rsvp-panel">
-    <div>
-      <h2 class="rsvp-panel__title">RSVP</h2>
-      <p class="rsvp-panel__copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor — by [date].</p>
-      <a href="#rsvp" class="btn btn--pink rsvp-panel__btn">Reply now <svg class="icon-arrow" width="22" height="22" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+  <div class="ask-panel">
+    <div class="ask-panel__col ask-panel__col--intro">
+      <div class="ask-panel__eyebrow-row">
+        <span class="ask-panel__eyebrow">Have a question?</span>
+        <svg class="ask-panel__lines" width="20" height="20" aria-hidden="true"><use href="#icon-plane-lines"/></svg>
+      </div>
+      <h2 class="ask-panel__title">Just<br>Ask <span class="ask-panel__heart" aria-hidden="true">♡</span></h2>
+      <img class="ask-panel__badge ask-panel__badge--mobile" src="icons/couple-badge.png" alt="Karishma + Partha Wedding 2027">
+      <p class="ask-panel__copy">If you have any questions about the wedding, travel or anything else, we're here to help.</p>
     </div>
-    <div class="rsvp-panel__contact">
-      <div class="rsvp-panel__contact-label">Any questions?</div>
-      <div>[email address]</div>
-      <div>[phone number]</div>
-      <div class="rsvp-panel__contact-note hand">Just ask ♥︎</div>
+
+    <div class="ask-panel__col ask-panel__col--methods">
+      <div class="ask-panel__method">
+        <span class="ask-panel__icon" style="background:var(--pink)"><svg width="20" height="20" aria-hidden="true"><use href="#icon-mail"/></svg></span>
+        <div>
+          <div class="ask-panel__method-label">Email us</div>
+          <div class="ask-panel__method-value">[email address]</div>
+        </div>
+      </div>
+      <div class="ask-panel__method">
+        <span class="ask-panel__icon" style="background:var(--blue)"><svg width="20" height="20" aria-hidden="true"><use href="#icon-phone"/></svg></span>
+        <div>
+          <div class="ask-panel__method-label">Give us a call</div>
+          <div class="ask-panel__method-value">[phone number]</div>
+        </div>
+      </div>
+      <div class="ask-panel__method">
+        <span class="ask-panel__icon" style="background:var(--yellow)"><svg width="20" height="20" aria-hidden="true"><use href="#icon-chat"/></svg></span>
+        <div>
+          <div class="ask-panel__method-label">Or just drop us a message</div>
+          <div class="ask-panel__method-value">We'd love to hear from you!</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ask-panel__col ask-panel__col--aside">
+      <img class="ask-panel__badge ask-panel__badge--desktop" src="icons/favicon-512.png" alt="K+P">
+      <div class="ask-panel__note hand">Same people<br>bigger party <u>♡</u></div>
     </div>
   </div>
 </div>
