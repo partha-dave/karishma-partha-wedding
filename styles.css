@@ -329,26 +329,6 @@ a { color: inherit; }
 
 .journey__row { margin-top: 30px; display: flex; flex-wrap: wrap; align-items: flex-start; gap: 16px; }
 @media (min-width: 960px) { .journey__row { margin-top: 44px; flex-wrap: nowrap; gap: 26px; } }
-.journey__note-left, .journey__note-right {
-  flex: none;
-  order: 1;
-  padding: 16px 14px;
-  font-size: 20px; line-height: 1.15;
-}
-.journey__note-left { background: var(--pink-light); transform: rotate(-4deg); }
-.journey__note-right { background: var(--blue-light); transform: rotate(4deg); }
-@media (min-width: 960px) {
-  .journey__note-left, .journey__note-right { display: none; }
-}
-
-.journey__mini-star {
-  order: 1;
-  flex: none;
-  align-self: center;
-  color: var(--yellow);
-}
-@media (min-width: 960px) { .journey__mini-star { display: none; } }
-
 .journey__grid {
   order: -1;
   flex: 1 1 100%;
