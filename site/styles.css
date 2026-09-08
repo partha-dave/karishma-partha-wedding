@@ -184,7 +184,7 @@ a { color: inherit; }
   transform-origin: left center;
 }
 @media (min-width: 960px) {
-  .hero__title { margin: 14px 0 26px; font-size: 112px; letter-spacing: -.035em; }
+  .hero__title { margin: 14px 0 26px; font-size: clamp(56px, 9vw, 112px); letter-spacing: -.035em; }
 }
 
 .hero__lede {
@@ -545,7 +545,7 @@ a { color: inherit; }
 
 .venue__title-wrap { position: relative; display: inline-block; }
 .venue__title { margin: 10px 0 0; font-family: var(--font-display); text-transform: uppercase; letter-spacing: -.03em; line-height: .9; font-size: 42px; }
-@media (min-width: 960px) { .venue__title { margin: 12px 0 0; font-size: 88px; } }
+@media (min-width: 960px) { .venue__title { margin: 12px 0 0; font-size: clamp(44px, 6.6vw, 88px); } }
 .venue__title-flower { position: absolute; right: -6px; bottom: -14px; transform: rotate(12deg); color: var(--pink); }
 @media (min-width: 960px) { .venue__title-flower { right: -58px; bottom: 6px; } }
 
