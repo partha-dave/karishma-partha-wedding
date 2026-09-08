@@ -54,3 +54,25 @@
     list.appendChild(item);
   });
 })();
+
+(function () {
+  var links = document.querySelectorAll('a[href^="#"]');
+  links.forEach(function (link) {
+    var href = link.getAttribute("href");
+    if (!href || href.length < 2) return;
+
+    link.addEventListener("click", function (e) {
+      var target = document.getElementById(href.slice(1));
+      if (!target) return;
+
+      e.preventDefault();
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+
+      if (window.history && window.history.pushState) {
+        history.pushState(null, "", href);
+      } else {
+        location.hash = href;
+      }
+    });
+  });
+})();
