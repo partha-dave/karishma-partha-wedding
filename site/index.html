@@ -32,6 +32,9 @@
   <symbol id="icon-plane-lines" viewBox="0 0 40 40">
     <path d="M6 24L1 31M16 21L14 32M25 21L29 30" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
   </symbol>
+  <symbol id="icon-plane-solid" viewBox="0 0 24 24">
+    <path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-3 2v1.5l4-1 4 1V21l-3-2v-5.5l8 2.5z" fill="currentColor"/>
+  </symbol>
   <symbol id="icon-car" viewBox="0 0 32 32">
     <path d="M5 20v3M27 20v3" fill="none" stroke="#111" stroke-width="3.4" stroke-linecap="round"/>
     <path d="M4 20v-4l2.6-5.4A2 2 0 0 1 8.4 9.5h15.2a2 2 0 0 1 1.8 1.1L28 16v4z" fill="none" stroke="#111" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
@@ -376,55 +379,57 @@
   </div>
   <div class="travel__subline hand">Getting here is part of the adventure.</div>
 
-  <div class="travel__head-notes">
-    <div class="sticker-note hand">Different<br>places<br>Same people<br>Bigger party<br><span style="font-family:'DM Sans',sans-serif">♥</span></div>
-    <svg class="starburst" width="50" height="50" aria-hidden="true" style="color:var(--yellow)"><use href="#icon-starburst"/></svg>
-  </div>
+  <div class="travel-tickets">
+    <div class="airport-ticket">
+      <span class="notch notch--l" aria-hidden="true"></span><span class="notch notch--r" aria-hidden="true"></span>
 
-  <div class="travel__grid">
-    <div>
-      <div class="airport-panel">
-        <span class="notch notch--l" aria-hidden="true"></span><span class="notch notch--r" aria-hidden="true"></span>
-        <div class="airport-panel__label">Nearest airport</div>
-        <h3 class="airport-panel__title">Dublin Airport<br>(DUB)<svg class="airport-panel__title-icon" width="34" height="34" aria-hidden="true"><use href="#icon-plane-lines"/></svg></h3>
-        <div class="airport-panel__meta"><svg width="20" height="20" fill="#111" aria-hidden="true"><use href="#icon-pin"/></svg><span>Around an hour's drive from the house.</span></div>
-        <a href="#" class="btn btn--yellow btn--block" style="margin-top:16px;justify-content:center">Directions <svg class="icon-arrow" width="20" height="20" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+      <div class="airport-ticket__top">
+        <img class="airport-ticket__plane-doodle" src="icons/plane.png" alt="" aria-hidden="true">
+        <div class="airport-ticket__label">Nearest airport</div>
+        <svg class="airport-ticket__lines" width="22" height="22" aria-hidden="true"><use href="#icon-plane-lines"/></svg>
+        <span class="airport-ticket__heart" aria-hidden="true">♥</span>
+        <h3 class="airport-ticket__title">Dublin Airport<br>(DUB)</h3>
+        <div class="airport-ticket__meta"><svg width="18" height="18" fill="#111" aria-hidden="true"><use href="#icon-pin"/></svg><span>Around an hour's drive from the house.</span></div>
+        <img class="airport-ticket__stamp" src="icons/postmark.png" alt="">
       </div>
 
-      <div class="airport-photos">
-        <div class="airport-photo">
-          <span class="tape" aria-hidden="true"></span>
-          <div class="placeholder placeholder--top-left">dublin airport<br>terminal exterior</div>
-          <div class="airport-photo-caption">Dublin Airport <span style="font-family:'DM Sans',sans-serif">♥</span></div>
+      <div class="airport-ticket__stub">
+        <span class="notch notch--l" aria-hidden="true"></span><span class="notch notch--r" aria-hidden="true"></span>
+        <div class="airport-ticket__stub-row">
+          <div class="airport-ticket__stub-col">
+            <div class="airport-ticket__stub-label">Departing from</div>
+            <div class="airport-ticket__stub-code">DUB</div>
+            <div class="airport-ticket__stub-caption">Dublin Airport</div>
+          </div>
+          <svg class="airport-ticket__stub-plane" width="26" height="26" aria-hidden="true"><use href="#icon-plane-solid"/></svg>
+          <div class="airport-ticket__stub-col airport-ticket__stub-col--right">
+            <div class="airport-ticket__stub-label">Final destination</div>
+            <div class="airport-ticket__stub-code">Kildare</div>
+            <div class="airport-ticket__stub-caption">Martinstown House</div>
+          </div>
         </div>
-        <img class="postmark-icon" src="icons/postmark.png" alt="">
+        <a href="#" class="btn btn--yellow btn--block airport-ticket__cta" style="justify-content:center">Get directions <svg class="icon-arrow" width="20" height="20" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
       </div>
     </div>
 
-    <div>
-      <div class="getting-there">
-        <span class="notch notch--l" aria-hidden="true"></span><span class="notch notch--r" aria-hidden="true"></span>
-        <div class="getting-there__label-row">
-          <span class="getting-there__label">Getting there</span>
-          <svg class="icon-plane" width="24" height="24" aria-hidden="true"><use href="#icon-plane-lines"/></svg>
-        </div>
-        <div class="getting-there__list">
-          <a href="#" class="getting-there__link">Flights from Leeds Bradford<svg class="icon-arrow" width="22" height="22" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
-          <a href="#" class="getting-there__link">Flights from Manchester<svg class="icon-arrow" width="22" height="22" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
-          <a href="#" class="getting-there__link">Flights from all London airports<svg class="icon-arrow" width="22" height="22" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
-        </div>
+    <div class="flights-ticket">
+      <span class="notch notch--l" aria-hidden="true"></span><span class="notch notch--r" aria-hidden="true"></span>
+      <div class="flights-ticket__head">
+        <span class="flights-ticket__label">Getting there</span>
+        <svg class="icon-plane" width="20" height="20" aria-hidden="true"><use href="#icon-plane-lines"/></svg>
+      </div>
+      <div class="flights-ticket__list">
+        <a href="#" class="flights-ticket__link"><svg width="18" height="18" aria-hidden="true"><use href="#icon-plane-solid"/></svg><span>Flights from Leeds Bradford</span><svg class="icon-arrow" width="18" height="18" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+        <a href="#" class="flights-ticket__link"><svg width="18" height="18" aria-hidden="true"><use href="#icon-plane-solid"/></svg><span>Flights from Manchester</span><svg class="icon-arrow" width="18" height="18" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+        <a href="#" class="flights-ticket__link"><svg width="18" height="18" aria-hidden="true"><use href="#icon-plane-solid"/></svg><span>Flights from all London airports</span><svg class="icon-arrow" width="18" height="18" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+      </div>
+      <div class="flights-ticket__foot">
+        <svg class="flights-ticket__barcode" width="140" height="34" viewBox="0 0 140 34" aria-hidden="true">
+          <rect x="0" y="0" width="2" height="34" fill="currentColor"/><rect x="5" y="0" width="4" height="34" fill="currentColor"/><rect x="12" y="0" width="2" height="34" fill="currentColor"/><rect x="17" y="0" width="3" height="34" fill="currentColor"/><rect x="23" y="0" width="2" height="34" fill="currentColor"/><rect x="28" y="0" width="5" height="34" fill="currentColor"/><rect x="36" y="0" width="2" height="34" fill="currentColor"/><rect x="41" y="0" width="3" height="34" fill="currentColor"/><rect x="47" y="0" width="2" height="34" fill="currentColor"/><rect x="52" y="0" width="4" height="34" fill="currentColor"/><rect x="59" y="0" width="2" height="34" fill="currentColor"/><rect x="64" y="0" width="2" height="34" fill="currentColor"/><rect x="69" y="0" width="5" height="34" fill="currentColor"/><rect x="77" y="0" width="2" height="34" fill="currentColor"/><rect x="82" y="0" width="3" height="34" fill="currentColor"/><rect x="88" y="0" width="2" height="34" fill="currentColor"/><rect x="93" y="0" width="4" height="34" fill="currentColor"/><rect x="100" y="0" width="2" height="34" fill="currentColor"/><rect x="105" y="0" width="3" height="34" fill="currentColor"/><rect x="111" y="0" width="2" height="34" fill="currentColor"/><rect x="116" y="0" width="5" height="34" fill="currentColor"/><rect x="124" y="0" width="2" height="34" fill="currentColor"/><rect x="129" y="0" width="3" height="34" fill="currentColor"/><rect x="135" y="0" width="2" height="34" fill="currentColor"/>
+        </svg>
+        <div class="flights-ticket__note hand">See you<br><u>there!</u> ♥</div>
       </div>
     </div>
-  </div>
-
-  <div class="travel__foot">
-    <svg class="starburst" width="38" height="38" aria-hidden="true" style="color:var(--yellow)"><use href="#icon-starburst"/></svg>
-    <div class="travel__foot-note hand">Same people<br>New adventures <span style="font-family:'DM Sans',sans-serif">♥</span></div>
-  </div>
-
-  <div class="suitcase-block">
-    <img class="suitcase-icon" src="icons/suitcase.png" alt="">
-    <div class="suitcase-note hand">Good<br>Flights<br>Good<br>Times <span style="font-family:'DM Sans',sans-serif">♥</span></div>
   </div>
 </section>
 
