@@ -666,24 +666,6 @@ a { color: inherit; }
 }
 .schedule-card__photo img.venue-photo { display: block; width: 100%; aspect-ratio: 4/3; object-fit: cover; }
 
-.schedule__foot {
-  margin-top: 32px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap;
-}
-@media (min-width: 960px) { .schedule__foot { margin-top: 44px; } }
-.schedule__foot-left { display: flex; align-items: center; gap: 14px; }
-@media (min-width: 960px) { .schedule__foot-left { gap: 22px; } }
-.schedule__foot-circle {
-  width: 88px; height: 88px; border-radius: 50%; background: var(--green);
-  display: grid; place-items: center; text-align: center;
-  font: 800 11px/1.2 var(--font-body); text-transform: uppercase; transform: rotate(-6deg);
-}
-@media (min-width: 960px) { .schedule__foot-circle { width: 118px; height: 118px; font-size: 13px; } }
-.schedule__foot-right { display: flex; align-items: center; gap: 10px; }
-@media (min-width: 960px) { .schedule__foot-right { gap: 16px; } }
-.schedule__foot-arrow { transform: rotate(24deg); display: inline-block; }
-.schedule__foot-note { background: var(--yellow); padding: 10px 14px; transform: rotate(-3deg); font-size: 24px; line-height: 1; }
-@media (min-width: 960px) { .schedule__foot-note { padding: 12px 18px; font-size: 30px; } }
-
 /* ---------- Travel ---------- */
 .travel__head-row { display: flex; align-items: center; gap: 12px; }
 @media (min-width: 960px) { .travel__head-row { gap: 20px; } }
