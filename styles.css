@@ -548,8 +548,8 @@ a { color: inherit; }
 .venue__copy { margin-top: 12px; font-size: 16px; line-height: 1.6; max-width: 560px; }
 @media (min-width: 960px) { .venue__copy { margin-top: 16px; font-size: 17px; } }
 
-.venue__notes { display: flex; gap: 20px; align-items: flex-start; }
-@media (min-width: 960px) { .venue__notes { padding-top: 18px; gap: 26px; } }
+.venue__notes { display: none; gap: 20px; align-items: flex-start; }
+@media (min-width: 960px) { .venue__notes { display: flex; padding-top: 18px; gap: 26px; } }
 .venue__note-home {
   background: var(--yellow);
   padding: 16px 14px;
