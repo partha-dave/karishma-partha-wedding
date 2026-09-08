@@ -123,14 +123,6 @@ a { color: inherit; }
 }
 .btn--pink { background: var(--pink); }
 .btn--yellow { background: var(--yellow); font: 500 16px/1 var(--font-body); text-transform: none; letter-spacing: normal; }
-.btn--outline {
-  background: transparent;
-  border: 2px solid var(--ink);
-  border-radius: 999px;
-  justify-content: center;
-  font: 700 14px/1 var(--font-body);
-  min-height: 52px;
-}
 .btn--ghost {
   background: rgba(255,255,255,.55);
   justify-content: center;
