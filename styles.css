@@ -567,7 +567,8 @@ a { color: inherit; }
 
 .venue__map { margin-top: 22px; background: #fff; border: 1px solid var(--line); }
 @media (min-width: 960px) { .venue__map { box-shadow: 0 8px 20px rgba(17,17,17,.08); } }
-.venue__map .placeholder { aspect-ratio: 4/3; }
+.venue__map .placeholder,
+.venue__map-frame { display: block; width: 100%; aspect-ratio: 4/3; border: 0; }
 
 .venue__map-caption { margin-top: 12px; display: flex; align-items: center; gap: 12px; }
 @media (min-width: 960px) { .venue__map-caption { margin-top: 16px; gap: 14px; } }
