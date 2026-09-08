@@ -848,7 +848,8 @@ a { color: inherit; }
 @media (min-width: 960px) { .faqs__head { flex-direction: row; align-items: baseline; gap: 20px; } }
 .faqs__title { margin: 0; font-family: var(--font-display); text-transform: uppercase; letter-spacing: -.03em; line-height: .9; font-size: 46px; }
 @media (min-width: 960px) { .faqs__title { font-size: 64px; } }
-.faqs__intro { font-size: 16px; }
+.faqs__intro { font-size: 22px; line-height: 1.1; }
+@media (min-width: 960px) { .faqs__intro { font-size: 26px; } }
 
 .faq-list { margin-top: 18px; border-top: 1px solid var(--line); }
 @media (min-width: 960px) { .faq-list { margin-top: 26px; } }
