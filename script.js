@@ -66,7 +66,7 @@
       if (!target) return;
 
       e.preventDefault();
-      target.scrollIntoView({ behavior: "smooth", block: "start" });
+      target.scrollIntoView({ behavior: "auto", block: "start" });
 
       if (window.history && window.history.pushState) {
         history.pushState(null, "", href);
