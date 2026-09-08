@@ -890,7 +890,7 @@ a { color: inherit; }
 
 .ask-panel__title { margin: 14px 0 0; font-family: var(--font-display); text-transform: uppercase; letter-spacing: -.03em; line-height: .88; font-size: 52px; }
 @media (min-width: 960px) { .ask-panel__title { font-size: 68px; } }
-.ask-panel__heart { font-size: .7em; }
+.ask-panel__heart { height: .62em; width: auto; display: inline-block; vertical-align: -0.06em; margin-left: 4px; }
 
 .ask-panel__badge { display: block; }
 .ask-panel__badge--mobile { width: 160px; margin: 20px 0 0; }
