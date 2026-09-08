@@ -1,0 +1,43 @@
+
+:root {
+  --paper: #FFFDF8;
+  --ink: #111111;
+  --pink: #F58BC1;
+  --yellow: #FFD92F;
+  --blue: #28AEEF;
+  --lilac: #C7A6F4;
+  --green: #36C86B;
+  --muted: #F3F0EA;
+  --line: #D9D5CD;
+
+  --display: "Bowlby One SC", "Arial Black", sans-serif;
+  --body: "Inter", Arial, sans-serif;
+  --hand: "Caveat", "Comic Sans MS", cursive;
+
+  --page-max: 1180px;
+  --radius: 2px;
+  --shadow-photo: 0 12px 30px rgba(17,17,17,.12);
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--paper); color:var(--ink); font-family:var(--body); }
+.container { width:min(calc(100% - 48px), var(--page-max)); margin-inline:auto; }
+.display { font-family:var(--display); text-transform:uppercase; letter-spacing:-.03em; line-height:.9; }
+.hand { font-family:var(--hand); font-weight:700; line-height:.95; }
+.photo-card { position:relative; background:#fff; padding:10px; box-shadow:var(--shadow-photo); transform:rotate(-2deg); }
+.photo-card img { display:block; width:100%; height:auto; }
+.tape { position:absolute; width:96px; height:28px; background:var(--pink); opacity:.92; top:-14px; left:50%; transform:translateX(-50%) rotate(3deg); }
+.sticker { display:inline-grid; place-items:center; min-width:92px; min-height:92px; padding:14px; text-align:center; font-weight:900; text-transform:uppercase; line-height:.9; transform:rotate(4deg); }
+.sticker.circle { border-radius:50%; }
+.ticket { position:relative; padding:24px; background:var(--pink); }
+.ticket::before,.ticket::after { content:""; position:absolute; top:50%; width:18px; height:18px; background:var(--paper); border-radius:50%; transform:translateY(-50%); }
+.ticket::before { left:-9px; } .ticket::after { right:-9px; }
+.btn { display:inline-flex; align-items:center; gap:14px; min-height:48px; padding:0 22px; background:var(--pink); color:var(--ink); text-decoration:none; font-weight:900; text-transform:uppercase; border:0; }
+.card-list { display:grid; gap:16px; }
+.faq-row { display:grid; grid-template-columns:1fr auto; gap:20px; padding:18px 0; border-bottom:1px solid var(--line); }
+@media (max-width: 700px) {
+  .container { width:min(calc(100% - 32px), var(--page-max)); }
+  .photo-card { transform:rotate(-1.2deg); padding:7px; }
+  .tape { width:72px; height:22px; top:-11px; }
+  .sticker { min-width:72px; min-height:72px; font-size:.78rem; }
+  .ticket { padding:20px; }
+}

@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics=""><meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&amp;family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&amp;family=Caveat:wght@600;700&amp;display=swap" rel="stylesheet">
+<style>body{margin:0;background:#e9e6df;font-family:"DM Sans",system-ui,sans-serif}a{color:#111}a:hover{color:#F58BC1}.dv-turn{padding:40px 44px 32px;border-bottom:1px solid rgba(0,0,0,.08);scroll-margin-top:16px}.dv-thd{display:flex;align-items:baseline;gap:10px;margin:0 0 20px}.dv-tid{font:600 10px ui-monospace,Menlo,monospace;padding:3px 7px;background:#1a1a1a;color:#fff;border-radius:4px;text-decoration:none}.dv-tname{font:600 13px/1.2 system-ui,sans-serif;color:#1a1a1a}.dv-opts{display:flex;flex-wrap:wrap;gap:36px;align-items:flex-start}.dv-opt{flex:none;display:flex;flex-direction:column;gap:9px;scroll-margin-top:16px}.dv-oid{font:600 10.5px ui-monospace,Menlo,monospace;padding:3px 7px;background:rgba(0,0,0,.08);color:#1a1a1a;border-radius:5px;text-decoration:none}.dv-olabel{display:flex;align-items:baseline;gap:8px;font:400 11px/1.3 system-ui,sans-serif;color:rgba(0,0,0,.55)}.dv-card{max-width:100%;background:#FFFDF8;border:1px solid rgba(0,0,0,.1);box-shadow:0 2px 10px rgba(0,0,0,.08);overflow:hidden}.dv-opt:target .dv-oid{background:#2a78d6;color:#fff}.dv-next{margin:22px 0 0;font:12px/1.5 system-ui,sans-serif;color:rgba(0,0,0,.5)}</style></helmet>
+
+<section class="dv-turn" id="t1">
+<div class="dv-thd"><a class="dv-tid" href="#t1">1</a><span class="dv-tname">One-page wedding site — no nav, sections stacked in order</span></div>
+
+<div class="dv-opts">
+
+<div class="dv-opt" id="1a"><div class="dv-olabel"><a class="dv-oid" href="#1a">1a</a>Desktop · 1180px content · scroll-through one-pager</div>
+<div class="dv-card" style="width:1180px">
+
+<div style="position:relative;padding:36px 56px 0;overflow:hidden">
+<div style="display:flex;justify-content:space-between;align-items:center;font:700 13px/1 'DM Sans',sans-serif;letter-spacing:.18em;text-transform:uppercase">
+<span style="color:#8a857c">JULY &amp; AUGUST 2027</span>
+</div>
+
+<div style="position:relative;margin-top:26px;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:32px;align-items:start">
+<div>
+
+<h1 style="margin: 14px 0 26px; font-family: 'Bowlby One',Arial Black,sans-serif; text-transform: uppercase; letter-spacing: -.035em; line-height: .9; font-size: 112px; color: #111; transform: rotate(-6deg); transform-origin: left center; width: 845px; height: 314px">Karishma<br>+ Partha</h1>
+<p style="margin:26px 0 0;max-width:420px;font-size:18px;line-height:1.55;color:#111">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna.</p><div style="margin-top:26px;display:flex;gap:14px;align-items:center">
+<a href="#1a" style="display:inline-flex;align-items:center;gap:14px;min-height:52px;padding:0 26px;background:#F58BC1;color:#111;text-decoration:none;font:700 14px/1 'DM Sans',sans-serif;letter-spacing:.12em;text-transform:uppercase" style-hover="transform:translateY(-2px)">RSVP <span aria-hidden="true" style="display:inline-flex;width:21px"><svg aria-hidden="true" width="21" height="21" viewBox="0 0 100 100" fill="none" stroke="currentColor" style="display:block"><path d="M12 50H84M65 30L85 50L65 70" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a>
+<span style="font-family:Caveat,cursive;font-weight:700;font-size:30px;transform:rotate(-6deg);display:inline-block">Same people, bigger party</span>
+</div>
+</div>
+
+<div style="position:relative;padding:10px 0 40px">
+<div aria-hidden="true" style="position:absolute;top:-6px;right:6px;font-size:56px;line-height:1;color:#F58BC1;transform:rotate(8deg);z-index:5">♥</div>
+<div style="position:relative;max-width:330px;margin-left:auto;background:#fff;padding:14px 14px 50px;box-shadow:0 14px 32px rgba(17,17,17,.16);transform:rotate(-6deg)">
+<div aria-hidden="true" style="position:absolute;top:-13px;left:-18px;width:84px;height:26px;background:#FFFDF8;border:1px solid #D9D5CD;opacity:.96;transform:rotate(-34deg)"></div>
+<div aria-hidden="true" style="position:absolute;bottom:30px;right:-18px;width:76px;height:24px;background:#FFFDF8;border:1px solid #D9D5CD;opacity:.96;transform:rotate(-28deg)"></div>
+<div style="aspect-ratio:4/5;background:repeating-linear-gradient(45deg,#F3F0EA 0 10px,#FFFDF8 10px 20px);display:grid;place-items:center;font:11px/1.7 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#8a857c;text-align:center">couple shot<br>4:5 portrait<br>polaroid frame</div>
+</div>
+<img aria-hidden="true" src="icons/couple-badge.png" alt="" style="position:absolute;bottom:0;left:-6px;width:139px;transform:rotate(-6deg);z-index:6">
+<div style="position:absolute;bottom:10px;right:6px;font-family:Caveat,cursive;font-weight:700;font-size:36px;line-height:1.05;transform:rotate(-6deg);z-index:6">Better<br>Together<br><span style="font-size:30px">♥</span></div>
+</div>
+</div>
+</div>
+
+<div style="padding:96px 56px 0">
+<div style="font:700 12px/1 'DM Sans',sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#8a857c">Welcome</div>
+<div style="margin-top:18px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:center">
+<div>
+<h2 style="margin:0;font-family:'Bowlby One',Arial Black,sans-serif;text-transform:uppercase;letter-spacing:-.03em;line-height:.92;font-size:60px;color:#111">We're getting married!</h2>
+<p style="margin:22px 0 0;font-size:17px;line-height:1.6;max-width:460px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+</div>
+<div style="position:relative;display:flex;justify-content:flex-end">
+<div style="background:#F58BC1;padding:26px 30px;transform:rotate(-2deg);max-width:300px;font-family:Caveat,cursive;font-weight:700;font-size:34px;line-height:1.05;color:#111">Better together ♥</div>
+<div aria-hidden="true" style="position:absolute;top:-20px;right:-12px"><svg aria-hidden="true" width="48" height="48" viewBox="0 0 100 100" style="color:#36C86B;display:block"><path d="M50 4C54 29 58 35 82 23C62 42 62 47 92 50C62 54 59 59 79 80C58 66 54 70 50 96C46 70 42 66 21 80C41 59 38 54 8 50C38 47 38 42 18 23C42 35 46 29 50 4Z" fill="currentColor"></path></svg></div>
+</div>
+</div>
+</div>
+
+<div style="padding:104px 56px 0">
+<div style="font:700 12px/1 'DM Sans',sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#8a857c">Our story</div>
+<div style="margin-top:18px;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:start">
+<div style="position:relative;padding-top:14px">
+<div aria-hidden="true" style="position:absolute;top:0;left:22%;width:92px;height:26px;background:#28AEEF;opacity:.92;transform:rotate(3deg);z-index:2"></div>
+<div style="background:#fff;padding:10px;box-shadow:0 12px 30px rgba(17,17,17,.12);transform:rotate(-2.2deg)">
+<div style="aspect-ratio:1/1;background:repeating-linear-gradient(45deg,#F3F0EA 0 10px,#FFFDF8 10px 20px);display:grid;align-content:start;justify-items:start;padding:20px;font:11px/1.6 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#8a857c;text-align:left">early photo<br>square</div>
+</div>
+<div style="margin:-30px 0 0 42%;width:58%;background:#fff;padding:10px;box-shadow:0 12px 30px rgba(17,17,17,.12);transform:rotate(2.8deg);position:relative;z-index:3">
+<div style="aspect-ratio:3/4;background:repeating-linear-gradient(45deg,#F3F0EA 0 10px,#FFFDF8 10px 20px);display:grid;place-items:center;font:11px/1.5 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#8a857c;text-align:center">the proposal<br>3:4</div>
+</div>
+</div>
+<div>
+<h2 style="margin:0;font-family:'Bowlby One',Arial Black,sans-serif;text-transform:uppercase;letter-spacing:-.03em;line-height:.9;font-size:68px">Our story</h2>
+<p style="margin:24px 0 0;font-size:17px;line-height:1.65;max-width:520px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p style="margin:18px 0 0;font-size:17px;line-height:1.65;max-width:520px">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat.</p>
+<div style="margin-top:24px;font-family:Caveat,cursive;font-weight:700;font-size:32px;transform:rotate(-3deg);display:inline-block">…and then there were two ♥</div>
+</div>
+</div>
+</div>
+
+<div style="padding:104px 56px 0">
+<div style="text-align:center">
+<div style="font:700 13px/1 'DM Sans',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#1f8a4c">Our story so far</div>
+<div aria-hidden="true" style="margin:12px auto 0;width:150px;height:9px;border-radius:999px;background:#F58BC1"></div>
+<div style="position:relative;display:inline-block;margin-top:14px;padding:6px 34px">
+<span aria-hidden="true" style="position:absolute;inset:10px 0 14px;background:#FFD92F;border-radius:44px;transform:rotate(-1.2deg)"></span>
+<h2 style="position:relative;margin:0;font-family:'Bowlby One',Arial Black,sans-serif;text-transform:uppercase;letter-spacing:-.03em;line-height:1;font-size:72px">Our journey</h2>
+</div>
+<div style="margin-top:10px"><div style="font-family:Caveat,cursive;font-weight:700;font-size:32px;line-height:1;border-bottom:3px solid #111;display:inline-block;padding-bottom:6px">Different places, same adventure ♡</div></div>
+</div>
+<div style="margin-top:44px;display:flex;align-items:flex-start;gap:26px">
+<div style="flex:none;padding-top:14px"><div style="background:#F9A8CE;padding:20px 18px;transform:rotate(-4deg);font-family:Caveat,cursive;font-weight:700;font-size:24px;line-height:1.15">Good<br>Food<br>Great<br>Company<br>Brighter<br>Days ♡</div></div>
+<div style="flex:1;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px;align-items:start;padding-top:26px">
+<div style="margin-top:0px"><div style="position:relative;background:#fff;padding:10px;box-shadow:0 10px 24px rgba(17,17,17,.14);transform:rotate(-3.5deg)">
+<div aria-hidden="true" style="position:absolute;top:-12px;left:50%;margin-left:-32px;width:64px;height:22px;background:#F58BC1;opacity:.92;transform:rotate(-3deg)"></div>
+<div style="aspect-ratio:1/1;background:repeating-linear-gradient(45deg,#F3F0EA 0 10px,#FFFDF8 10px 20px);display:grid;align-content:start;padding:12px;font:10px/1.6 ui-monospace,Menlo,monospace;letter-spacing:.1em;text-transform:uppercase;color:#8a857c">coast town</div>
+<div style="margin-top:10px;min-height:46px;font-family:Caveat,cursive;font-weight:700;font-size:22px;line-height:1.05">First trip together ♡</div>
+</div></div><div style="margin-top:14px"><div style="position:relative;background:#fff;padding:10px;box-shadow:0 10px 24px rgba(17,17,17,.14);transform:rotate(2.5deg)">
+<div aria-hidden="true" style="position:absolute;top:-12px;left:50%;margin-left:-32px;width:64px;height:22px;background:#FFD92F;opacity:.92;transform:rotate(-3deg)"></div>
+<div style="aspect-ratio:1/1;background:repeating-linear-gradient(45deg,#F3F0EA 0 10px,#FFFDF8 10px 20px);display:grid;align-content:start;padding:12px;font:10px/1.6 ui-monospace,Menlo,monospace;letter-spacing:.1em;text-transform:uppercase;color:#8a857c">city landmark</div>
+<div style="margin-top:10px;min-height:46px;font-family:Caveat,cursive;font-weight:700;font-size:22px;line-height:1.05">Exploring<br>new places</div>
+</div></div><div style="margin-top:4px"><div style="position:relative;background:#fff;padding:10px;box-shadow:0 10px 24px rgba(17,17,17,.14);transform:rotate(-2deg)">
+<div aria-hidden="true" style="position:absolute;top:-12px;left:50%;margin-left:-32px;width:64px;height:22px;background:#28AEEF;opacity:.92;transform:rotate(-3deg)"></div>
+<div style="aspect-ratio:1/1;background:repeating-linear-gradient(45deg,#F3F0EA 0 10px,#FFFDF8 10px 20px);display:grid;align-content:start;padding:12px;font:10px/1.6 ui-monospace,Menlo,monospace;letter-spacing:.1em;text-transform:uppercase;color:#8a857c">mountain lake</div>
+<div style="margin-top:10px;min-height:46px;font-family:Caveat,cursive;font-weight:700;font-size:22px;line-height:1.05">Mountains,<br>memories ♡</div>
+</div></div><div style="margin-top:20px"><div style="position:relative;background:#fff;padding:10px;box-shadow:0 10px 24px rgba(17,17,17,.14);transform:rotate(3deg)">
+<div aria-hidden="true" style="position:absolute;top:-12px;left:50%;margin-left:-32px;width:64px;height:22px;background:#F58BC1;opacity:.92;transform:rotate(-3deg)"></div>
+<div style="aspect-ratio:1/1;background:repeating-linear-gradient(45deg,#F3F0EA 0 10px,#FFFDF8 10px 20px);display:grid;align-content:start;padding:12px;font:10px/1.6 ui-monospace,Menlo,monospace;letter-spacing:.1em;text-transform:uppercase;color:#8a857c">beach sunset</div>
+<div style="margin-top:10px;min-height:46px;font-family:Caveat,cursive;font-weight:700;font-size:22px;line-height:1.05">Chasing<br>sunsets</div>
+</div></div><div style="margin-top:6px"><div style="position:relative;background:#fff;padding:10px;box-shadow:0 10px 24px rgba(17,17,17,.14);transform:rotate(-2.5deg)">
+<div aria-hidden="true" style="position:absolute;top:-12px;left:50%;margin-left:-32px;width:64px;height:22px;background:#36C86B;opacity:.92;transform:rotate(-3deg)"></div>
+<div style="aspect-ratio:1/1;background:repeating-linear-gradient(45deg,#F3F0EA 0 10px,#FFFDF8 10px 20px);display:grid;align-content:start;padding:12px;font:10px/1.6 ui-monospace,Menlo,monospace;letter-spacing:.1em;text-transform:uppercase;color:#8a857c">river city</div>
+<div style="margin-top:10px;min-height:46px;font-family:Caveat,cursive;font-weight:700;font-size:22px;line-height:1.05">Good food,<br>better times ♡</div>
+</div></div><div style="margin-top:16px"><div style="position:relative;background:#fff;padding:10px;box-shadow:0 10px 24px rgba(17,17,17,.14);transform:rotate(2deg)">
+<div aria-hidden="true" style="position:absolute;top:-12px;left:50%;margin-left:-32px;width:64px;height:22px;background:#FFD92F;opacity:.92;transform:rotate(-3deg)"></div>
+<div style="aspect-ratio:1/1;background:repeating-linear-gradient(45deg,#F3F0EA 0 10px,#FFFDF8 10px 20px);display:grid;align-content:start;padding:12px;font:10px/1.6 ui-monospace,Menlo,monospace;letter-spacing:.1em;text-transform:uppercase;color:#8a857c">green hills</div>
+<div style="margin-top:10px;min-height:46px;font-family:Caveat,cursive;font-weight:700;font-size:22px;line-height:1.05">So many<br>more to come…</div>
+</div></div>
+</div>
+<div style="flex:none"><div style="background:#9BDDF7;padding:18px 16px;transform:rotate(4deg);font-family:Caveat,cursive;font-weight:700;font-size:24px;line-height:1.15">Better<br>Together<br>Always</div></div>
+</div>
+<div style="margin-top:26px;display:flex;justify-content:space-between;align-items:center">
+<div style="transform:rotate(-8deg)"><svg aria-hidden="true" width="52" height="52" viewBox="0 0 100 100" style="color:#FFD92F;display:block"><path d="M50 4C54 29 58 35 82 23C62 42 62 47 92 50C62 54 59 59 79 80C58 66 54 70 50 96C46 70 42 66 21 80C41 59 38 54 8 50C38 47 38 42 18 23C42 35 46 29 50 4Z" fill="currentColor"></path></svg></div>
+<div style="transform:rotate(6deg)"><svg aria-hidden="true" width="54" height="54" viewBox="0 0 100 100" style="color:#F58BC1;display:block"><path d="M50 38C36 9 11 18 21 40C-3 42 5 69 29 62C25 88 55 94 59 68C78 88 98 65 76 51C99 33 80 10 59 34C58 15 44 16 50 38Z" fill="currentColor"></path><circle cx="51" cy="52" r="8" fill="#FFD92F"></circle></svg></div>
+</div>
+</div>
+
+<div style="padding:104px 56px 0">
+<div style="display:flex;align-items:baseline;justify-content:space-between;gap:24px">
+<h2 style="margin:0;font-family:'Bowlby One',Arial Black,sans-serif;text-transform:uppercase;letter-spacing:-.03em;line-height:.9;font-size:64px">The events</h2>
+<p style="margin:0;max-width:400px;font-size:16px;line-height:1.6">Three days, two countries, one big party. Here's the shape of the weekend.</p>
+</div>
+<div style="margin-top:34px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px">
+<div style="position:relative;background:#F58BC1;padding:24px 26px;transform:rotate(-1.2deg)" style-hover="transform:rotate(0deg) translateY(-2px)" style-before="content:'';position:absolute;top:50%;left:-9px;width:18px;height:18px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)" style-after="content:'';position:absolute;top:50%;right:-9px;width:18px;height:18px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)">
+<div style="font:700 12px/1 'DM Sans',sans-serif;letter-spacing:.14em;text-transform:uppercase;border-bottom:2px solid #111;display:inline-block;padding-bottom:5px">Fri 13 Aug</div>
+<img aria-hidden="true" src="icons/note.png" alt="" style="position:absolute;top:20px;right:24px;width:48px;height:46px">
+<div style="margin-top:12px;font-family:'Bowlby One',Arial Black,sans-serif;font-size:40px;line-height:.92;text-transform:uppercase;letter-spacing:-.02em">Jago</div>
+<div style="margin-top:10px;font-size:15px;line-height:1.4">Dublin · venue TBC</div>
+<div aria-hidden="true" style="margin-top:16px;display:flex;justify-content:flex-end"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 100 100" fill="none" stroke="currentColor" style="display:block"><path d="M12 50H84M65 30L85 50L65 70" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+</div>
+<div style="position:relative;background:#FFD92F;padding:24px 26px;transform:rotate(.9deg)" style-hover="transform:rotate(0deg) translateY(-2px)" style-before="content:'';position:absolute;top:50%;left:-9px;width:18px;height:18px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)" style-after="content:'';position:absolute;top:50%;right:-9px;width:18px;height:18px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)">
+<div style="font:700 12px/1 'DM Sans',sans-serif;letter-spacing:.14em;text-transform:uppercase;border-bottom:2px solid #111;display:inline-block;padding-bottom:5px">Sat 14 Aug</div>
+<img aria-hidden="true" src="icons/disco.png" alt="" style="position:absolute;top:16px;right:22px;width:42px;height:54px">
+<div style="margin-top:12px;font-family:'Bowlby One',Arial Black,sans-serif;font-size:40px;line-height:.92;text-transform:uppercase;letter-spacing:-.02em">Sangeet</div>
+<div style="margin-top:10px;font-size:15px;line-height:1.4">Martinstown House,<br>Co. Kildare</div>
+<div aria-hidden="true" style="margin-top:16px;display:flex;justify-content:flex-end"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 100 100" fill="none" stroke="currentColor" style="display:block"><path d="M12 50H84M65 30L85 50L65 70" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+</div>
+<div style="position:relative;background:#C7A6F4;padding:24px 26px;transform:rotate(-.7deg)" style-hover="transform:rotate(0deg) translateY(-2px)" style-before="content:'';position:absolute;top:50%;left:-9px;width:18px;height:18px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)" style-after="content:'';position:absolute;top:50%;right:-9px;width:18px;height:18px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)">
+<div style="font:700 12px/1 'DM Sans',sans-serif;letter-spacing:.14em;text-transform:uppercase;border-bottom:2px solid #111;display:inline-block;padding-bottom:5px">Sun 15 Aug</div>
+<img aria-hidden="true" src="icons/heart.png" alt="" style="position:absolute;top:20px;right:24px;width:42px;height:46px">
+<div style="margin-top:12px;font-family:'Bowlby One',Arial Black,sans-serif;font-size:40px;line-height:.92;text-transform:uppercase;letter-spacing:-.02em">Wedding</div>
+<div style="margin-top:10px;font-size:15px;line-height:1.4">Martinstown House,<br>Co. Kildare</div>
+<div aria-hidden="true" style="margin-top:16px;display:flex;justify-content:flex-end"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 100 100" fill="none" stroke="currentColor" style="display:block"><path d="M12 50H84M65 30L85 50L65 70" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+</div>
+</div>
+</div>
+
+<div style="margin-top:104px;padding:0 56px;position:relative">
+<div style="display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:40px;align-items:start">
+<div>
+<div style="font:700 12px/1 'DM Sans',sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#111">The wedding venue</div>
+<div style="position:relative;display:inline-block">
+<h2 style="margin:12px 0 0;font-family:'Bowlby One',Arial Black,sans-serif;text-transform:uppercase;letter-spacing:-.03em;line-height:.9;font-size:72px">Martinstown<br>House</h2>
+<span aria-hidden="true" style="position:absolute;right:-58px;bottom:6px;transform:rotate(12deg)"><svg aria-hidden="true" width="58" height="58" viewBox="0 0 100 100" style="color:#F58BC1;display:block"><path d="M50 4C54 29 58 35 82 23C62 42 62 47 92 50C62 54 59 59 79 80C58 66 54 70 50 96C46 70 42 66 21 80C41 59 38 54 8 50C38 47 38 42 18 23C42 35 46 29 50 4Z" fill="currentColor"></path></svg></span>
+</div>
+<p style="margin:22px 0 0;font-size:17px;line-height:1.5">The Curragh, County Kildare, Ireland · 14–15 August 2027</p>
+<p style="margin:16px 0 0;font-size:17px;line-height:1.6;max-width:560px">Martinstown House is a family-operated country house set in the leafy landscape of the Curragh in County Kildare. It's set on a fully working farmyard that houses cattle, sheep, horses and two rescue donkeys, and the entire estate is a bird sanctuary.</p>
+</div>
+<div style="display:flex;gap:26px;align-items:flex-start;padding-top:18px">
+<div style="background:#FFD92F;padding:24px 22px;transform:rotate(-1.5deg);font-family:Caveat,cursive;font-weight:700;font-size:34px;line-height:1.05;min-width:180px">Our<br>wedding<br>home<br><span style="font-size:28px">♥</span></div>
+<div style="font-family:Caveat,cursive;font-weight:700;font-size:28px;line-height:1.15;transform:rotate(3deg);border-bottom:3px solid #111;padding-bottom:8px;align-self:flex-start">Countryside<br>Good times<br>Beautiful<br>people</div>
+</div>
+</div>
+
+<div style="position:relative;margin-top:34px">
+<div aria-hidden="true" style="position:absolute;top:-13px;left:52%;width:118px;height:26px;background:#F58BC1;opacity:.92;transform:rotate(-1deg);z-index:3"></div>
+<div style="background:#fff;padding:12px;box-shadow:0 14px 34px rgba(17,17,17,.14);transform:rotate(-.8deg)">
+<img src="images/martinstown-house.jpeg" alt="Martinstown House exterior" style="display:block;width:100%;aspect-ratio:21/9;object-fit:cover">
+</div>
+<div aria-hidden="true" style="position:absolute;bottom:-30px;left:6px;z-index:4;transform:rotate(-8deg)"><svg aria-hidden="true" width="110" height="110" viewBox="0 0 100 100" style="color:#F58BC1;display:block"><path d="M50 38C36 9 11 18 21 40C-3 42 5 69 29 62C25 88 55 94 59 68C78 88 98 65 76 51C99 33 80 10 59 34C58 15 44 16 50 38Z" fill="currentColor"></path><circle cx="51" cy="52" r="8" fill="#FFFDF8" stroke="currentColor" stroke-width="4"></circle></svg></div>
+<div aria-hidden="true" style="position:absolute;bottom:-34px;right:-10px;width:132px;height:132px;border-radius:50%;background:#28AEEF;display:grid;place-items:center;text-align:center;font:800 15px/1.25 'DM Sans',sans-serif;text-transform:uppercase;z-index:4">A<br>truly<br>special<br>place<br><span style="font-size:17px">♥</span></div>
+</div>
+
+<div style="margin-top:64px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:36px;align-items:start">
+<div>
+<div style="background:#fff;border:1px solid #D9D5CD;box-shadow:0 8px 20px rgba(17,17,17,.08)">
+<div style="aspect-ratio:4/3;background:repeating-linear-gradient(45deg,#F3F0EA 0 10px,#FFFDF8 10px 20px);display:grid;align-content:start;padding:20px;font:11px/1.7 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#8a857c">embedded map<br>google maps pin</div>
+</div>
+<div style="margin-top:16px;display:flex;align-items:center;gap:14px">
+<span aria-hidden="true" style="display:inline-flex;transform:rotate(-125deg)"><svg aria-hidden="true" width="34" height="34" viewBox="0 0 100 100" fill="none" stroke="currentColor" style="display:block"><path d="M12 50H84M65 30L85 50L65 70" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+<span style="font-family:Caveat,cursive;font-weight:700;font-size:28px;line-height:1.1;transform:rotate(-4deg);display:inline-block">Right here<br>in the heart of Kildare</span>
+</div>
+</div>
+<div style="position:relative;padding-top:14px">
+<div aria-hidden="true" style="position:absolute;top:0;left:38px;width:104px;height:24px;background:#36C86B;opacity:.92;transform:rotate(-2deg);z-index:3"></div>
+<div style="background:#F3F0EA;padding:30px 28px">
+<div style="display:flex;align-items:center;gap:16px">
+<h3 style="margin:0;font-family:'Bowlby One',Arial Black,sans-serif;text-transform:uppercase;letter-spacing:-.02em;font-size:32px;line-height:1">Points of interest</h3>
+<span aria-hidden="true" style="display:flex;gap:5px">
+<span style="display:block;width:3px;height:16px;background:#111;transform:rotate(-24deg)"></span>
+<span style="display:block;width:3px;height:20px;background:#111;transform:rotate(-4deg)"></span>
+<span style="display:block;width:3px;height:16px;background:#111;transform:rotate(16deg)"></span>
+</span>
+</div>
+<div style="margin-top:22px;display:grid;gap:14px">
+<div style="display:grid;grid-template-columns:52px minmax(0,1fr) auto;gap:18px;align-items:center">
+<span aria-hidden="true" style="width:48px;height:48px;border-radius:50%;background:#F58BC1;display:grid;place-items:center"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 32 32" fill="none" stroke="#111" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20v3M27 20v3"></path><path d="M4 20v-4l2.6-5.4A2 2 0 0 1 8.4 9.5h15.2a2 2 0 0 1 1.8 1.1L28 16v4z"></path><path d="M4 16h24"></path><circle cx="9.5" cy="20" r="1.6"></circle><circle cx="22.5" cy="20" r="1.6"></circle></svg></span>
+<span style="font:500 18px/1.3 'DM Sans',sans-serif">Dublin Airport</span>
+<span style="font-size:15px;color:#8a857c">1 hr</span>
+</div>
+<div style="display:grid;grid-template-columns:52px minmax(0,1fr) auto;gap:18px;align-items:center">
+<span aria-hidden="true" style="width:48px;height:48px;border-radius:50%;background:#FFD92F;display:grid;place-items:center"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 32 32" fill="none" stroke="#111" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20v3M27 20v3"></path><path d="M4 20v-4l2.6-5.4A2 2 0 0 1 8.4 9.5h15.2a2 2 0 0 1 1.8 1.1L28 16v4z"></path><path d="M4 16h24"></path><circle cx="9.5" cy="20" r="1.6"></circle><circle cx="22.5" cy="20" r="1.6"></circle></svg></span>
+<span style="font:500 18px/1.3 'DM Sans',sans-serif">The Curragh</span>
+<span style="font-size:15px;color:#8a857c">5 min</span>
+</div>
+<div style="display:grid;grid-template-columns:52px minmax(0,1fr) auto;gap:18px;align-items:center">
+<span aria-hidden="true" style="width:48px;height:48px;border-radius:50%;background:#C7A6F4;display:grid;place-items:center"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 32 32" fill="none" stroke="#111" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20v3M27 20v3"></path><path d="M4 20v-4l2.6-5.4A2 2 0 0 1 8.4 9.5h15.2a2 2 0 0 1 1.8 1.1L28 16v4z"></path><path d="M4 16h24"></path><circle cx="9.5" cy="20" r="1.6"></circle><circle cx="22.5" cy="20" r="1.6"></circle></svg></span>
+<span style="font:500 18px/1.3 'DM Sans',sans-serif">Kildare</span>
+<span style="font-size:15px;color:#8a857c">15 min</span>
+</div>
+</div>
+<div style="margin-top:20px;padding-top:16px;border-top:1px solid #D9D5CD;font-size:14px;color:#8a857c">Driving times from the house</div>
+</div>
+<span aria-hidden="true" style="position:absolute;bottom:-52px;left:24px;transform:rotate(-10deg)"><svg aria-hidden="true" width="52" height="52" viewBox="0 0 100 100" style="color:#28AEEF;display:block"><path d="M50 4C54 29 58 35 82 23C62 42 62 47 92 50C62 54 59 59 79 80C58 66 54 70 50 96C46 70 42 66 21 80C41 59 38 54 8 50C38 47 38 42 18 23C42 35 46 29 50 4Z" fill="currentColor"></path></svg></span>
+</div>
+</div>
+</div>
+
+<div style="padding:104px 56px 0">
+<div style="display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:36px;align-items:start">
+<div>
+<h2 style="margin:0;font-family:'Bowlby One',Arial Black,sans-serif;text-transform:uppercase;letter-spacing:-.03em;line-height:.92;font-size:64px">Wedding<br>weekend schedule</h2>
+<div style="margin-top:16px;font-family:Caveat,cursive;font-weight:700;font-size:30px;line-height:1.1;border-bottom:3px solid #111;display:inline-block;padding-bottom:6px">Four moments. One unforgettable weekend.</div>
+</div>
+<div style="display:flex;align-items:flex-start;gap:26px;justify-content:flex-end;flex-wrap:wrap">
+<div style="background:#F9A8CE;padding:22px 20px;transform:rotate(-2deg);font-family:Caveat,cursive;font-weight:700;font-size:26px;line-height:1.15">Good<br>food<br>Great company<br>Big celebrations<br><span style="font-size:22px">♥</span></div>
+<div style="transform:rotate(6deg);margin-top:14px"><svg aria-hidden="true" width="92" height="92" viewBox="0 0 100 100" style="color:#FFD92F;display:block"><path d="M50 4C54 29 58 35 82 23C62 42 62 47 92 50C62 54 59 59 79 80C58 66 54 70 50 96C46 70 42 66 21 80C41 59 38 54 8 50C38 47 38 42 18 23C42 35 46 29 50 4Z" fill="currentColor"></path></svg></div>
+<div style="font-family:Caveat,cursive;font-weight:700;font-size:26px;line-height:1.12;transform:rotate(4deg);border-bottom:3px solid #111;padding-bottom:6px;align-self:flex-start;margin-top:6px">Same<br>people<br>Bigger<br>party</div>
+</div>
+</div>
+<div style="margin-top:40px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;align-items:start">
+<div><div style="position:relative;background:#F9A8CE;padding:26px 26px 22px" style-before="content:'';position:absolute;top:50%;left:-9px;width:18px;height:18px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)" style-after="content:'';position:absolute;top:50%;right:-9px;width:18px;height:18px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)">
+<div aria-hidden="true" style="position:absolute;top:88px;right:20px"><img aria-hidden="true" src="icons/ws-cocktail-t.png" alt="" style="width: 54px; height: 59px"></div>
+<div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+<span style="font:700 13px/1 'DM Sans',sans-serif;letter-spacing:.1em;text-transform:uppercase">Fri 13th Aug 2027</span>
+<span style="display:inline-flex;align-items:center;height:28px;padding:0 14px;border:1.6px solid #111;border-radius:999px;font:500 13px/1 'DM Sans',sans-serif">Optional</span>
+</div>
+<h3 style="margin:14px 0 0;font-family:'Bowlby One',Arial Black,sans-serif;text-transform:uppercase;letter-spacing:-.02em;line-height:.96;font-size:34px;max-width:78%">Informal gathering in Dublin</h3>
+<div style="margin-top:14px;display:flex;align-items:center;gap:8px;font:500 17px/1.3 'DM Sans',sans-serif"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 32 32" fill="#111"><path d="M16 2a9 9 0 0 0-9 9c0 6.6 9 19 9 19s9-12.4 9-19a9 9 0 0 0-9-9zm0 12.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4z"></path></svg>Dublin · venue TBC</div>
+<p style="margin:16px 0 0;font-size:16px;line-height:1.5">We'll be in Dublin the night before heading to Kildare, so if you're around, come join us for a very informal get-together and ease yourself into the weekend. Completely optional, very relaxed, and a good chance to say hello before the wedding chaos properly begins.</p>
+<div style="margin-top:22px;position:relative;background:#fff;padding:10px 10px 34px;box-shadow:0 10px 24px rgba(17,17,17,.16);transform:rotate(-4deg)">
+<div aria-hidden="true" style="position:absolute;top:-10px;left:50%;margin-left:-38px;width:76px;height:20px;background:#28AEEF;opacity:.9;transform:rotate(-2deg)"></div>
+<div style="aspect-ratio:4/3;background:repeating-linear-gradient(45deg,#F3F0EA 0 10px,#FFFDF8 10px 20px);display:grid;align-content:start;padding:14px;font:10px/1.6 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#8a857c">dublin photo</div>
+<div style="position:absolute;left:0;right:0;bottom:8px;display:flex;justify-content:center;align-items:center;gap:8px;font-family:Caveat,cursive;font-weight:700;font-size:20px;letter-spacing:.06em;text-transform:uppercase">Dublin ♥</div>
+</div>
+<a href="#1a" style="margin-top:22px;display:flex;align-items:center;justify-content:center;gap:12px;min-height:52px;background:rgba(255,255,255,.5);color:#111;text-decoration:none;font:700 13px/1 'DM Sans',sans-serif;letter-spacing:.1em;text-transform:uppercase"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 32 32" fill="none" stroke="#111" stroke-width="2.4" stroke-linecap="round"><rect x="4" y="7" width="24" height="21" rx="4"></rect><path d="M4 13h24M10 4v5M22 4v5M16 18v6M13 21h6"></path></svg>Add to calendar <svg aria-hidden="true" width="18" height="18" viewBox="0 0 100 100" fill="none" stroke="currentColor" style="display:block"><path d="M12 50H84M65 30L85 50L65 70" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+</div></div>
+<div style="display:grid;gap:28px"><div style="position:relative;background:#FFDE4D;padding:26px 26px 22px" style-before="content:'';position:absolute;top:50%;left:-9px;width:18px;height:18px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)" style-after="content:'';position:absolute;top:50%;right:-9px;width:18px;height:18px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)">
+<div aria-hidden="true" style="position:absolute;top:70px;right:18px"><img aria-hidden="true" src="icons/ws-bus-t.png" alt="" style="width: 52px; height: 47px"></div>
+<div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+<span style="font:700 13px/1 'DM Sans',sans-serif;letter-spacing:.1em;text-transform:uppercase">Sat 14th Aug 2027</span>
+<span style="display:inline-flex;align-items:center;height:28px;padding:0 14px;border:1.6px solid #111;border-radius:999px;font:500 13px/1 'DM Sans',sans-serif">AM</span>
+</div>
+<h3 style="margin:14px 0 0;font-family:'Bowlby One',Arial Black,sans-serif;text-transform:uppercase;letter-spacing:-.02em;line-height:.96;font-size:34px;max-width:78%">Coaches to Kildare</h3>
+<div style="margin-top:14px;display:flex;align-items:center;gap:8px;font:500 17px/1.3 'DM Sans',sans-serif"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 32 32" fill="#111"><path d="M16 2a9 9 0 0 0-9 9c0 6.6 9 19 9 19s9-12.4 9-19a9 9 0 0 0-9-9zm0 12.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4z"></path></svg>Dublin · pickup TBC</div>
+<p style="margin:16px 0 0;font-size:16px;line-height:1.5">We'll be arranging coaches from Dublin to Kildare on Saturday morning for close family and friends, if you're reading this, they'll be a seat for you! Pick-up point and timings will be confirmed closer to the date. Don't be a Kevin and get left behind!</p>
+
+<a href="#1a" style="margin-top:22px;display:flex;align-items:center;justify-content:center;gap:12px;min-height:52px;background:rgba(255,255,255,.55);color:#111;text-decoration:none;font:700 13px/1 'DM Sans',sans-serif;letter-spacing:.1em;text-transform:uppercase"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 32 32" fill="none" stroke="#111" stroke-width="2.4" stroke-linecap="round"><rect x="4" y="7" width="24" height="21" rx="4"></rect><path d="M4 13h24M10 4v5M22 4v5M16 18v6M13 21h6"></path></svg>Add to calendar <svg aria-hidden="true" width="18" height="18" viewBox="0 0 100 100" fill="none" stroke="currentColor" style="display:block"><path d="M12 50H84M65 30L85 50L65 70" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+</div><div style="position:relative;background:#9BDDF7;padding:26px 26px 22px" style-before="content:'';position:absolute;top:50%;left:-9px;width:18px;height:18px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)" style-after="content:'';position:absolute;top:50%;right:-9px;width:18px;height:18px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)">
+<div aria-hidden="true" style="position:absolute;top:56px;right:22px"><img aria-hidden="true" src="icons/ws-disco-t.png" alt="" style="width:80px;height:72px"></div>
+<div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+<span style="font:700 13px/1 'DM Sans',sans-serif;letter-spacing:.1em;text-transform:uppercase">Sat 14th Aug 2027</span>
+<span style="display:inline-flex;align-items:center;height:28px;padding:0 14px;border:1.6px solid #111;border-radius:999px;font:500 13px/1 'DM Sans',sans-serif">PM</span>
+</div>
+<h3 style="margin:14px 0 0;font-family:'Bowlby One',Arial Black,sans-serif;text-transform:uppercase;letter-spacing:-.02em;line-height:.96;font-size:34px;max-width:78%">Sangeet</h3>
+<div style="margin-top:14px;display:flex;align-items:center;gap:8px;font:500 17px/1.3 'DM Sans',sans-serif"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 32 32" fill="#111"><path d="M16 2a9 9 0 0 0-9 9c0 6.6 9 19 9 19s9-12.4 9-19a9 9 0 0 0-9-9zm0 12.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4z"></path></svg>Martinstown House</div>
+<p style="margin:16px 0 0;font-size:16px;line-height:1.5">We're warming up for the wedding day with an evening of music, food and dancing. We've secured Priya Dharni for a one-night-only Ireland exclusive DJ set, so expect bangers, chaos and absolutely no guarantees about what gets played.</p>
+
+<a href="#1a" style="margin-top:22px;display:flex;align-items:center;justify-content:center;gap:12px;min-height:52px;background:rgba(255,255,255,.55);color:#111;text-decoration:none;font:700 13px/1 'DM Sans',sans-serif;letter-spacing:.1em;text-transform:uppercase"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 32 32" fill="none" stroke="#111" stroke-width="2.4" stroke-linecap="round"><rect x="4" y="7" width="24" height="21" rx="4"></rect><path d="M4 13h24M10 4v5M22 4v5M16 18v6M13 21h6"></path></svg>Add to calendar <svg aria-hidden="true" width="18" height="18" viewBox="0 0 100 100" fill="none" stroke="currentColor" style="display:block"><path d="M12 50H84M65 30L85 50L65 70" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+</div></div>
+<div><div style="position:relative;background:#CBAEF7;padding:26px 26px 22px" style-before="content:'';position:absolute;top:50%;left:-9px;width:18px;height:18px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)" style-after="content:'';position:absolute;top:50%;right:-9px;width:18px;height:18px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)">
+<div aria-hidden="true" style="position:absolute;top:58px;right:18px"><img aria-hidden="true" src="icons/ws-hearts-t.png" alt="" style="width:59px;height:76px"></div>
+<div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+<span style="font:700 13px/1 'DM Sans',sans-serif;letter-spacing:.1em;text-transform:uppercase">Sun 15th Aug 2027</span>
+
+</div>
+<h3 style="margin:14px 0 0;font-family:'Bowlby One',Arial Black,sans-serif;text-transform:uppercase;letter-spacing:-.02em;line-height:.96;font-size:34px;max-width:78%">Wedding ceremony &amp; reception</h3>
+<div style="margin-top:14px;display:flex;align-items:center;gap:8px;font:500 17px/1.3 'DM Sans',sans-serif"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 32 32" fill="#111"><path d="M16 2a9 9 0 0 0-9 9c0 6.6 9 19 9 19s9-12.4 9-19a9 9 0 0 0-9-9zm0 12.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4z"></path></svg>Martinstown House</div>
+<p style="margin:16px 0 0;font-size:16px;line-height:1.5">The main event! Join us for our wedding ceremony, followed by plenty of food, drinks, dancing and celebrations. We've done all the planning (or will have by then), so your only jobs are to turn up, look lovely and keep the dance floor full!</p>
+<div style="margin-top:22px;position:relative;background:#fff;padding:10px 10px 34px;box-shadow:0 10px 24px rgba(17,17,17,.16);transform:rotate(2.5deg)">
+<div aria-hidden="true" style="position:absolute;top:-10px;left:50%;margin-left:-38px;width:76px;height:20px;background:#28AEEF;opacity:.9;transform:rotate(-2deg)"></div>
+<img src="images/martinstown-house.jpeg" alt="Martinstown House" style="display:block;width:100%;aspect-ratio:4/3;object-fit:cover">
+<div style="position:absolute;left:0;right:0;bottom:8px;display:flex;justify-content:center;align-items:center;gap:8px;font-family:Caveat,cursive;font-weight:700;font-size:20px;letter-spacing:.06em;text-transform:uppercase">Martinstown House ♥</div>
+</div>
+<a href="#1a" style="margin-top:22px;display:flex;align-items:center;justify-content:center;gap:12px;min-height:52px;background:rgba(255,255,255,.5);color:#111;text-decoration:none;font:700 13px/1 'DM Sans',sans-serif;letter-spacing:.1em;text-transform:uppercase"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 32 32" fill="none" stroke="#111" stroke-width="2.4" stroke-linecap="round"><rect x="4" y="7" width="24" height="21" rx="4"></rect><path d="M4 13h24M10 4v5M22 4v5M16 18v6M13 21h6"></path></svg>Add to calendar <svg aria-hidden="true" width="18" height="18" viewBox="0 0 100 100" fill="none" stroke="currentColor" style="display:block"><path d="M12 50H84M65 30L85 50L65 70" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+</div></div>
+</div>
+<div style="margin-top:44px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap">
+<div style="display:flex;align-items:center;gap:22px">
+<div aria-hidden="true" style="width:118px;height:118px;border-radius:50%;background:#36C86B;display:grid;place-items:center;text-align:center;font:800 13px/1.2 'DM Sans',sans-serif;text-transform:uppercase;transform:rotate(-6deg)">Good<br>food<br>bright<br>people</div>
+<svg aria-hidden="true" width="52" height="52" viewBox="0 0 100 100" fill="none" stroke="#111" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><path d="M50 86C42 77 12 57 12 33C12 13 38 9 50 29C62 9 88 13 88 33C88 57 58 77 50 86Z"></path></svg>
+</div>
+<div style="display:flex;align-items:center;gap:16px">
+<span aria-hidden="true" style="display:inline-block;transform:rotate(24deg)"><svg aria-hidden="true" width="42" height="42" viewBox="0 0 100 100" fill="none" stroke="currentColor" style="display:block"><path d="M12 50H84M65 30L85 50L65 70" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+<div style="background:#FFD92F;padding:12px 18px;transform:rotate(-3deg);font-family:Caveat,cursive;font-weight:700;font-size:30px;line-height:1">See you there? ♥</div>
+</div>
+</div>
+</div>
+
+<div style="padding:104px 56px 0">
+<div style="display:flex;align-items:flex-start;gap:24px">
+<div>
+<div style="display:flex;align-items:center;gap:20px"><h2 style="margin:0;font-family:'Bowlby One',Arial Black,sans-serif;text-transform:uppercase;letter-spacing:-.03em;line-height:.9;font-size:80px">Travel</h2><img aria-hidden="true" src="icons/plane.png" alt="" style="width:92px;height:76px;flex:none"><svg aria-hidden="true" width="44" height="44" viewBox="0 0 40 40" fill="none" stroke="#111" stroke-width="3" stroke-linecap="round" style="display:block;flex:none;transform:rotate(0deg)"><path d="M6 24L1 31M16 21L14 32M25 21L29 30"></path></svg></div>
+<div style="margin-top:8px"><div style="font-family:Caveat,cursive;font-weight:700;font-size:32px;line-height:1.1;border-bottom:3px solid #111;display:inline-block;padding-bottom:6px">Getting here is part of the adventure.</div></div>
+</div>
+<div style="margin-left:auto;display:flex;align-items:flex-start;gap:20px">
+<div style="background:#F9A8CE;padding:18px 20px;transform:rotate(3deg);font-family:Caveat,cursive;font-weight:700;font-size:23px;line-height:1.25">Different<br>places<br>Same people<br>Bigger party<br><span style="font-family:'DM Sans',sans-serif;font-size:19px">♥</span></div>
+<div style="margin-top:20px"><svg aria-hidden="true" width="50" height="50" viewBox="0 0 100 100" style="color:#FFD92F;display:block"><path d="M50 4C54 29 58 35 82 23C62 42 62 47 92 50C62 54 59 59 79 80C58 66 54 70 50 96C46 70 42 66 21 80C41 59 38 54 8 50C38 47 38 42 18 23C42 35 46 29 50 4Z" fill="currentColor"></path></svg></div>
+</div>
+</div>
+
+<div style="margin-top:34px;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:30px;align-items:start">
+<div style="position:relative;background:#9BDDF7;padding:34px 36px">
+<div aria-hidden="true" style="position:absolute;left:-11px;top:46%;width:22px;height:22px;border-radius:50%;background:#FFFDF8"></div><div aria-hidden="true" style="position:absolute;right:-11px;top:46%;width:22px;height:22px;border-radius:50%;background:#FFFDF8"></div>
+<div style="font:700 13px/1 'DM Sans',sans-serif;letter-spacing:.2em;text-transform:uppercase">Nearest airport</div>
+<div style="margin-top:14px;display:flex;align-items:flex-end;gap:16px"><h3 style="margin:0;font-family:'Bowlby One',Arial Black,sans-serif;text-transform:uppercase;letter-spacing:-.02em;line-height:1;font-size:44px">Dublin Airport<br>(DUB)</h3><svg aria-hidden="true" width="34" height="34" viewBox="0 0 40 40" fill="none" stroke="#111" stroke-width="3" stroke-linecap="round" style="display:block;flex:none;transform:rotate(180deg)"><path d="M6 24L1 31M16 21L14 32M25 21L29 30"></path></svg></div>
+<div style="margin-top:18px;display:flex;align-items:flex-start;gap:10px;font:500 18px/1.45 'DM Sans',sans-serif"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 32 32" fill="#111" style="flex:none;margin-top:2px"><path d="M16 2a9 9 0 0 0-9 9c0 7 9 19 9 19s9-12 9-19a9 9 0 0 0-9-9zm0 12.2A3.2 3.2 0 1 1 16 7.8a3.2 3.2 0 0 1 0 6.4z"></path></svg><span>Around an hour's drive<br>from the house.</span></div>
+<a href="#1a" style="margin-top:22px;display:inline-flex;align-items:center;gap:14px;background:#FFD92F;color:#111;text-decoration:none;padding:16px 26px;font:500 18px/1 'DM Sans',sans-serif">Directions <span style="display:inline-flex;width:22px"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 100 100" fill="none" stroke="currentColor" style="display:block"><path d="M12 50H84M65 30L85 50L65 70" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a>
+</div>
+<div style="display:flex;align-items:flex-start;gap:18px">
+<div style="position:relative;flex:1;background:#fff;padding:12px;box-shadow:0 12px 28px rgba(17,17,17,.16);transform:rotate(1.5deg)">
+<div aria-hidden="true" style="position:absolute;top:-13px;left:50%;margin-left:-42px;width:84px;height:26px;background:#36C86B;opacity:.9;transform:rotate(-2deg)"></div>
+<div style="aspect-ratio:1/1;background:repeating-linear-gradient(45deg,#F3F0EA 0 10px,#FFFDF8 10px 20px);display:grid;align-content:start;padding:14px;font:10px/1.6 ui-monospace,Menlo,monospace;letter-spacing:.1em;text-transform:uppercase;color:#8a857c">dublin airport<br>terminal exterior</div>
+<div style="margin-top:12px;display:flex;align-items:center;justify-content:center;gap:8px;font-family:Caveat,cursive;font-weight:700;font-size:24px;letter-spacing:.04em;text-transform:uppercase">Dublin Airport <span style="font-family:'DM Sans',sans-serif;font-size:19px">♥</span></div>
+</div>
+<div style="margin-top:40px"><img aria-hidden="true" src="icons/postmark.png" alt="" style="width:181px;display:block"></div>
+</div>
+</div>
+
+<div style="margin-top:30px;display:flex;align-items:flex-start;gap:22px">
+<img aria-hidden="true" src="icons/suitcase.png" alt="" style="width:170px;flex:none;margin-top:6px">
+<div style="position:relative;flex:1;background:#F9A8CE;padding:26px 32px">
+<div aria-hidden="true" style="position:absolute;left:-11px;top:50%;width:22px;height:22px;border-radius:50%;background:#FFFDF8"></div><div aria-hidden="true" style="position:absolute;right:-11px;top:50%;width:22px;height:22px;border-radius:50%;background:#FFFDF8"></div>
+<div style="display:flex;align-items:center;gap:12px"><span style="font:700 13px/1 'DM Sans',sans-serif;letter-spacing:.2em;text-transform:uppercase">Getting there</span><svg aria-hidden="true" width="28" height="28" viewBox="0 0 40 40" fill="none" stroke="#111" stroke-width="3" stroke-linecap="round" style="display:block;flex:none;transform:rotate(0deg)"><path d="M6 24L1 31M16 21L14 32M25 21L29 30"></path></svg></div>
+<div style="margin-top:12px">
+<a href="#1a" style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 0;border-top:1px solid rgba(17,17,17,.35);color:#111;text-decoration:none;font:500 19px/1.3 'DM Sans',sans-serif">Flights from Leeds Bradford<span style="display:inline-flex;width:26px;flex:none"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 100 100" fill="none" stroke="currentColor" style="display:block"><path d="M12 50H84M65 30L85 50L65 70" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a>
+<a href="#1a" style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 0;border-top:1px solid rgba(17,17,17,.35);color:#111;text-decoration:none;font:500 19px/1.3 'DM Sans',sans-serif">Flights from Manchester<span style="display:inline-flex;width:26px;flex:none"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 100 100" fill="none" stroke="currentColor" style="display:block"><path d="M12 50H84M65 30L85 50L65 70" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a>
+<a href="#1a" style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 0;border-top:1px solid rgba(17,17,17,.35);color:#111;text-decoration:none;font:500 19px/1.3 'DM Sans',sans-serif">Flights from all London airports<span style="display:inline-flex;width:26px;flex:none"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 100 100" fill="none" stroke="currentColor" style="display:block"><path d="M12 50H84M65 30L85 50L65 70" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a>
+</div>
+</div>
+<div style="width:170px;flex:none;background:#FFE45C;padding:22px 20px;transform:rotate(-3deg);margin-top:40px;font-family:Caveat,cursive;font-weight:700;font-size:26px;line-height:1.2">Good<br>Flights<br>Good<br>Times <span style="font-family:'DM Sans',sans-serif;font-size:21px">♥</span></div>
+</div>
+</div>
+
+<div style="padding:104px 56px 0">
+<div style="display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:32px;align-items:start">
+<div>
+<div style="display:flex;align-items:center;gap:18px">
+<h2 style="margin:0;font-family:'Bowlby One',Arial Black,sans-serif;text-transform:uppercase;letter-spacing:-.03em;line-height:.9;font-size:72px">Stay</h2>
+<img aria-hidden="true" src="icons/bed.png" alt="" style="width:67px;height:60px">
+<span aria-hidden="true" style="display:flex;gap:5px;transform:rotate(0deg)"><span style="display:block;width:3px;height:16px;background:#111;transform:rotate(-24deg)"></span><span style="display:block;width:3px;height:20px;background:#111;transform:rotate(-4deg)"></span><span style="display:block;width:3px;height:16px;background:#111;transform:rotate(16deg)"></span></span>
+</div>
+<div style="margin-top:12px;font-family:Caveat,cursive;font-weight:700;font-size:34px;line-height:1;border-bottom:3px solid #111;display:inline-block;padding-bottom:6px">Rest. Recharge. Repeat.</div>
+</div>
+<div style="display:flex;align-items:flex-start;gap:22px;justify-content:flex-end;flex-wrap:wrap">
+<div style="background:#FFD92F;padding:20px 18px;transform:rotate(-3deg);font-family:Caveat,cursive;font-weight:700;font-size:26px;line-height:1.15">Same<br>roof<br>Bigger<br>memories ♥</div>
+<div style="margin-top:16px;transform:rotate(-6deg)"><svg aria-hidden="true" width="76" height="76" viewBox="0 0 100 100" style="color:#F58BC1;display:block"><path d="M50 38C36 9 11 18 21 40C-3 42 5 69 29 62C25 88 55 94 59 68C78 88 98 65 76 51C99 33 80 10 59 34C58 15 44 16 50 38Z" fill="currentColor"></path><circle cx="51" cy="52" r="8" fill="#FFD92F"></circle></svg></div>
+<div style="font-family:Caveat,cursive;font-weight:700;font-size:26px;line-height:1.15;transform:rotate(4deg);border-bottom:3px solid #111;padding-bottom:6px;margin-top:4px">Sleep<br>Eat<br>Dance<br>Repeat</div>
+</div>
+</div>
+<div style="margin-top:56px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:34px;align-items:start">
+<div style="position:relative;background:#F9A8CE;padding:56px 28px 26px" style-before="content:'';position:absolute;top:50%;left:-9px;width:18px;height:18px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)" style-after="content:'';position:absolute;top:50%;right:-9px;width:18px;height:18px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)">
+<div style="position:relative;margin:-46px 0 0;padding-top:18px">
+<div aria-hidden="true" style="position:absolute;top:0;left:26%;width:96px;height:26px;background:#F58BC1;opacity:.92;transform:rotate(-2deg);z-index:4"></div>
+<div style="position:relative;background:#fff;padding:9px;box-shadow:0 10px 24px rgba(17,17,17,.16);transform:rotate(-1.2deg)">
+<div style="aspect-ratio:16/9;background:repeating-linear-gradient(45deg,#F3F0EA 0 10px,#FFFDF8 10px 20px);display:grid;align-content:end;padding:16px;font:11px/1.7 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#8a857c">glamping tents</div>
+<span style="position:absolute;top:20px;left:20px;background:#FFFDF8;border-radius:999px;padding:8px 16px;font:500 14px/1 'DM Sans',sans-serif;box-shadow:0 2px 8px rgba(17,17,17,.12)">At the venue</span>
+</div>
+</div>
+<h3 style="margin:22px 0 0;font:700 32px/1.1 'DM Sans',sans-serif">Glamping</h3>
+<p style="margin:14px 0 0;font-size:16px;line-height:1.55">Stay right in the heart of Martinstown House in the venue's Goa to Sleep glamping village. Tucked amongst the trees, the bell tents are a fun and comfortable way to make a proper weekend of the wedding.</p>
+<ul style="margin:16px 0 0;padding-left:20px;display:grid;gap:7px;font-size:16px;line-height:1.45"><li>10 fully furnished bell tents</li><li>Proper beds, duvets, pillows and linen provided</li><li>Towels and extra blankets included</li><li>Lighting, USB charging and a heater in each tent</li><li><strong>Breakfast with the couple! (ps. probably just the Groom)</strong></li></ul>
+<a href="#1a" style="margin-top:22px;display:flex;align-items:center;justify-content:center;gap:14px;min-height:56px;background:transparent;border:2px solid #111;border-radius:999px;color:#111;text-decoration:none;font:700 16px/1 'DM Sans',sans-serif">Find out everything you need to know <svg aria-hidden="true" width="22" height="22" viewBox="0 0 100 100" fill="none" stroke="currentColor" style="display:block"><path d="M12 50H84M65 30L85 50L65 70" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+</div>
+<div style="position:relative;background:#FFDE4D;padding:56px 28px 26px" style-before="content:'';position:absolute;top:50%;left:-9px;width:18px;height:18px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)" style-after="content:'';position:absolute;top:50%;right:-9px;width:18px;height:18px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)">
+<div style="position:relative;margin:-46px 0 0;padding-top:18px">
+<div aria-hidden="true" style="position:absolute;top:0;left:26%;width:96px;height:26px;background:#28AEEF;opacity:.92;transform:rotate(-2deg);z-index:4"></div>
+<div style="position:relative;background:#fff;padding:9px;box-shadow:0 10px 24px rgba(17,17,17,.16);transform:rotate(-1.2deg)">
+<div style="aspect-ratio:16/9;background:repeating-linear-gradient(45deg,#F3F0EA 0 10px,#FFFDF8 10px 20px);display:grid;align-content:end;padding:16px;font:11px/1.7 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#8a857c">stables bedroom</div>
+<span style="position:absolute;top:20px;left:20px;background:#FFFDF8;border-radius:999px;padding:8px 16px;font:500 14px/1 'DM Sans',sans-serif;box-shadow:0 2px 8px rgba(17,17,17,.12)">At the venue</span>
+</div>
+</div>
+<h3 style="margin:22px 0 0;font:700 32px/1.1 'DM Sans',sans-serif">Stables</h3>
+<p style="margin:14px 0 0;font-size:16px;line-height:1.55">For those who prefer four walls and a proper bedroom, the converted Stables offer a cosy place to stay right at Martinstown House, so you can enjoy the celebrations without having far to wander at the end of the night.</p>
+<ul style="margin:16px 0 0;padding-left:20px;display:grid;gap:7px;font-size:16px;line-height:1.45"><li>Five bedrooms in the converted stable block</li><li>Comfortable beds with luxury linen and duvets</li><li>Towels provided</li><li>Right at the venue, close to the celebrations</li><li><strong>Breakfast with the couple! (ps. probably just the Groom)</strong></li></ul>
+<a href="#1a" style="margin-top:22px;display:flex;align-items:center;justify-content:center;gap:14px;min-height:56px;background:transparent;border:2px solid #111;border-radius:999px;color:#111;text-decoration:none;font:700 16px/1 'DM Sans',sans-serif">Find out everything you need to know <svg aria-hidden="true" width="22" height="22" viewBox="0 0 100 100" fill="none" stroke="currentColor" style="display:block"><path d="M12 50H84M65 30L85 50L65 70" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+</div>
+</div>
+<div style="margin-top:36px;background:#FFFDF8;border:1px solid #D9D5CD;padding:30px 28px">
+<div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+<h3 style="margin:0;font:700 28px/1.15 'DM Sans',sans-serif">Shared by the Stables and Glamping</h3>
+<span style="background:#28AEEF;padding:5px 10px;font:700 11px/1 'DM Sans',sans-serif;letter-spacing:.12em;text-transform:uppercase">At the venue</span>
+</div>
+<p style="margin:14px 0 0;font-size:16px;line-height:1.55;max-width:820px">Guests staying in the Stables and Glamping will have access to the facilities within Martinstown House's accommodation village.  There's no need to bring bedding or towels, just settle in and enjoy being right at the heart of the weekend.</p>
+<div style="margin-top:20px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px">
+<div style="display:flex;align-items:center;gap:12px;background:#fff;border:1px solid #D9D5CD;padding:12px 14px">
+<img aria-hidden="true" src="icons/am-showers-c.png" alt="" style="width:40px;height:40px;flex:none">
+<span style="font-size:14px;line-height:1.3">Hot showers and toilets</span></div><div style="display:flex;align-items:center;gap:12px;background:#fff;border:1px solid #D9D5CD;padding:12px 14px">
+<img aria-hidden="true" src="icons/am-breakfast-c.png" alt="" style="width:40px;height:40px;flex:none">
+<span style="font-size:14px;line-height:1.3">Breakfast included</span></div><div style="display:flex;align-items:center;gap:12px;background:#fff;border:1px solid #D9D5CD;padding:12px 14px">
+<img aria-hidden="true" src="icons/am-towels-c.png" alt="" style="width:40px;height:40px;flex:none">
+<span style="font-size:14px;line-height:1.3">Towels and bedding provided</span></div><div style="display:flex;align-items:center;gap:12px;background:#fff;border:1px solid #D9D5CD;padding:12px 14px">
+<img aria-hidden="true" src="icons/am-parking-c.png" alt="" style="width:40px;height:40px;flex:none">
+<span style="font-size:14px;line-height:1.3">Parking on site</span></div><div style="display:flex;align-items:center;gap:12px;background:#fff;border:1px solid #D9D5CD;padding:12px 14px">
+<img aria-hidden="true" src="icons/am-venue-c.png" alt="" style="width:40px;height:40px;flex:none">
+<span style="font-size:14px;line-height:1.3">At the wedding venue</span></div>
+</div>
+</div>
+<div style="position:relative;margin-top:32px;background:#9BDDF7;padding:56px 28px 30px" style-before="content:'';position:absolute;top:50%;left:-9px;width:18px;height:18px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)" style-after="content:'';position:absolute;top:50%;right:-9px;width:18px;height:18px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)">
+<div style="position:relative;margin:-46px 0 0;padding-top:18px">
+<div aria-hidden="true" style="position:absolute;top:0;left:26%;width:96px;height:26px;background:#F58BC1;opacity:.92;transform:rotate(-2deg);z-index:4"></div>
+<div style="position:relative;background:#fff;padding:9px;box-shadow:0 10px 24px rgba(17,17,17,.16);transform:rotate(-1.2deg)">
+<div style="aspect-ratio:32/9;background:repeating-linear-gradient(45deg,#F3F0EA 0 10px,#FFFDF8 10px 20px);display:grid;align-content:end;padding:16px;font:11px/1.7 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#8a857c">hotel exterior</div>
+</div>
+</div>
+<h3 style="margin:22px 0 0;font:700 32px/1.1 'DM Sans',sans-serif">Nearby Hotels</h3>
+<p style="margin:14px 0 0;font-size:16px;line-height:1.55;max-width:760px">If glamping isn't quite your thing, there are plenty of lovely places to stay nearby. We've included a few options below that are within easy reach of Martinstown House. Just remember that transport to and from the venue will need to be arranged separately.</p>
+<ul style="margin:16px 0 0;padding-left:20px;display:grid;gap:7px;font-size:16px;line-height:1.45"><li>A range of hotels within a short drive</li><li>Taxis back to Kildare town</li><li>Book early — August is busy</li></ul>
+</div>
+</div>
+
+<div style="padding:104px 56px 0">
+<div style="display:flex;align-items:baseline;gap:20px">
+<h2 style="margin:0;font-family:'Bowlby One',Arial Black,sans-serif;text-transform:uppercase;letter-spacing:-.03em;line-height:.9;font-size:64px">FAQs</h2>
+<span style="font-size:16px;color:#111">Quick answers to the big (and small) questions.</span>
+</div>
+<div style="margin-top:26px;border-top:1px solid #D9D5CD">
+<sc-for list="{{ faqsD }}" as="f" hint-placeholder-count="6">
+<div style="border-bottom:1px solid #D9D5CD">
+<button type="button" onClick="{{ f.toggle }}" aria-expanded="{{ f.open }}" style="width:100%;display:grid;grid-template-columns:minmax(0,1fr) 32px;gap:20px;align-items:center;min-height:64px;padding:16px 0;background:none;border:0;cursor:pointer;text-align:left;font:700 19px/1.35 'DM Sans',sans-serif;color:#111">
+<span>{{ f.q }}</span><span style="font-size:24px;text-align:right;line-height:1">{{ f.sign }}</span>
+</button>
+<sc-if value="{{ f.open }}" hint-placeholder-val="{{ false }}">
+<p style="margin:0;padding:0 52px 22px 0;font-size:16px;line-height:1.65;color:#111">{{ f.a }}</p>
+</sc-if>
+</div>
+</sc-for>
+</div>
+</div>
+
+<div style="margin-top:110px;padding:0 56px 0">
+<div style="position:relative;background:#F3F0EA;padding:64px 56px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.7fr);gap:40px;align-items:center">
+<div>
+<h2 style="margin:0;font-family:'Bowlby One',Arial Black,sans-serif;text-transform:uppercase;letter-spacing:-.03em;line-height:.86;font-size:96px">RSVP</h2>
+<p style="margin:20px 0 0;font-size:17px;line-height:1.6;max-width:420px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor — by [date].</p>
+<a href="#1a" style="margin-top:26px;display:inline-flex;align-items:center;gap:14px;min-height:56px;padding:0 30px;background:#F58BC1;color:#111;text-decoration:none;font:700 15px/1 'DM Sans',sans-serif;letter-spacing:.12em;text-transform:uppercase">Reply now <span aria-hidden="true" style="display:inline-flex;width:22px"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 100 100" fill="none" stroke="currentColor" style="display:block"><path d="M12 50H84M65 30L85 50L65 70" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a>
+</div>
+<div style="font-size:16px;line-height:1.8">
+<div style="font:700 12px/1 'DM Sans',sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#8a857c;margin-bottom:12px">Any questions?</div>
+<div>[email address]</div>
+<div>[phone number]</div>
+<div style="margin-top:16px;font-family:Caveat,cursive;font-weight:700;font-size:28px;transform:rotate(-2deg);display:inline-block">Just ask ♥</div>
+</div>
+</div>
+</div>
+
+<div style="margin-top:64px;padding:26px 56px 34px;border-top:1px solid #D9D5CD;display:flex;justify-content:space-between;font:700 12px/1 'DM Sans',sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#8a857c">
+<span>K + P</span><span>Good times ahead</span><span>2027</span>
+</div>
+
+</div></div>
+
+<div class="dv-opt" id="1b"><div class="dv-olabel"><a class="dv-oid" href="#1b">1b</a>Mobile · 390px · same one-pager, single column</div>
+<div class="dv-card" style="width:390px">
+
+<div style="padding:22px 16px 0;overflow:hidden">
+<div style="display:flex;justify-content:space-between;font:700 11px/1 'DM Sans',sans-serif;letter-spacing:.18em;text-transform:uppercase"><span style="color:#8a857c">JULY - AUG 2027</span></div>
+
+<h1 style="margin:40px 0 10px;font-family:'Bowlby One',Arial Black,sans-serif;text-transform:uppercase;letter-spacing:-.03em;line-height:.9;font-size:56px;transform:rotate(-6deg);transform-origin:left center">Karishma<br>+ Partha</h1>
+
+<div style="position:relative;margin-top:30px;padding-bottom:46px">
+<div aria-hidden="true" style="position:absolute;top:-16px;right:8px;font-size:44px;line-height:1;color:#F58BC1;transform:rotate(8deg);z-index:5">♥</div>
+<div style="position:relative;background:#fff;padding:12px 12px 44px;box-shadow:0 12px 28px rgba(17,17,17,.14);transform:rotate(-6deg);width:84%;margin-left:auto">
+<div aria-hidden="true" style="position:absolute;top:-11px;left:-14px;width:72px;height:24px;background:#FFFDF8;border:1px solid #D9D5CD;opacity:.96;transform:rotate(-34deg)"></div>
+<div aria-hidden="true" style="position:absolute;bottom:26px;right:0;width:66px;height:22px;background:#FFFDF8;border:1px solid #D9D5CD;opacity:.96;transform:rotate(-28deg)"></div>
+<div style="aspect-ratio: 4/5; background: repeating-linear-gradient(45deg,#F3F0EA 0 10px,#FFFDF8 10px 20px); display: grid; place-items: center; font: 10px/1.7 ui-monospace,Menlo,monospace; letter-spacing: .12em; text-transform: uppercase; color: #8a857c; text-align: center; width: 296px; height: 261px">couple shot<br>4:5 portrait<br>polaroid frame</div>
+</div>
+<img aria-hidden="true" src="icons/couple-badge.png" alt="" style="position:absolute;bottom:0;left:2px;width:125px;transform:rotate(-6deg);z-index:6">
+<div style="position:absolute;bottom:6px;right:10px;font-family:Caveat,cursive;font-weight:700;font-size:32px;line-height:1.05;transform:rotate(-6deg);z-index:6">Better<br>Together<br><span style="font-size:26px">♥</span></div>
+</div>
+</div>
+
+<div style="padding:60px 16px 0">
+<div style="font:700 11px/1 'DM Sans',sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#8a857c">Welcome</div>
+<h2 style="margin:12px 0 0;font-family:'Bowlby One',Arial Black,sans-serif;text-transform:uppercase;letter-spacing:-.03em;line-height:.92;font-size:42px">We're getting married!</h2>
+<p style="margin:16px 0 0;font-size:16px;line-height:1.6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<a href="#1b" style="margin-top:18px;display:inline-flex;align-items:center;gap:12px;min-height:52px;padding:0 24px;background:#F58BC1;color:#111;text-decoration:none;font:700 14px/1 'DM Sans',sans-serif;letter-spacing:.12em;text-transform:uppercase">RSVP <span aria-hidden="true" style="display:inline-flex;width:21px"><svg aria-hidden="true" width="21" height="21" viewBox="0 0 100 100" fill="none" stroke="currentColor" style="display:block"><path d="M12 50H84M65 30L85 50L65 70" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a>
+<div style="margin-top:20px;background:#F58BC1;padding:20px 22px;transform:rotate(-1.5deg);font-family:Caveat,cursive;font-weight:700;font-size:30px;line-height:1.05">Better together ♥</div>
+</div>
+
+<div style="padding:60px 16px 0">
+<div style="font:700 11px/1 'DM Sans',sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#8a857c">Our story</div>
+<h2 style="margin:12px 0 0;font-family:'Bowlby One',Arial Black,sans-serif;text-transform:uppercase;letter-spacing:-.03em;line-height:.9;font-size:46px">Our story</h2>
+<div style="position:relative;margin-top:20px;padding-top:12px">
+<div aria-hidden="true" style="position:absolute;top:0;left:26%;width:72px;height:22px;background:#28AEEF;opacity:.92;transform:rotate(3deg);z-index:2"></div>
+<div style="background:#fff;padding:7px;box-shadow:0 10px 24px rgba(17,17,17,.12);transform:rotate(-1.2deg)">
+<div style="aspect-ratio:4/3;background:repeating-linear-gradient(45deg,#F3F0EA 0 10px,#FFFDF8 10px 20px);display:grid;place-items:center;font:10px/1.6 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#8a857c;text-align:center">early photo<br>4:3</div>
+</div>
+</div>
+<p style="margin:18px 0 0;font-size:16px;line-height:1.6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud.</p>
+<div style="margin-top:14px;font-family:Caveat,cursive;font-weight:700;font-size:28px;transform:rotate(-2deg);display:inline-block">…and then there were two ♥</div>
+</div>
+
+<div style="padding:60px 16px 0">
+<div style="text-align:center">
+<div style="font:700 11px/1 'DM Sans',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#1f8a4c">Our story so far</div>
+<div aria-hidden="true" style="margin:10px auto 0;width:110px;height:7px;border-radius:999px;background:#F58BC1"></div>
+<div style="position:relative;display:inline-block;margin-top:12px;padding:4px 22px">
+<span aria-hidden="true" style="position:absolute;inset:8px 0 12px;background:#FFD92F;border-radius:32px;transform:rotate(-1.2deg)"></span>
+<h2 style="position:relative;margin:0;font-family:'Bowlby One',Arial Black,sans-serif;text-transform:uppercase;letter-spacing:-.03em;line-height:1;font-size:36px;white-space:nowrap">Our journey</h2>
+</div>
+<div style="margin-top:8px"><div style="font-family:Caveat,cursive;font-weight:700;font-size:24px;line-height:1;border-bottom:3px solid #111;display:inline-block;padding-bottom:6px">Different places, same adventure ♡</div></div>
+</div>
+<div style="margin-top:30px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-items:start">
+<div style="margin-top:0px"><div style="position:relative;background:#fff;padding:8px;box-shadow:0 10px 24px rgba(17,17,17,.14);transform:rotate(-3.5deg)">
+<div aria-hidden="true" style="position:absolute;top:-10px;left:50%;margin-left:-26px;width:52px;height:18px;background:#F58BC1;opacity:.92;transform:rotate(-3deg)"></div>
+<div style="aspect-ratio:1/1;background:repeating-linear-gradient(45deg,#F3F0EA 0 10px,#FFFDF8 10px 20px);display:grid;align-content:start;padding:10px;font:9px/1.6 ui-monospace,Menlo,monospace;letter-spacing:.1em;text-transform:uppercase;color:#8a857c">coast town</div>
+<div style="margin-top:8px;min-height:40px;font-family:Caveat,cursive;font-weight:700;font-size:19px;line-height:1.05">First trip together ♡</div>
+</div></div><div style="margin-top:16px"><div style="position:relative;background:#fff;padding:8px;box-shadow:0 10px 24px rgba(17,17,17,.14);transform:rotate(2.5deg)">
+<div aria-hidden="true" style="position:absolute;top:-10px;left:50%;margin-left:-26px;width:52px;height:18px;background:#FFD92F;opacity:.92;transform:rotate(-3deg)"></div>
+<div style="aspect-ratio:1/1;background:repeating-linear-gradient(45deg,#F3F0EA 0 10px,#FFFDF8 10px 20px);display:grid;align-content:start;padding:10px;font:9px/1.6 ui-monospace,Menlo,monospace;letter-spacing:.1em;text-transform:uppercase;color:#8a857c">city landmark</div>
+<div style="margin-top:8px;min-height:40px;font-family:Caveat,cursive;font-weight:700;font-size:19px;line-height:1.05">Exploring<br>new places</div>
+</div></div><div style="margin-top:0px"><div style="position:relative;background:#fff;padding:8px;box-shadow:0 10px 24px rgba(17,17,17,.14);transform:rotate(-2deg)">
+<div aria-hidden="true" style="position:absolute;top:-10px;left:50%;margin-left:-26px;width:52px;height:18px;background:#28AEEF;opacity:.92;transform:rotate(-3deg)"></div>
+<div style="aspect-ratio:1/1;background:repeating-linear-gradient(45deg,#F3F0EA 0 10px,#FFFDF8 10px 20px);display:grid;align-content:start;padding:10px;font:9px/1.6 ui-monospace,Menlo,monospace;letter-spacing:.1em;text-transform:uppercase;color:#8a857c">mountain lake</div>
+<div style="margin-top:8px;min-height:40px;font-family:Caveat,cursive;font-weight:700;font-size:19px;line-height:1.05">Mountains,<br>memories ♡</div>
+</div></div><div style="margin-top:16px"><div style="position:relative;background:#fff;padding:8px;box-shadow:0 10px 24px rgba(17,17,17,.14);transform:rotate(3deg)">
+<div aria-hidden="true" style="position:absolute;top:-10px;left:50%;margin-left:-26px;width:52px;height:18px;background:#F58BC1;opacity:.92;transform:rotate(-3deg)"></div>
+<div style="aspect-ratio:1/1;background:repeating-linear-gradient(45deg,#F3F0EA 0 10px,#FFFDF8 10px 20px);display:grid;align-content:start;padding:10px;font:9px/1.6 ui-monospace,Menlo,monospace;letter-spacing:.1em;text-transform:uppercase;color:#8a857c">beach sunset</div>
+<div style="margin-top:8px;min-height:40px;font-family:Caveat,cursive;font-weight:700;font-size:19px;line-height:1.05">Chasing<br>sunsets</div>
+</div></div><div style="margin-top:0px"><div style="position:relative;background:#fff;padding:8px;box-shadow:0 10px 24px rgba(17,17,17,.14);transform:rotate(-2.5deg)">
+<div aria-hidden="true" style="position:absolute;top:-10px;left:50%;margin-left:-26px;width:52px;height:18px;background:#36C86B;opacity:.92;transform:rotate(-3deg)"></div>
+<div style="aspect-ratio:1/1;background:repeating-linear-gradient(45deg,#F3F0EA 0 10px,#FFFDF8 10px 20px);display:grid;align-content:start;padding:10px;font:9px/1.6 ui-monospace,Menlo,monospace;letter-spacing:.1em;text-transform:uppercase;color:#8a857c">river city</div>
+<div style="margin-top:8px;min-height:40px;font-family:Caveat,cursive;font-weight:700;font-size:19px;line-height:1.05">Good food,<br>better times ♡</div>
+</div></div><div style="margin-top:16px"><div style="position:relative;background:#fff;padding:8px;box-shadow:0 10px 24px rgba(17,17,17,.14);transform:rotate(2deg)">
+<div aria-hidden="true" style="position:absolute;top:-10px;left:50%;margin-left:-26px;width:52px;height:18px;background:#FFD92F;opacity:.92;transform:rotate(-3deg)"></div>
+<div style="aspect-ratio:1/1;background:repeating-linear-gradient(45deg,#F3F0EA 0 10px,#FFFDF8 10px 20px);display:grid;align-content:start;padding:10px;font:9px/1.6 ui-monospace,Menlo,monospace;letter-spacing:.1em;text-transform:uppercase;color:#8a857c">green hills</div>
+<div style="margin-top:8px;min-height:40px;font-family:Caveat,cursive;font-weight:700;font-size:19px;line-height:1.05">So many<br>more to come…</div>
+</div></div>
+</div>
+<div style="margin-top:26px;display:flex;justify-content:space-between;align-items:flex-start;gap:12px">
+<div style="background:#F9A8CE;padding:16px 14px;transform:rotate(-4deg);font-family:Caveat,cursive;font-weight:700;font-size:20px;line-height:1.15">Good<br>Food<br>Great<br>Company<br>Brighter<br>Days ♡</div>
+<div style="margin-top:14px"><svg aria-hidden="true" width="42" height="42" viewBox="0 0 100 100" style="color:#FFD92F;display:block"><path d="M50 4C54 29 58 35 82 23C62 42 62 47 92 50C62 54 59 59 79 80C58 66 54 70 50 96C46 70 42 66 21 80C41 59 38 54 8 50C38 47 38 42 18 23C42 35 46 29 50 4Z" fill="currentColor"></path></svg></div>
+<div style="background:#9BDDF7;padding:14px 12px;transform:rotate(4deg);font-family:Caveat,cursive;font-weight:700;font-size:20px;line-height:1.15">Better<br>Together<br>Always</div>
+</div>
+</div>
+
+<div style="padding:60px 16px 0">
+<h2 style="margin:0;font-family:'Bowlby One',Arial Black,sans-serif;text-transform:uppercase;letter-spacing:-.03em;line-height:.9;font-size:46px">The events</h2>
+<div style="margin-top:20px;display:grid;gap:16px">
+<div style="position:relative;background:#F58BC1;padding:20px" style-before="content:'';position:absolute;top:50%;left:-8px;width:16px;height:16px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)" style-after="content:'';position:absolute;top:50%;right:-8px;width:16px;height:16px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)">
+<div style="font:700 11px/1 'DM Sans',sans-serif;letter-spacing:.14em;text-transform:uppercase;border-bottom:2px solid #111;display:inline-block;padding-bottom:4px">SAT 31 JULY</div>
+<img aria-hidden="true" src="icons/note.png" alt="" style="position:absolute;top:18px;right:20px;width:40px;height:38px">
+<div style="margin-top:10px;font-family:'Bowlby One',Arial Black,sans-serif;font-size:32px;line-height:.94;text-transform:uppercase">Jago</div>
+<div style="margin-top:8px;display:flex;justify-content:space-between;align-items:flex-end;font-size:14px;line-height:1.4"><span>Cedar Court Hotel, Bradford</span><svg aria-hidden="true" width="22" height="22" viewBox="0 0 100 100" fill="none" stroke="currentColor" style="display:block"><path d="M12 50H84M65 30L85 50L65 70" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+</div>
+<div style="position:relative;background:#FFD92F;padding:20px" style-before="content:'';position:absolute;top:50%;left:-8px;width:16px;height:16px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)" style-after="content:'';position:absolute;top:50%;right:-8px;width:16px;height:16px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)">
+<div style="font:700 11px/1 'DM Sans',sans-serif;letter-spacing:.14em;text-transform:uppercase;border-bottom:2px solid #111;display:inline-block;padding-bottom:4px">Sat 14 Aug</div>
+<img aria-hidden="true" src="icons/disco.png" alt="" style="position:absolute;top:15px;right:18px;width:31px;height:40px">
+<div style="margin-top:10px;font-family:'Bowlby One',Arial Black,sans-serif;font-size:32px;line-height:.94;text-transform:uppercase">Sangeet</div>
+<div style="margin-top:8px;display:flex;justify-content:space-between;align-items:flex-end;font-size:14px;line-height:1.4"><span>Martinstown House,<br>Co. Kildare</span><svg aria-hidden="true" width="22" height="22" viewBox="0 0 100 100" fill="none" stroke="currentColor" style="display:block"><path d="M12 50H84M65 30L85 50L65 70" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+</div>
+<div style="position:relative;background:#C7A6F4;padding:20px" style-before="content:'';position:absolute;top:50%;left:-8px;width:16px;height:16px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)" style-after="content:'';position:absolute;top:50%;right:-8px;width:16px;height:16px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)">
+<div style="font:700 11px/1 'DM Sans',sans-serif;letter-spacing:.14em;text-transform:uppercase;border-bottom:2px solid #111;display:inline-block;padding-bottom:4px">Sun 15 Aug</div>
+<img aria-hidden="true" src="icons/heart.png" alt="" style="position:absolute;top:18px;right:20px;width:34px;height:38px">
+<div style="margin-top:10px;font-family:'Bowlby One',Arial Black,sans-serif;font-size:32px;line-height:.94;text-transform:uppercase">Wedding</div>
+<div style="margin-top:8px;display:flex;justify-content:space-between;align-items:flex-end;font-size:14px;line-height:1.4"><span>Martinstown House,<br>Co. Kildare</span><svg aria-hidden="true" width="22" height="22" viewBox="0 0 100 100" fill="none" stroke="currentColor" style="display:block"><path d="M12 50H84M65 30L85 50L65 70" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+</div>
+</div>
+</div>
+
+<div style="padding:60px 16px 0">
+<div style="font:700 11px/1 'DM Sans',sans-serif;letter-spacing:.18em;text-transform:uppercase">The wedding venue</div>
+<div style="position:relative;display:inline-block">
+<h2 style="margin:10px 0 0;font-family:'Bowlby One',Arial Black,sans-serif;text-transform:uppercase;letter-spacing:-.03em;line-height:.9;font-size:42px">Martinstown<br>House</h2>
+<span aria-hidden="true" style="position:absolute;right:-6px;bottom:-14px;transform:rotate(12deg)"><svg aria-hidden="true" width="38" height="38" viewBox="0 0 100 100" style="color:#F58BC1;display:block"><path d="M50 4C54 29 58 35 82 23C62 42 62 47 92 50C62 54 59 59 79 80C58 66 54 70 50 96C46 70 42 66 21 80C41 59 38 54 8 50C38 47 38 42 18 23C42 35 46 29 50 4Z" fill="currentColor"></path></svg></span>
+</div>
+<p style="margin:16px 0 0;font-size:16px;line-height:1.5">The Curragh, Co Kildare</p>
+<p style="margin:12px 0 0;font-size:16px;line-height:1.6">Martinstown House is a family-operated country house set in the leafy landscape of the Curragh in County Kildare. It's set on a fully working farmyard that houses cattle, sheep, horses and two rescue donkeys, and the entire estate is a bird sanctuary.</p>
+
+<div style="position:relative;margin-top:26px;padding-bottom:24px">
+<div aria-hidden="true" style="position:absolute;top:-11px;left:46%;width:84px;height:22px;background:#F58BC1;opacity:.92;transform:rotate(-2deg);z-index:3"></div>
+<div style="background:#fff;padding:8px;box-shadow:0 10px 24px rgba(17,17,17,.12);transform:rotate(-1deg)">
+<img src="images/martinstown-house.jpeg" alt="Martinstown House exterior" style="display:block;width:100%;aspect-ratio:16/10;object-fit:cover">
+</div>
+<div style="position:absolute;top:-14px;left:-4px;background:#FFD92F;padding:16px 14px;transform:rotate(-4deg);font-family:Caveat,cursive;font-weight:700;font-size:24px;line-height:1.05;box-shadow:0 6px 16px rgba(17,17,17,.14);z-index:5">Our<br>wedding<br>home<br><span style="font-size:20px">♥</span></div>
+<div aria-hidden="true" style="position:absolute;bottom:-6px;right:-4px;width:96px;height:96px;border-radius:50%;background:#28AEEF;display:grid;place-items:center;text-align:center;font:800 11px/1.25 'DM Sans',sans-serif;text-transform:uppercase;z-index:4">A<br>truly<br>special<br>place<br><span style="font-size:13px">♥</span></div>
+</div>
+
+<div style="margin-top:22px;background:#fff;border:1px solid #D9D5CD">
+<div style="aspect-ratio:4/3;background:repeating-linear-gradient(45deg,#F3F0EA 0 10px,#FFFDF8 10px 20px);display:grid;align-content:start;padding:16px;font:10px/1.7 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#8a857c">embedded map<br>google maps pin</div>
+</div>
+<div style="margin-top:12px;display:flex;align-items:center;gap:12px">
+<span aria-hidden="true" style="display:inline-flex;transform:rotate(-125deg)"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 100 100" fill="none" stroke="currentColor" style="display:block"><path d="M12 50H84M65 30L85 50L65 70" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+<span style="font-family:Caveat,cursive;font-weight:700;font-size:24px;line-height:1.1;transform:rotate(-3deg);display:inline-block">Right here in the heart of Kildare</span>
+</div>
+
+<div style="position:relative;margin-top:26px;padding-top:12px">
+<div aria-hidden="true" style="position:absolute;top:0;left:30px;width:86px;height:22px;background:#36C86B;opacity:.92;transform:rotate(-2deg);z-index:3"></div>
+<div style="background:#F3F0EA;padding:22px 18px">
+<h3 style="margin:0;font-family:'Bowlby One',Arial Black,sans-serif;text-transform:uppercase;letter-spacing:-.02em;font-size:24px;line-height:1">Points of interest</h3>
+<div style="margin-top:16px;display:grid;gap:12px">
+
+<div style="display:grid;grid-template-columns:46px minmax(0,1fr) auto;gap:14px;align-items:center">
+<span aria-hidden="true" style="width:42px;height:42px;border-radius:50%;background:#FFD92F;display:grid;place-items:center"><svg aria-hidden="true" width="23" height="23" viewBox="0 0 32 32" fill="none" stroke="#111" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20v3M27 20v3"></path><path d="M4 20v-4l2.6-5.4A2 2 0 0 1 8.4 9.5h15.2a2 2 0 0 1 1.8 1.1L28 16v4z"></path><path d="M4 16h24"></path><circle cx="9.5" cy="20" r="1.6"></circle><circle cx="22.5" cy="20" r="1.6"></circle></svg></span>
+<span style="font:500 16px/1.3 'DM Sans',sans-serif">The Curragh</span><span style="font-size:14px;color:#8a857c">5 min</span>
+</div>
+<div style="display:grid;grid-template-columns:46px minmax(0,1fr) auto;gap:14px;align-items:center">
+<span aria-hidden="true" style="width:42px;height:42px;border-radius:50%;background:#C7A6F4;display:grid;place-items:center"><svg aria-hidden="true" width="23" height="23" viewBox="0 0 32 32" fill="none" stroke="#111" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20v3M27 20v3"></path><path d="M4 20v-4l2.6-5.4A2 2 0 0 1 8.4 9.5h15.2a2 2 0 0 1 1.8 1.1L28 16v4z"></path><path d="M4 16h24"></path><circle cx="9.5" cy="20" r="1.6"></circle><circle cx="22.5" cy="20" r="1.6"></circle></svg></span>
+<span style="font:500 16px/1.3 'DM Sans',sans-serif">Kildare</span><span style="font-size:14px;color:#8a857c">15 min</span>
+</div>
+</div>
+<div style="margin-top:16px;padding-top:14px;border-top:1px solid #D9D5CD;font-size:13px;color:#8a857c">Driving times from the house</div>
+</div>
+</div>
+</div>
+
+<div style="padding:60px 16px 0">
+<div style="display:grid;grid-template-columns:minmax(0,1fr);gap:20px;align-items:start">
+<div>
+<h2 style="margin:0;font-family:'Bowlby One',Arial Black,sans-serif;text-transform:uppercase;letter-spacing:-.03em;line-height:.92;font-size:44px">Wedding<br>weekend schedule</h2>
+<div style="margin-top:12px;font-family:Caveat,cursive;font-weight:700;font-size:24px;line-height:1.1;border-bottom:3px solid #111;display:inline-block;padding-bottom:6px">Four moments. One unforgettable weekend.</div>
+</div>
+<div style="display:flex;align-items:flex-start;gap:16px;flex-wrap:wrap">
+<div style="background:#F9A8CE;padding:18px 16px;transform:rotate(-2deg);font-family:Caveat,cursive;font-weight:700;font-size:22px;line-height:1.15">Good<br>food<br>Great company<br>Big celebrations<br><span style="font-size:19px">♥</span></div>
+<div style="transform:rotate(6deg);margin-top:8px"><svg aria-hidden="true" width="60" height="60" viewBox="0 0 100 100" style="color:#FFD92F;display:block"><path d="M50 4C54 29 58 35 82 23C62 42 62 47 92 50C62 54 59 59 79 80C58 66 54 70 50 96C46 70 42 66 21 80C41 59 38 54 8 50C38 47 38 42 18 23C42 35 46 29 50 4Z" fill="currentColor"></path></svg></div>
+<div style="font-family:Caveat,cursive;font-weight:700;font-size:22px;line-height:1.12;transform:rotate(4deg);border-bottom:3px solid #111;padding-bottom:6px;align-self:flex-start;margin-top:0px">Same<br>people<br>Bigger<br>party</div>
+</div>
+</div>
+<div style="margin-top:26px;display:grid;gap:18px"><div style="position:relative;background:#F9A8CE;padding:22px 20px 18px" style-before="content:'';position:absolute;top:50%;left:-9px;width:18px;height:18px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)" style-after="content:'';position:absolute;top:50%;right:-9px;width:18px;height:18px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)">
+<div aria-hidden="true" style="position:absolute;top:74px;right:14px"><img aria-hidden="true" src="icons/ws-cocktail-t.png" alt="" style="width:56px;height:60px"></div>
+<div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+<span style="font:700 12px/1 'DM Sans',sans-serif;letter-spacing:.1em;text-transform:uppercase">Fri 13th Aug 2027</span>
+<span style="display:inline-flex;align-items:center;height:28px;padding:0 14px;border:1.6px solid #111;border-radius:999px;font:500 13px/1 'DM Sans',sans-serif">Optional</span>
+</div>
+<h3 style="margin:12px 0 0;font-family:'Bowlby One',Arial Black,sans-serif;text-transform:uppercase;letter-spacing:-.02em;line-height:.96;font-size:28px;max-width:86%">Informal gathering in Dublin</h3>
+<div style="margin-top:12px;display:flex;align-items:center;gap:8px;font:500 15px/1.3 'DM Sans',sans-serif"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 32 32" fill="#111"><path d="M16 2a9 9 0 0 0-9 9c0 6.6 9 19 9 19s9-12.4 9-19a9 9 0 0 0-9-9zm0 12.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4z"></path></svg>Dublin · venue TBC</div>
+<p style="margin:12px 0 0;font-size:15px;line-height:1.5">We'll be in Dublin the night before heading to Kildare, so if you're around, come join us for a very informal get-together and ease yourself into the weekend. Completely optional, very relaxed, and a good chance to say hello before the wedding chaos properly begins.</p>
+
+<a href="#1a" style="margin-top:18px;display:flex;align-items:center;justify-content:center;gap:12px;min-height:52px;background:rgba(255,255,255,.5);color:#111;text-decoration:none;font:700 13px/1 'DM Sans',sans-serif;letter-spacing:.1em;text-transform:uppercase"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 32 32" fill="none" stroke="#111" stroke-width="2.4" stroke-linecap="round"><rect x="4" y="7" width="24" height="21" rx="4"></rect><path d="M4 13h24M10 4v5M22 4v5M16 18v6M13 21h6"></path></svg>Add to calendar <svg aria-hidden="true" width="18" height="18" viewBox="0 0 100 100" fill="none" stroke="currentColor" style="display:block"><path d="M12 50H84M65 30L85 50L65 70" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+</div><div style="position:relative;background:#FFDE4D;padding:22px 20px 18px" style-before="content:'';position:absolute;top:50%;left:-9px;width:18px;height:18px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)" style-after="content:'';position:absolute;top:50%;right:-9px;width:18px;height:18px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)">
+<div aria-hidden="true" style="position:absolute;top:60px;right:14px"><img aria-hidden="true" src="icons/ws-bus-t.png" alt="" style="width:59px;height:54px"></div>
+<div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+<span style="font:700 12px/1 'DM Sans',sans-serif;letter-spacing:.1em;text-transform:uppercase">Sat 14th Aug 2027</span>
+<span style="display:inline-flex;align-items:center;height:28px;padding:0 14px;border:1.6px solid #111;border-radius:999px;font:500 13px/1 'DM Sans',sans-serif">AM</span>
+</div>
+<h3 style="margin:12px 0 0;font-family:'Bowlby One',Arial Black,sans-serif;text-transform:uppercase;letter-spacing:-.02em;line-height:.96;font-size:28px;max-width:86%">Coaches to Kildare</h3>
+<div style="margin-top:12px;display:flex;align-items:center;gap:8px;font:500 15px/1.3 'DM Sans',sans-serif"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 32 32" fill="#111"><path d="M16 2a9 9 0 0 0-9 9c0 6.6 9 19 9 19s9-12.4 9-19a9 9 0 0 0-9-9zm0 12.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4z"></path></svg>Dublin · pickup TBC</div>
+<p style="margin:12px 0 0;font-size:15px;line-height:1.5">We'll be arranging coaches from Dublin to Kildare on Saturday morning for close family and friends, if you're reading this, they'll be a seat for you! Pick-up point and timings will be confirmed closer to the date. Don't be a Kevin and get left behind!</p>
+
+<a href="#1a" style="margin-top:18px;display:flex;align-items:center;justify-content:center;gap:12px;min-height:52px;background:rgba(255,255,255,.55);color:#111;text-decoration:none;font:700 13px/1 'DM Sans',sans-serif;letter-spacing:.1em;text-transform:uppercase"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 32 32" fill="none" stroke="#111" stroke-width="2.4" stroke-linecap="round"><rect x="4" y="7" width="24" height="21" rx="4"></rect><path d="M4 13h24M10 4v5M22 4v5M16 18v6M13 21h6"></path></svg>Add to calendar <svg aria-hidden="true" width="18" height="18" viewBox="0 0 100 100" fill="none" stroke="currentColor" style="display:block"><path d="M12 50H84M65 30L85 50L65 70" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+</div><div style="position:relative;background:#9BDDF7;padding:22px 20px 18px" style-before="content:'';position:absolute;top:50%;left:-9px;width:18px;height:18px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)" style-after="content:'';position:absolute;top:50%;right:-9px;width:18px;height:18px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)">
+<div aria-hidden="true" style="position:absolute;top:52px;right:16px"><img aria-hidden="true" src="icons/ws-disco-t.png" alt="" style="width:60px;height:54px"></div>
+<div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+<span style="font:700 12px/1 'DM Sans',sans-serif;letter-spacing:.1em;text-transform:uppercase">Sat 14th Aug 2027</span>
+<span style="display:inline-flex;align-items:center;height:28px;padding:0 14px;border:1.6px solid #111;border-radius:999px;font:500 13px/1 'DM Sans',sans-serif">PM</span>
+</div>
+<h3 style="margin:12px 0 0;font-family:'Bowlby One',Arial Black,sans-serif;text-transform:uppercase;letter-spacing:-.02em;line-height:.96;font-size:28px;max-width:86%">Sangeet</h3>
+<div style="margin-top:12px;display:flex;align-items:center;gap:8px;font:500 15px/1.3 'DM Sans',sans-serif"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 32 32" fill="#111"><path d="M16 2a9 9 0 0 0-9 9c0 6.6 9 19 9 19s9-12.4 9-19a9 9 0 0 0-9-9zm0 12.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4z"></path></svg>Martinstown House</div>
+<p style="margin:12px 0 0;font-size:15px;line-height:1.5">We're warming up for the wedding day with an evening of music, food and dancing. <b>We've secured Priya Dharni for a one-night-only Ireland exclusive DJ set</b>, so expect bangers, chaos and absolutely no guarantees about what gets played.</p>
+
+<a href="#1a" style="margin-top:18px;display:flex;align-items:center;justify-content:center;gap:12px;min-height:52px;background:rgba(255,255,255,.55);color:#111;text-decoration:none;font:700 13px/1 'DM Sans',sans-serif;letter-spacing:.1em;text-transform:uppercase"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 32 32" fill="none" stroke="#111" stroke-width="2.4" stroke-linecap="round"><rect x="4" y="7" width="24" height="21" rx="4"></rect><path d="M4 13h24M10 4v5M22 4v5M16 18v6M13 21h6"></path></svg>Add to calendar <svg aria-hidden="true" width="18" height="18" viewBox="0 0 100 100" fill="none" stroke="currentColor" style="display:block"><path d="M12 50H84M65 30L85 50L65 70" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+</div><div style="position:relative;background:#CBAEF7;padding:22px 20px 18px" style-before="content:'';position:absolute;top:50%;left:-9px;width:18px;height:18px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)" style-after="content:'';position:absolute;top:50%;right:-9px;width:18px;height:18px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)">
+<div aria-hidden="true" style="position:absolute;top:50px;right:14px"><img aria-hidden="true" src="icons/ws-hearts-t.png" alt="" style="width:45px;height:58px"></div>
+<div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+<span style="font:700 12px/1 'DM Sans',sans-serif;letter-spacing:.1em;text-transform:uppercase">Sun 15th Aug 2027</span>
+
+</div>
+<h3 style="margin:12px 0 0;font-family:'Bowlby One',Arial Black,sans-serif;text-transform:uppercase;letter-spacing:-.02em;line-height:.96;font-size:28px;max-width:86%">Wedding ceremony &amp; reception</h3>
+<div style="margin-top:12px;display:flex;align-items:center;gap:8px;font:500 15px/1.3 'DM Sans',sans-serif"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 32 32" fill="#111"><path d="M16 2a9 9 0 0 0-9 9c0 6.6 9 19 9 19s9-12.4 9-19a9 9 0 0 0-9-9zm0 12.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4z"></path></svg>Martinstown House</div>
+<p style="margin:12px 0 0;font-size:15px;line-height:1.5">The main event! Join us for our wedding ceremony, followed by plenty of food, drinks, dancing and celebrations. We've done all the planning (or will have by then), so your only jobs are to turn up, look lovely and keep the dance floor full!</p>
+
+<a href="#1a" style="margin-top:18px;display:flex;align-items:center;justify-content:center;gap:12px;min-height:52px;background:rgba(255,255,255,.5);color:#111;text-decoration:none;font:700 13px/1 'DM Sans',sans-serif;letter-spacing:.1em;text-transform:uppercase"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 32 32" fill="none" stroke="#111" stroke-width="2.4" stroke-linecap="round"><rect x="4" y="7" width="24" height="21" rx="4"></rect><path d="M4 13h24M10 4v5M22 4v5M16 18v6M13 21h6"></path></svg>Add to calendar <svg aria-hidden="true" width="18" height="18" viewBox="0 0 100 100" fill="none" stroke="currentColor" style="display:block"><path d="M12 50H84M65 30L85 50L65 70" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+</div></div>
+<div style="margin-top:32px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap">
+<div style="display:flex;align-items:center;gap:14px">
+<div aria-hidden="true" style="width:88px;height:88px;border-radius:50%;background:#36C86B;display:grid;place-items:center;text-align:center;font:800 11px/1.2 'DM Sans',sans-serif;text-transform:uppercase;transform:rotate(-6deg)">Good<br>food<br>bright<br>people</div>
+<svg aria-hidden="true" width="40" height="40" viewBox="0 0 100 100" fill="none" stroke="#111" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><path d="M50 86C42 77 12 57 12 33C12 13 38 9 50 29C62 9 88 13 88 33C88 57 58 77 50 86Z"></path></svg>
+</div>
+<div style="display:flex;align-items:center;gap:10px">
+<span aria-hidden="true" style="display:inline-block;transform:rotate(24deg)"><svg aria-hidden="true" width="32" height="32" viewBox="0 0 100 100" fill="none" stroke="currentColor" style="display:block"><path d="M12 50H84M65 30L85 50L65 70" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+<div style="background:#FFD92F;padding:10px 14px;transform:rotate(-3deg);font-family:Caveat,cursive;font-weight:700;font-size:24px;line-height:1">See you there? ♥</div>
+</div>
+</div>
+</div>
+
+<div style="padding:60px 16px 0">
+<div style="display:flex;align-items:center;gap:12px"><h2 style="margin:0;font-family:'Bowlby One',Arial Black,sans-serif;text-transform:uppercase;letter-spacing:-.03em;line-height:.9;font-size:48px">Travel</h2><img aria-hidden="true" src="icons/plane.png" alt="" style="width:56px;height:46px;flex:none"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 40 40" fill="none" stroke="#111" stroke-width="3" stroke-linecap="round" style="display:block;flex:none;transform:rotate(0deg)"><path d="M6 24L1 31M16 21L14 32M25 21L29 30"></path></svg></div>
+<div style="margin-top:8px"><div style="font-family:Caveat,cursive;font-weight:700;font-size:21px;line-height:1.1;border-bottom:2.5px solid #111;display:inline-block;padding-bottom:5px">Getting here is part of the adventure.</div></div>
+
+<div style="position:relative;margin-top:22px;background:#9BDDF7;padding:22px 20px">
+<div aria-hidden="true" style="position:absolute;left:-9px;top:46%;width:18px;height:18px;border-radius:50%;background:#FFFDF8"></div><div aria-hidden="true" style="position:absolute;right:-9px;top:46%;width:18px;height:18px;border-radius:50%;background:#FFFDF8"></div>
+<div style="font:700 11px/1 'DM Sans',sans-serif;letter-spacing:.2em;text-transform:uppercase">Nearest airport</div>
+<h3 style="margin:10px 0 0;font-family:'Bowlby One',Arial Black,sans-serif;text-transform:uppercase;letter-spacing:-.02em;line-height:1.02;font-size:27px">Dublin Airport<br>(DUB)</h3>
+<div style="margin-top:12px;display:flex;align-items:flex-start;gap:8px;font:500 15px/1.45 'DM Sans',sans-serif"><svg aria-hidden="true" width="17" height="17" viewBox="0 0 32 32" fill="#111" style="flex:none;margin-top:2px"><path d="M16 2a9 9 0 0 0-9 9c0 7 9 19 9 19s9-12 9-19a9 9 0 0 0-9-9zm0 12.2A3.2 3.2 0 1 1 16 7.8a3.2 3.2 0 0 1 0 6.4z"></path></svg><span>Around an hour's drive from the house.</span></div>
+<a href="#1a" style="margin-top:16px;display:flex;align-items:center;justify-content:center;gap:12px;background:#FFD92F;color:#111;text-decoration:none;min-height:52px;font:500 16px/1 'DM Sans',sans-serif">Directions <span style="display:inline-flex;width:20px"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 100 100" fill="none" stroke="currentColor" style="display:block"><path d="M12 50H84M65 30L85 50L65 70" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a>
+</div>
+
+<div style="margin-top:20px;display:flex;align-items:flex-start;gap:12px">
+<div style="position:relative;flex:1;background:#fff;padding:9px;box-shadow:0 10px 24px rgba(17,17,17,.16);transform:rotate(1.5deg)">
+<div aria-hidden="true" style="position:absolute;top:-11px;left:50%;margin-left:-32px;width:64px;height:22px;background:#36C86B;opacity:.9;transform:rotate(-2deg)"></div>
+<div style="aspect-ratio:4/3;background:repeating-linear-gradient(45deg,#F3F0EA 0 10px,#FFFDF8 10px 20px);display:grid;align-content:start;padding:10px;font:9px/1.6 ui-monospace,Menlo,monospace;letter-spacing:.1em;text-transform:uppercase;color:#8a857c">dublin airport</div>
+<div style="margin-top:8px;display:flex;align-items:center;justify-content:center;gap:6px;font-family:Caveat,cursive;font-weight:700;font-size:18px;letter-spacing:.04em;text-transform:uppercase">Dublin Airport <span style="font-family:'DM Sans',sans-serif;font-size:14px">♥</span></div>
+</div>
+<div style="margin-top:22px"><img aria-hidden="true" src="icons/postmark.png" alt="" style="width:126px;display:block"></div>
+</div>
+
+<div style="position:relative;margin-top:22px;background:#F9A8CE;padding:20px">
+<div aria-hidden="true" style="position:absolute;left:-9px;top:50%;width:18px;height:18px;border-radius:50%;background:#FFFDF8"></div><div aria-hidden="true" style="position:absolute;right:-9px;top:50%;width:18px;height:18px;border-radius:50%;background:#FFFDF8"></div>
+<div style="display:flex;align-items:center;gap:10px"><span style="font:700 11px/1 'DM Sans',sans-serif;letter-spacing:.2em;text-transform:uppercase">Getting there</span><svg aria-hidden="true" width="24" height="24" viewBox="0 0 40 40" fill="none" stroke="#111" stroke-width="3" stroke-linecap="round" style="display:block;flex:none;transform:rotate(0deg)"><path d="M6 24L1 31M16 21L14 32M25 21L29 30"></path></svg></div>
+<div style="margin-top:8px">
+<a href="#1a" style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:15px 0;border-top:1px solid rgba(17,17,17,.35);color:#111;text-decoration:none;font:500 15px/1.35 'DM Sans',sans-serif">Flights from Leeds Bradford<span style="display:inline-flex;width:22px;flex:none"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 100 100" fill="none" stroke="currentColor" style="display:block"><path d="M12 50H84M65 30L85 50L65 70" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a>
+<a href="#1a" style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:15px 0;border-top:1px solid rgba(17,17,17,.35);color:#111;text-decoration:none;font:500 15px/1.35 'DM Sans',sans-serif">Flights from Manchester<span style="display:inline-flex;width:22px;flex:none"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 100 100" fill="none" stroke="currentColor" style="display:block"><path d="M12 50H84M65 30L85 50L65 70" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a>
+<a href="#1a" style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:15px 0;border-top:1px solid rgba(17,17,17,.35);color:#111;text-decoration:none;font:500 15px/1.35 'DM Sans',sans-serif">Flights from all London airports<span style="display:inline-flex;width:22px;flex:none"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 100 100" fill="none" stroke="currentColor" style="display:block"><path d="M12 50H84M65 30L85 50L65 70" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a>
+</div>
+</div>
+
+<div style="margin-top:20px;display:flex;align-items:center;gap:12px">
+
+<div style="margin-top:6px"><svg aria-hidden="true" width="38" height="38" viewBox="0 0 100 100" style="color:#FFD92F;display:block"><path d="M50 4C54 29 58 35 82 23C62 42 62 47 92 50C62 54 59 59 79 80C58 66 54 70 50 96C46 70 42 66 21 80C41 59 38 54 8 50C38 47 38 42 18 23C42 35 46 29 50 4Z" fill="currentColor"></path></svg></div>
+<div style="margin-left:auto;background:#F9A8CE;padding:14px 16px;transform:rotate(-3deg);font-family:Caveat,cursive;font-weight:700;font-size:20px;line-height:1.2">Same people<br>New adventures <span style="font-family:'DM Sans',sans-serif;font-size:16px">♥</span></div>
+</div>
+</div>
+
+<div style="padding:60px 16px 0">
+<div style="display:grid;grid-template-columns:minmax(0,1fr);gap:18px;align-items:start">
+<div>
+<div style="display:flex;align-items:center;gap:12px">
+<h2 style="margin:0;font-family:'Bowlby One',Arial Black,sans-serif;text-transform:uppercase;letter-spacing:-.03em;line-height:.9;font-size:46px">Stay</h2>
+<img aria-hidden="true" src="icons/bed.png" alt="" style="width:47px;height:42px">
+<span aria-hidden="true" style="display:flex;gap:4px;transform:rotate(0deg)"><span style="display:block;width:3px;height:13px;background:#111;transform:rotate(-24deg)"></span><span style="display:block;width:3px;height:16px;background:#111;transform:rotate(-4deg)"></span><span style="display:block;width:3px;height:13px;background:#111;transform:rotate(16deg)"></span></span>
+</div>
+<div style="margin-top:10px;font-family:Caveat,cursive;font-weight:700;font-size:26px;line-height:1;border-bottom:3px solid #111;display:inline-block;padding-bottom:6px">Rest. Recharge. Repeat.</div>
+</div>
+
+</div>
+<div style="margin-top:30px;display:grid;gap:20px">
+<div style="position:relative;background:#F9A8CE;padding:44px 18px 20px" style-before="content:'';position:absolute;top:50%;left:-9px;width:18px;height:18px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)" style-after="content:'';position:absolute;top:50%;right:-9px;width:18px;height:18px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)">
+<div style="position:relative;margin:-34px 0 0;padding-top:14px">
+<div aria-hidden="true" style="position:absolute;top:0;left:18%;width:70px;height:20px;background:#F58BC1;opacity:.92;transform:rotate(-2deg);z-index:4"></div>
+<div style="position:relative;background:#fff;padding:7px;box-shadow:0 10px 24px rgba(17,17,17,.16);transform:rotate(-1.2deg)">
+<div style="aspect-ratio:16/10;background:repeating-linear-gradient(45deg,#F3F0EA 0 10px,#FFFDF8 10px 20px);display:grid;align-content:end;padding:12px;font:10px/1.7 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#8a857c">glamping tents</div>
+<span style="position:absolute;top:15px;left:15px;background:#FFFDF8;border-radius:999px;padding:6px 12px;font:500 12px/1 'DM Sans',sans-serif;box-shadow:0 2px 8px rgba(17,17,17,.12)">At the venue</span>
+</div>
+</div>
+<h3 style="margin:18px 0 0;font:700 26px/1.1 'DM Sans',sans-serif">Glamping</h3>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.55">Stay right in the heart of Martinstown House in the venue's Goa to Sleep glamping village. Tucked amongst the trees, the bell tents are a fun and comfortable way to make a proper weekend of the wedding.</p>
+<ul style="margin:12px 0 0;padding-left:20px;display:grid;gap:6px;font-size:15px;line-height:1.45"><li>10 fully furnished bell tents</li><li>Proper beds, duvets, pillows and linen provided</li><li>Towels and extra blankets included</li><li>Lighting, USB charging and a heater in each tent</li><li><strong>Breakfast with the couple! (ps. probably just the Groom)</strong></li></ul>
+<a href="#1b" style="margin-top:18px;display:flex;align-items:center;justify-content:center;gap:14px;min-height:52px;background:transparent;border:2px solid #111;border-radius:999px;color:#111;text-decoration:none;font:700 14px/1 'DM Sans',sans-serif">Find out everything you need to know <svg aria-hidden="true" width="20" height="20" viewBox="0 0 100 100" fill="none" stroke="currentColor" style="display:block"><path d="M12 50H84M65 30L85 50L65 70" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+</div>
+<div style="position:relative;background:#FFDE4D;padding:44px 18px 20px" style-before="content:'';position:absolute;top:50%;left:-9px;width:18px;height:18px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)" style-after="content:'';position:absolute;top:50%;right:-9px;width:18px;height:18px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)">
+<div style="position:relative;margin:-34px 0 0;padding-top:14px">
+<div aria-hidden="true" style="position:absolute;top:0;left:18%;width:70px;height:20px;background:#28AEEF;opacity:.92;transform:rotate(-2deg);z-index:4"></div>
+<div style="position:relative;background:#fff;padding:7px;box-shadow:0 10px 24px rgba(17,17,17,.16);transform:rotate(-1.2deg)">
+<div style="aspect-ratio:16/10;background:repeating-linear-gradient(45deg,#F3F0EA 0 10px,#FFFDF8 10px 20px);display:grid;align-content:end;padding:12px;font:10px/1.7 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#8a857c">stables bedroom</div>
+<span style="position:absolute;top:15px;left:15px;background:#FFFDF8;border-radius:999px;padding:6px 12px;font:500 12px/1 'DM Sans',sans-serif;box-shadow:0 2px 8px rgba(17,17,17,.12)">At the venue</span>
+</div>
+</div>
+<h3 style="margin:18px 0 0;font:700 26px/1.1 'DM Sans',sans-serif">Stables</h3>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.55">For those who prefer four walls and a proper bedroom, the converted Stables offer a cosy place to stay right at Martinstown House, so you can enjoy the celebrations without having far to wander at the end of the night.</p>
+<ul style="margin:12px 0 0;padding-left:20px;display:grid;gap:6px;font-size:15px;line-height:1.45"><li>Five bedrooms in the converted stable block</li><li>Comfortable beds with luxury linen and duvets</li><li>Towels provided</li><li>Right at the venue, close to the celebrations</li><li><strong>Breakfast with the couple! (ps. probably just the Groom)</strong></li></ul>
+<a href="#1b" style="margin-top:18px;display:flex;align-items:center;justify-content:center;gap:14px;min-height:52px;background:transparent;border:2px solid #111;border-radius:999px;color:#111;text-decoration:none;font:700 14px/1 'DM Sans',sans-serif">Find out everything you need to know <svg aria-hidden="true" width="20" height="20" viewBox="0 0 100 100" fill="none" stroke="currentColor" style="display:block"><path d="M12 50H84M65 30L85 50L65 70" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+</div>
+</div>
+<div style="margin-top:24px;background:#FFFDF8;border:1px solid #D9D5CD;padding:22px 18px">
+<div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+<h3 style="margin:0;font:700 21px/1.15 'DM Sans',sans-serif">Shared by the Stables and Glamping</h3>
+<span style="background:#28AEEF;padding:5px 10px;font:700 10px/1 'DM Sans',sans-serif;letter-spacing:.12em;text-transform:uppercase">At the venue</span>
+</div>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.55;max-width:none">Guests staying in the Stables and Glamping will have access to the facilities within Martinstown House's accommodation village.  There's no need to bring bedding or towels, just settle in and enjoy being right at the heart of the weekend.</p>
+<div style="margin-top:16px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px">
+<div style="display:flex;align-items:center;gap:10px;background:#fff;border:1px solid #D9D5CD;padding:10px 12px">
+<img aria-hidden="true" src="icons/am-showers-c.png" alt="" style="width:36px;height:36px;flex:none">
+<span style="font-size:13px;line-height:1.3">Hot showers and toilets</span></div><div style="display:flex;align-items:center;gap:10px;background:#fff;border:1px solid #D9D5CD;padding:10px 12px">
+<img aria-hidden="true" src="icons/am-breakfast-c.png" alt="" style="width:36px;height:36px;flex:none">
+<span style="font-size:13px;line-height:1.3">Breakfast included</span></div><div style="display:flex;align-items:center;gap:10px;background:#fff;border:1px solid #D9D5CD;padding:10px 12px">
+<img aria-hidden="true" src="icons/am-towels-c.png" alt="" style="width:36px;height:36px;flex:none">
+<span style="font-size:13px;line-height:1.3">Towels and bedding provided</span></div><div style="display:flex;align-items:center;gap:10px;background:#fff;border:1px solid #D9D5CD;padding:10px 12px">
+<img aria-hidden="true" src="icons/am-parking-c.png" alt="" style="width:36px;height:36px;flex:none">
+<span style="font-size:13px;line-height:1.3">Parking on site</span></div><div style="display:flex;align-items:center;gap:10px;background:#fff;border:1px solid #D9D5CD;padding:10px 12px">
+<img aria-hidden="true" src="icons/am-venue-c.png" alt="" style="width:36px;height:36px;flex:none">
+<span style="font-size:13px;line-height:1.3">At the wedding venue</span></div>
+</div>
+</div>
+<div style="position:relative;margin-top:22px;background:#9BDDF7;padding:44px 18px 22px" style-before="content:'';position:absolute;top:50%;left:-9px;width:18px;height:18px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)" style-after="content:'';position:absolute;top:50%;right:-9px;width:18px;height:18px;background:#FFFDF8;border-radius:50%;transform:translateY(-50%)">
+<div style="position:relative;margin:-34px 0 0;padding-top:14px">
+<div aria-hidden="true" style="position:absolute;top:0;left:18%;width:70px;height:20px;background:#F58BC1;opacity:.92;transform:rotate(-2deg);z-index:4"></div>
+<div style="position:relative;background:#fff;padding:7px;box-shadow:0 10px 24px rgba(17,17,17,.16);transform:rotate(-1.2deg)">
+<div style="aspect-ratio:16/9;background:repeating-linear-gradient(45deg,#F3F0EA 0 10px,#FFFDF8 10px 20px);display:grid;align-content:end;padding:12px;font:10px/1.7 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#8a857c">hotel exterior</div>
+
+</div>
+</div>
+<h3 style="margin:18px 0 0;font:700 26px/1.1 'DM Sans',sans-serif">Nearby Hotels</h3>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.55;max-width:none">If glamping isn't quite your thing, there are plenty of lovely places to stay nearby. We've included a few options below that are within easy reach of Martinstown House. <b>Just remember that transport to and from the venue will need to be arranged separately.</b></p>
+<ul style="margin:12px 0 0;padding-left:20px;display:grid;gap:6px;font-size:15px;line-height:1.45"><li>A range of hotels within a short drive</li><li>Taxis back to Kildare town</li><li>Book early — August is busy</li></ul>
+</div>
+</div>
+
+<div style="padding:60px 16px 0">
+<h2 style="margin:0;font-family:'Bowlby One',Arial Black,sans-serif;text-transform:uppercase;letter-spacing:-.03em;line-height:.9;font-size:46px">FAQs</h2>
+<p style="margin:10px 0 0;font-size:16px;line-height:1.55">Quick answers to the big (and small) questions.</p>
+<div style="margin-top:18px;border-top:1px solid #D9D5CD">
+<sc-for list="{{ faqsM }}" as="f" hint-placeholder-count="6">
+<div style="border-bottom:1px solid #D9D5CD">
+<button type="button" onClick="{{ f.toggle }}" aria-expanded="{{ f.open }}" style="width:100%;display:grid;grid-template-columns:minmax(0,1fr) 28px;gap:14px;align-items:center;min-height:56px;padding:14px 0;background:none;border:0;cursor:pointer;text-align:left;font:700 16px/1.35 'DM Sans',sans-serif;color:#111">
+<span>{{ f.q }}</span><span style="font-size:22px;text-align:right;line-height:1">{{ f.sign }}</span>
+</button>
+<sc-if value="{{ f.open }}" hint-placeholder-val="{{ false }}">
+<p style="margin:0;padding:0 24px 18px 0;font-size:15px;line-height:1.6">{{ f.a }}</p>
+</sc-if>
+</div>
+</sc-for>
+</div>
+</div>
+
+<div style="margin-top:60px;padding:0 16px">
+<div style="background:#F3F0EA;padding:36px 22px">
+<h2 style="margin:0;font-family:'Bowlby One',Arial Black,sans-serif;text-transform:uppercase;letter-spacing:-.03em;line-height:.88;font-size:66px">RSVP</h2>
+<p style="margin:14px 0 0;font-size:16px;line-height:1.6">Lorem ipsum dolor sit amet, consectetur adipiscing — by [date].</p>
+<a href="#1b" style="margin-top:20px;display:flex;align-items:center;justify-content:center;gap:12px;min-height:54px;background:#F58BC1;color:#111;text-decoration:none;font:700 14px/1 'DM Sans',sans-serif;letter-spacing:.12em;text-transform:uppercase">Reply now <span aria-hidden="true" style="display:inline-flex;width:21px"><svg aria-hidden="true" width="21" height="21" viewBox="0 0 100 100" fill="none" stroke="currentColor" style="display:block"><path d="M12 50H84M65 30L85 50L65 70" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a>
+<div style="margin-top:22px;font-size:15px;line-height:1.8"><div>[email address]</div><div>[phone number]</div></div>
+<div style="margin-top:10px;font-family:Caveat,cursive;font-weight:700;font-size:26px;transform:rotate(-2deg);display:inline-block">Just ask ♥</div>
+</div>
+</div>
+
+<div style="margin-top:36px;padding:20px 16px 26px;border-top:1px solid #D9D5CD;display:flex;justify-content:space-between;font:700 10px/1 'DM Sans',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8a857c">
+<span>K + P</span><span>Good times ahead</span><span>2027</span>
+</div>
+
+</div></div>
+
+</div><p class="dv-next">Try next: "drop in the real copy and dates" · "make the hero in <a class="dv-oid" href="#1a">1a</a> full-bleed with the photo behind the type" · "show me two alternative event-section layouts"</p>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const FAQS = [
+  ["Who is invited to which events?", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."],
+  ["How do I RSVP?", "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."],
+  ["What should I wear?", "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."],
+  ["Can I bring children?", "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."],
+  ["Is there parking at the venue?", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."],
+  ["What happens at a Sangeet?", "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur."],
+  ["What if it rains?", "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit."]
+];
+
+class Component extends DCLogic {
+  state = { open: {} };
+  list(scope) {
+    return FAQS.map((f, i) => {
+      const key = scope + i;
+      const open = !!this.state.open[key];
+      return {
+        q: f[0], a: f[1], open, sign: open ? "\u00d7" : "+",
+        toggle: () => this.setState(s => ({ open: Object.assign({}, s.open, { [key]: !s.open[key] }) }))
+      };
+    });
+  }
+  renderVals() {
+    return { faqsD: this.list("d"), faqsM: this.list("m") };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "colors": {
+    "paper": "#FFFDF8",
+    "ink": "#111111",
+    "pink": "#F58BC1",
+    "yellow": "#FFD92F",
+    "blue": "#28AEEF",
+    "lilac": "#C7A6F4",
+    "green": "#36C86B",
+    "muted": "#F3F0EA",
+    "line": "#D9D5CD"
+  },
+  "fonts": {
+    "display": "Bowlby One SC",
+    "body": "Inter",
+    "handwritten": "Caveat"
+  },
+  "breakpoints": {
+    "mobileMax": 699,
+    "tabletMin": 700,
+    "desktopMin": 1024
+  },
+  "layout": {
+    "maxWidth": 1180,
+    "mobileGutter": 16,
+    "desktopGutter": 24
+  }
+}
