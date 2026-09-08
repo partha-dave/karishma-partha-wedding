@@ -600,19 +600,10 @@ a { color: inherit; }
 
 /* ---------- Weekend schedule ---------- */
 .schedule__grid { display: grid; gap: 20px; }
-@media (min-width: 960px) { .schedule__grid { grid-template-columns: minmax(0,1.15fr) minmax(0,.85fr); gap: 36px; align-items: start; } }
 .schedule__title { margin: 0; font-family: var(--font-display); text-transform: uppercase; letter-spacing: -.03em; line-height: .92; font-size: 40px; }
 @media (min-width: 960px) { .schedule__title { font-size: 64px; } }
 .schedule__subline { margin-top: 12px; font-size: 24px; line-height: 1.1; }
 @media (min-width: 960px) { .schedule__subline { margin-top: 16px; font-size: 30px; } }
-
-.schedule__notes { display: flex; align-items: flex-start; gap: 16px; flex-wrap: wrap; }
-@media (min-width: 960px) { .schedule__notes { gap: 26px; justify-content: flex-end; } }
-.schedule__notes .sticker-note { padding: 18px 16px; font-size: 22px; line-height: 1.15; }
-@media (min-width: 960px) { .schedule__notes .sticker-note { padding: 22px 20px; font-size: 26px; } }
-.schedule__notes .sticker-note--pink { background: var(--pink-light); transform: rotate(-2deg); }
-.schedule__notes .sticker-note--underline { transform: rotate(4deg); border-bottom: 3px solid var(--ink); padding-bottom: 6px; align-self: flex-start; }
-.schedule__notes .starburst { color: var(--yellow); transform: rotate(6deg); }
 
 .schedule-cards { margin-top: 26px; display: grid; gap: 18px; }
 @media (min-width: 960px) { .schedule-cards { margin-top: 40px; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 28px; } }
@@ -844,10 +835,10 @@ a { color: inherit; }
 @media (min-width: 960px) { .hotels-card__list { margin-top: 16px; gap: 7px; font-size: 16px; } }
 
 /* ---------- FAQs ---------- */
-.faqs__head { display: flex; flex-direction: column; gap: 6px; }
-@media (min-width: 960px) { .faqs__head { flex-direction: row; align-items: baseline; gap: 20px; } }
+.faqs__head { display: flex; flex-direction: column; gap: 10px; }
 .faqs__title { margin: 0; font-family: var(--font-display); text-transform: uppercase; letter-spacing: -.03em; line-height: .9; font-size: 46px; }
 @media (min-width: 960px) { .faqs__title { font-size: 64px; } }
+.faqs__title-s { font-size: .62em; }
 .faqs__intro { font-size: 22px; line-height: 1.1; }
 @media (min-width: 960px) { .faqs__intro { font-size: 26px; } }
 
