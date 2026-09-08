@@ -134,7 +134,9 @@ a { color: inherit; }
 .btn--ghost {
   background: rgba(255,255,255,.55);
   justify-content: center;
+  margin-top: 18px;
 }
+@media (min-width: 960px) { .btn--ghost { margin-top: 22px; } }
 .btn--block { display: flex; width: 100%; }
 
 /* svg arrow used throughout */
