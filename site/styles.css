@@ -859,7 +859,8 @@ a { color: inherit; }
 .stay-card--stables .stay-card__photo-tape { background: var(--blue); }
 .stay-card__photo { position: relative; background: #fff; padding: 7px; box-shadow: 0 10px 24px rgba(17,17,17,.16); transform: rotate(-1.2deg); }
 @media (min-width: 960px) { .stay-card__photo { padding: 9px; } }
-.stay-card__photo .placeholder { aspect-ratio: 16/10; }
+.stay-card__photo .placeholder,
+.stay-card__photo img { display: block; width: 100%; aspect-ratio: 16/10; object-fit: cover; }
 .stay-card__pill { position: absolute; top: 15px; left: 15px; background: var(--cream); border-radius: 999px; padding: 6px 12px; font: 500 12px/1 var(--font-body); box-shadow: 0 2px 8px rgba(17,17,17,.12); }
 @media (min-width: 960px) { .stay-card__pill { top: 20px; left: 20px; padding: 8px 16px; font-size: 14px; } }
 
@@ -900,8 +901,12 @@ a { color: inherit; }
 @media (min-width: 960px) { .hotels-card__photo-tape { left: 26%; width: 96px; height: 26px; } }
 .hotels-card__photo { position: relative; background: #fff; padding: 7px; box-shadow: 0 10px 24px rgba(17,17,17,.16); transform: rotate(-1.2deg); }
 @media (min-width: 960px) { .hotels-card__photo { padding: 9px; } }
-.hotels-card__photo .placeholder { aspect-ratio: 16/9; }
-@media (min-width: 960px) { .hotels-card__photo .placeholder { aspect-ratio: 32/9; } }
+.hotels-card__photo .placeholder,
+.hotels-card__photo img { display: block; width: 100%; aspect-ratio: 16/9; object-fit: cover; }
+@media (min-width: 960px) {
+  .hotels-card__photo .placeholder,
+  .hotels-card__photo img { aspect-ratio: 32/9; }
+}
 .hotels-card__title { margin: 18px 0 0; font: 700 26px/1.1 var(--font-body); }
 @media (min-width: 960px) { .hotels-card__title { margin-top: 22px; font-size: 32px; } }
 .hotels-card__copy { margin-top: 10px; font-size: 15px; line-height: 1.55; }
