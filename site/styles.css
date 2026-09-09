@@ -829,8 +829,10 @@ a { color: inherit; }
 .hotels__subline { margin-top: 14px; font-size: 22px; line-height: 1; border-bottom: 3px solid var(--ink); display: inline-block; padding-bottom: 6px; }
 @media (min-width: 960px) { .hotels__subline { margin-top: 18px; font-size: 27px; } }
 
-.hotels__polaroids { position: relative; flex: none; align-self: center; display: flex; align-items: flex-end; padding: 4px 38px 30px 4px; }
-@media (min-width: 960px) { .hotels__polaroids { padding: 8px 58px 40px 4px; } }
+.hotels__polaroids { display: none; }
+@media (min-width: 960px) {
+  .hotels__polaroids { position: relative; flex: none; align-self: center; display: flex; align-items: flex-end; padding: 8px 58px 40px 4px; }
+}
 
 .hotel-polaroid { position: relative; width: 92px; flex: none; background: #fff; padding: 5px 5px 16px; box-shadow: 0 8px 16px rgba(17,17,17,.16); }
 .hotel-polaroid + .hotel-polaroid { margin-left: -20px; }
