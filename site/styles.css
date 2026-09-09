@@ -820,6 +820,7 @@ a { color: inherit; }
 @media (min-width: 960px) { .hotels__copy { margin-top: 16px; font-size: 16px; } }
 .hotels__subline { margin-top: 14px; font-size: 22px; line-height: 1; border-bottom: 3px solid var(--ink); display: inline-block; padding-bottom: 6px; }
 @media (min-width: 960px) { .hotels__subline { margin-top: 18px; font-size: 27px; } }
+.hotels__subline-heart { height: .62em; width: auto; display: inline-block; vertical-align: -0.06em; margin-left: 4px; }
 
 .hotels__polaroids { display: none; }
 @media (min-width: 960px) {
