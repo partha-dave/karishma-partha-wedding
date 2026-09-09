@@ -832,22 +832,22 @@ a { color: inherit; }
 .hotels__polaroids { position: relative; flex: none; align-self: center; display: flex; align-items: flex-end; padding: 4px 38px 30px 4px; }
 @media (min-width: 960px) { .hotels__polaroids { padding: 8px 58px 40px 4px; } }
 
-.polaroid { position: relative; width: 92px; flex: none; background: #fff; padding: 5px 5px 16px; box-shadow: 0 8px 16px rgba(17,17,17,.16); }
-.polaroid + .polaroid { margin-left: -20px; }
-.polaroid:nth-child(1) { transform: rotate(-6deg); z-index: 1; }
-.polaroid:nth-child(2) { transform: rotate(3deg); z-index: 2; margin-bottom: 16px; }
-.polaroid:nth-child(3) { transform: rotate(-3deg); z-index: 3; }
+.hotel-polaroid { position: relative; width: 92px; flex: none; background: #fff; padding: 5px 5px 16px; box-shadow: 0 8px 16px rgba(17,17,17,.16); }
+.hotel-polaroid + .hotel-polaroid { margin-left: -20px; }
+.hotel-polaroid:nth-child(1) { transform: rotate(-6deg); z-index: 1; }
+.hotel-polaroid:nth-child(2) { transform: rotate(3deg); z-index: 2; margin-bottom: 16px; }
+.hotel-polaroid:nth-child(3) { transform: rotate(-3deg); z-index: 3; }
 @media (min-width: 960px) {
-  .polaroid { width: 140px; padding: 8px 8px 22px; }
-  .polaroid + .polaroid { margin-left: -32px; }
-  .polaroid:nth-child(2) { margin-bottom: 26px; }
+  .hotel-polaroid { width: 140px; padding: 8px 8px 22px; }
+  .hotel-polaroid + .hotel-polaroid { margin-left: -32px; }
+  .hotel-polaroid:nth-child(2) { margin-bottom: 26px; }
 }
-.polaroid__tape { position: absolute; top: -8px; left: 50%; transform: translateX(-50%) rotate(-2deg); width: 42px; height: 15px; opacity: .92; }
-@media (min-width: 960px) { .polaroid__tape { width: 60px; height: 20px; top: -10px; } }
-.polaroid__photo { aspect-ratio: 4/5; display: grid; place-items: center; font: 8px/1.5 ui-monospace, Menlo, monospace; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); text-align: center; }
-@media (min-width: 960px) { .polaroid__photo { font-size: 11px; } }
-.polaroid__label { position: absolute; bottom: 2px; left: 10px; font-size: 14px; }
-@media (min-width: 960px) { .polaroid__label { font-size: 19px; bottom: 4px; left: 14px; } }
+.hotel-polaroid__tape { position: absolute; top: -8px; left: 50%; transform: translateX(-50%) rotate(-2deg); width: 42px; height: 15px; opacity: .92; }
+@media (min-width: 960px) { .hotel-polaroid__tape { width: 60px; height: 20px; top: -10px; } }
+.hotel-polaroid__photo { aspect-ratio: 4/5; display: grid; place-items: center; font: 8px/1.5 ui-monospace, Menlo, monospace; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); text-align: center; }
+@media (min-width: 960px) { .hotel-polaroid__photo { font-size: 11px; } }
+.hotel-polaroid__label { position: absolute; bottom: 2px; left: 10px; font-size: 14px; }
+@media (min-width: 960px) { .hotel-polaroid__label { font-size: 19px; bottom: 4px; left: 14px; } }
 
 .hotels__book-early {
   position: absolute; right: -4px; bottom: -6px; z-index: 4;
