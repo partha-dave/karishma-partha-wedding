@@ -895,13 +895,14 @@ a { color: inherit; }
 .hotel-card__body .btn { margin-top: 14px; }
 @media (min-width: 960px) { .hotel-card__body .btn { margin-top: 18px; } }
 
-.rooms-reserved-bar { margin-top: 24px; background: var(--cream); border: 1px solid var(--line); padding: 18px; display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
-@media (min-width: 960px) { .rooms-reserved-bar { margin-top: 34px; padding: 22px 30px; flex-wrap: nowrap; gap: 24px; } }
+.rooms-reserved-bar { margin-top: 24px; background: var(--cream); border: 1px solid var(--line); padding: 18px; display: flex; align-items: flex-start; gap: 14px; flex-wrap: wrap; }
+@media (min-width: 960px) { .rooms-reserved-bar { align-items: center; margin-top: 34px; padding: 22px 30px; flex-wrap: nowrap; gap: 24px; } }
 
-.rooms-reserved-bar__icon { flex: none; width: 72px; height: 72px; }
+.rooms-reserved-bar__icon { flex: none; width: 56px; height: 56px; }
 @media (min-width: 960px) { .rooms-reserved-bar__icon { width: 92px; height: 92px; } }
 
-.rooms-reserved-bar__text { flex: 1; min-width: 220px; }
+.rooms-reserved-bar__text { flex: 1 1 0%; min-width: 0; }
+@media (min-width: 960px) { .rooms-reserved-bar__text { min-width: 220px; } }
 .rooms-reserved-bar__text h4 { margin: 0; font: 700 16px/1.2 var(--font-body); text-transform: uppercase; letter-spacing: .04em; }
 @media (min-width: 960px) { .rooms-reserved-bar__text h4 { font-size: 19px; } }
 .rooms-reserved-bar__text p { margin: 6px 0 0; font-size: 13.5px; line-height: 1.5; }
