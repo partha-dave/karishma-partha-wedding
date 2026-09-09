@@ -251,13 +251,12 @@ a { color: inherit; }
   position: absolute;
   top: -16px;
   right: 8px;
-  font-size: 44px;
-  line-height: 1;
-  color: var(--pink);
+  width: 40px;
+  height: auto;
   transform: rotate(8deg);
   z-index: 5;
 }
-@media (min-width: 960px) { .hero__heart { top: -6px; right: 6px; font-size: 56px; } }
+@media (min-width: 960px) { .hero__heart { top: -6px; right: 6px; width: 52px; } }
 
 .polaroid {
   position: relative;
