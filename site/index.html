@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=10">
+<link rel="stylesheet" href="styles.css?v=11">
 </head>
 <body>
 
@@ -47,6 +47,25 @@
     <path d="M4 16h24" fill="none" stroke="#111" stroke-width="3.4" stroke-linecap="round"/>
     <circle cx="9.5" cy="20" r="1.6" fill="#111"/>
     <circle cx="22.5" cy="20" r="1.6" fill="#111"/>
+  </symbol>
+  <symbol id="icon-people" viewBox="0 0 32 32">
+    <circle cx="12" cy="10" r="4.4" fill="none" stroke="currentColor" stroke-width="2.3"/>
+    <path d="M4 27c0-5.6 3.4-9 8-9s8 3.4 8 9" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/>
+    <circle cx="23" cy="9" r="3.6" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="M18.5 27c.3-4.6 2.6-7.4 6.3-7.4S31 22 31.2 26.4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="icon-glass" viewBox="0 0 32 32">
+    <path d="M9 3h14l-1.6 12.4a5.4 5.4 0 0 1-10.8 0L9 3z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+    <path d="M16 15.5V27M10.5 29h11" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="icon-fork" viewBox="0 0 32 32">
+    <path d="M8 3v9a2.5 2.5 0 0 0 5 0V3M10.5 12v17" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M23 3c-2.2 0-4 2.6-4 6.5S20.8 16 23 16v13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="icon-golf" viewBox="0 0 32 32">
+    <path d="M9 29V3" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/>
+    <path d="M9 4l13 5.5L9 15V4z" fill="currentColor"/>
+    <ellipse cx="9" cy="29" rx="7" ry="2" fill="none" stroke="currentColor" stroke-width="2"/>
   </symbol>
   <symbol id="icon-mail" viewBox="0 0 24 24">
     <rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -475,20 +494,98 @@
     </div>
   </div>
 
-  <div class="hotels-card">
-    <div class="hotels-card__photo-wrap">
-      <div class="hotels-card__photo-tape" aria-hidden="true"></div>
-      <div class="hotels-card__photo">
-        <img src="images/hotel.jpg" alt="Kildare House Hotel exterior">
+  <div class="hotels">
+    <div class="hotels__head">
+      <div class="hotels__intro">
+        <h3 class="hotels__title">Nearby<br>Hotels</h3>
+        <p class="hotels__copy">If glamping isn't quite your thing, there are plenty of lovely places to stay nearby. We've put together a few options that are all within easy reach of Martinstown House. <b>Just remember that transport to and from the venue will need to be arranged separately.</b></p>
+        <div class="hotels__subline hand">Same beautiful weekend, different beds ♡︎</div>
+      </div>
+      <div class="hotels__polaroids" aria-hidden="true">
+        <div class="polaroid">
+          <span class="polaroid__tape" style="background:var(--pink)"></span>
+          <div class="polaroid__photo placeholder placeholder--center">Hotel<br>photo here</div>
+          <span class="polaroid__label hand">Option 1</span>
+        </div>
+        <div class="polaroid">
+          <span class="polaroid__tape" style="background:var(--blue)"></span>
+          <div class="polaroid__photo placeholder placeholder--center">Hotel<br>photo here</div>
+          <span class="polaroid__label hand">Option 2</span>
+        </div>
+        <div class="polaroid">
+          <span class="polaroid__tape" style="background:var(--yellow)"></span>
+          <div class="polaroid__photo placeholder placeholder--center">Hotel<br>photo here</div>
+          <span class="polaroid__label hand">Option 3</span>
+        </div>
+        <span class="hotels__book-early hand">Book<br>early!</span>
       </div>
     </div>
-    <h3 class="hotels-card__title">Nearby Hotels</h3>
-    <p class="hotels-card__copy">If glamping isn't quite your thing, there are plenty of lovely places to stay nearby. We've included a few options below that are within easy reach of Martinstown House. <b>Just remember that transport to and from the venue will need to be arranged separately.</b></p>
-    <ul class="hotels-card__list">
-      <li>A range of hotels within a short drive</li>
-      <li>Taxis back to Kildare town</li>
-      <li>Book early — August is busy</li>
-    </ul>
+
+    <div class="hotel-cards">
+      <div class="hotel-card">
+        <div class="hotel-card__photo">
+          <div class="placeholder placeholder--center">Hotel<br>photo here</div>
+          <span class="hotel-card__time" style="background:var(--yellow)">15<b>mins</b><svg width="13" height="13" aria-hidden="true"><use href="#icon-car"/></svg></span>
+        </div>
+        <div class="hotel-card__body">
+          <h4 class="hotel-card__title">The K Club</h4>
+          <span class="hotel-card__place">Straffan, Co. Kildare</span>
+          <p class="hotel-card__copy">A luxury 5★ hotel set in stunning grounds, just a short drive from Martinstown House. Perfect if you're after a little extra comfort (and maybe a spa!).</p>
+          <div class="hotel-card__tags">
+            <span><svg width="18" height="18" aria-hidden="true"><use href="#icon-car"/></svg>Luxury</span>
+            <span><svg width="18" height="18" aria-hidden="true"><use href="#icon-people"/></svg>Great for couples</span>
+            <span><svg width="18" height="18" aria-hidden="true"><use href="#icon-glass"/></svg>Spa &amp; dining</span>
+          </div>
+          <a href="#" class="btn btn--pink btn--block">Visit website <svg class="icon-arrow" width="18" height="18" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+        </div>
+      </div>
+
+      <div class="hotel-card">
+        <div class="hotel-card__photo">
+          <div class="placeholder placeholder--center">Hotel<br>photo here</div>
+          <span class="hotel-card__time" style="background:var(--blue-light)">20<b>mins</b><svg width="13" height="13" aria-hidden="true"><use href="#icon-car"/></svg></span>
+        </div>
+        <div class="hotel-card__body">
+          <h4 class="hotel-card__title">The Keadeen Hotel</h4>
+          <span class="hotel-card__place">Newbridge, Co. Kildare</span>
+          <p class="hotel-card__copy">A stylish and modern hotel with great amenities, located in Newbridge. A convenient and comfortable option with easy access to the venue.</p>
+          <div class="hotel-card__tags">
+            <span><svg width="18" height="18" aria-hidden="true"><use href="#icon-car"/></svg>Mid-range</span>
+            <span><svg width="18" height="18" aria-hidden="true"><use href="#icon-people"/></svg>Great for couples &amp; groups</span>
+            <span><svg width="18" height="18" aria-hidden="true"><use href="#icon-fork"/></svg>Restaurant &amp; bar</span>
+          </div>
+          <a href="#" class="btn btn--pink btn--block">Visit website <svg class="icon-arrow" width="18" height="18" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+        </div>
+      </div>
+
+      <div class="hotel-card">
+        <div class="hotel-card__photo">
+          <div class="placeholder placeholder--center">Hotel<br>photo here</div>
+          <span class="hotel-card__time" style="background:var(--yellow)">25<b>mins</b><svg width="13" height="13" aria-hidden="true"><use href="#icon-car"/></svg></span>
+        </div>
+        <div class="hotel-card__body">
+          <h4 class="hotel-card__title">Moyvalley Hotel &amp; Golf Resort</h4>
+          <span class="hotel-card__place">Moyvalley, Co. Kildare</span>
+          <p class="hotel-card__copy">A contemporary hotel and golf resort set in beautiful surroundings. A great option if you're looking to make a weekend of it.</p>
+          <div class="hotel-card__tags">
+            <span><svg width="18" height="18" aria-hidden="true"><use href="#icon-car"/></svg>Mid-range</span>
+            <span><svg width="18" height="18" aria-hidden="true"><use href="#icon-people"/></svg>Great for families</span>
+            <span><svg width="18" height="18" aria-hidden="true"><use href="#icon-golf"/></svg>Golf &amp; leisure</span>
+          </div>
+          <a href="#" class="btn btn--pink btn--block">Visit website <svg class="icon-arrow" width="18" height="18" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="getting-there-bar">
+      <span class="getting-there-bar__icon"><img src="icons/ws-bus-t.png" alt="" aria-hidden="true"></span>
+      <div class="getting-there-bar__text">
+        <h4>Getting there</h4>
+        <p>Coaches will be arranged from Dublin to Kildare on Saturday for close family and friends. More details (including pick-up points and timings) will be shared closer to the date.</p>
+      </div>
+      <span class="getting-there-bar__divider" aria-hidden="true"></span>
+      <span class="getting-there-bar__note hand">Don't be a Kevin<br>and get left behind!</span>
+    </div>
   </div>
 </section>
 
@@ -552,6 +649,6 @@
   <span>K + P</span><span>Good times ahead</span><span>2027</span>
 </footer>
 
-<script src="script.js?v=10"></script>
+<script src="script.js?v=11"></script>
 </body>
 </html>
