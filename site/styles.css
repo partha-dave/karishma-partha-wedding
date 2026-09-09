@@ -241,8 +241,8 @@ a { color: inherit; }
   padding-bottom: 4px;
 }
 @media (min-width: 960px) { .hero__tag { font-size: 30px; transform: rotate(-2deg); border-bottom: 0; padding-bottom: 0; } }
-.hero__tag-heart { font-size: 26px; transform: rotate(6deg); }
-@media (min-width: 960px) { .hero__tag-heart { font-size: 30px; } }
+.hero__tag-heart { width: 24px; height: auto; transform: rotate(6deg); }
+@media (min-width: 960px) { .hero__tag-heart { width: 28px; } }
 
 .hero__photo { position: relative; padding: 10px 0 46px; }
 @media (min-width: 960px) { .hero__photo { padding: 10px 0 40px; } }
@@ -276,8 +276,8 @@ a { color: inherit; }
 .polaroid--hero .placeholder { aspect-ratio: 4/5; }
 .polaroid--hero__photo { display: block; width: 100%; aspect-ratio: 4/5; object-fit: cover; }
 
-.tape--hero-1 { top: -11px; left: -14px; transform: rotate(-34deg); }
-.tape--hero-2 { bottom: 26px; right: 0; width: 66px; height: 22px; transform: rotate(-28deg); }
+.tape--hero-1 { top: -11px; left: -14px; transform: rotate(-34deg); background: var(--purple); border-color: var(--purple); }
+.tape--hero-2 { bottom: 26px; right: 0; width: 66px; height: 22px; transform: rotate(-28deg); background: var(--yellow); border-color: var(--yellow); }
 @media (min-width: 960px) {
   .tape--hero-1 { top: -13px; left: -18px; width: 84px; height: 26px; }
   .tape--hero-2 { bottom: 30px; right: -18px; width: 76px; height: 24px; }
@@ -304,7 +304,7 @@ a { color: inherit; }
   text-align: right;
 }
 @media (min-width: 960px) { .hero__note { bottom: 10px; right: 6px; font-size: 36px; } }
-.hero__note span { font-size: .8em; }
+.hero__note span { font-size: .8em; color: var(--pink); }
 
 /* ---------- Our journey ---------- */
 .journey__head { text-align: center; }
