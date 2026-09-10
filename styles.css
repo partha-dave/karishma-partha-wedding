@@ -483,8 +483,8 @@ a { color: inherit; }
 .venue__title-flower { position: absolute; right: -6px; bottom: -14px; transform: rotate(12deg); color: var(--pink); }
 @media (min-width: 960px) { .venue__title-flower { right: -58px; bottom: 6px; } }
 
-.venue__meta { margin-top: 16px; font-size: 16px; line-height: 1.5; }
-@media (min-width: 960px) { .venue__meta { margin-top: 22px; font-size: 17px; } }
+.venue__meta { margin-top: 16px; font-size: 22px; line-height: 1.2; }
+@media (min-width: 960px) { .venue__meta { margin-top: 22px; font-size: 27px; } }
 .venue__copy { margin-top: 12px; font-size: 16px; line-height: 1.6; max-width: 560px; }
 @media (min-width: 960px) { .venue__copy { margin-top: 16px; font-size: 17px; } }
 
