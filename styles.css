@@ -736,8 +736,8 @@ a { color: inherit; }
 
 .stay__accom-badge { display: block; flex: none; margin-left: auto; transform: rotate(4deg); transition: transform .15s ease; }
 .stay__accom-badge:hover { transform: rotate(0deg) scale(1.03); }
-.stay__accom-badge img { display: block; width: 120px; height: auto; }
-@media (min-width: 960px) { .stay__accom-badge img { width: 168px; } }
+.stay__accom-badge img { display: block; width: 170px; height: auto; }
+@media (min-width: 960px) { .stay__accom-badge img { width: 240px; } }
 .stay__subline { margin-top: 10px; font-size: 26px; line-height: 1; border-bottom: 3px solid var(--ink); display: inline-block; padding-bottom: 6px; }
 @media (min-width: 960px) { .stay__subline { margin-top: 12px; font-size: 34px; } }
 .stay__intro { margin-top: 16px; }
