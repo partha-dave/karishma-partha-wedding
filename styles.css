@@ -462,6 +462,12 @@ a { color: inherit; }
   .ticket__place-arrow { margin-top: 16px; display: flex; justify-content: flex-end; }
 }
 
+.ticket__details { margin-top: 10px; display: grid; gap: 5px; }
+@media (min-width: 960px) { .ticket__details { margin-top: 12px; gap: 6px; } }
+.ticket__detail { display: flex; align-items: center; gap: 6px; font-size: 12.5px; line-height: 1.3; }
+@media (min-width: 960px) { .ticket__detail { font-size: 13.5px; } }
+.ticket__detail svg { flex: none; }
+
 /* ---------- Venue ---------- */
 .venue { position: relative; }
 .venue__grid { display: grid; gap: 30px; }
