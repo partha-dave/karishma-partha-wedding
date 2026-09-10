@@ -965,6 +965,7 @@ a { color: inherit; }
 @media (min-width: 960px) { .ask-panel__method-label { font-size: 12px; } }
 .ask-panel__method-value { margin-top: 4px; font-size: 17px; overflow-wrap: anywhere; }
 @media (min-width: 960px) { .ask-panel__method-value { font-size: 18px; } }
+.ask-panel__method-value a { text-decoration: none; }
 
 .ask-panel__col--aside { display: flex; flex-direction: column; align-items: flex-start; gap: 18px; }
 @media (min-width: 960px) { .ask-panel__col--aside { align-items: center; } }
