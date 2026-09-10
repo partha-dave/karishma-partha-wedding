@@ -732,10 +732,11 @@ a { color: inherit; }
 .stay__bed-icon { width: 47px; height: 42px; }
 @media (min-width: 960px) { .stay__bed-icon { width: 67px; height: 60px; } }
 
-.stay__accom-badge { display: flex; flex-direction: column; align-items: center; flex: none; margin-left: auto; transform: rotate(4deg); transition: transform .15s ease; }
+.stay__accom-badge { position: relative; display: block; flex: none; margin-left: auto; transform: rotate(4deg); transition: transform .15s ease; }
 .stay__accom-badge:hover { transform: rotate(0deg) scale(1.03); }
 .stay__accom-badge-img { display: block; width: clamp(96px, 34vw, 170px); height: auto; }
 @media (min-width: 960px) { .stay__accom-badge-img { width: 240px; } }
+.stay__accom-badge-sticker { position: absolute; bottom: -8px; right: -12px; width: 34%; height: auto; z-index: 3; filter: drop-shadow(0 4px 8px rgba(17,17,17,.18)); }
 .stay__subline-photo { display: block; width: 200px; margin-top: 12px; background: #fff; padding: 6px; box-shadow: 0 10px 22px rgba(17,17,17,.16); transform: rotate(-2deg); transition: transform .15s ease; }
 .stay__subline-photo:hover { transform: rotate(0deg) scale(1.02); }
 .stay__subline-photo img { display: block; width: 100%; aspect-ratio: 4/3; object-fit: cover; }
