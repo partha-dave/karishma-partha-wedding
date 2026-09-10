@@ -736,11 +736,10 @@ a { color: inherit; }
 .stay__accom-badge:hover { transform: rotate(0deg) scale(1.03); }
 .stay__accom-badge-img { display: block; width: clamp(96px, 34vw, 170px); height: auto; }
 @media (min-width: 960px) { .stay__accom-badge-img { width: 240px; } }
-.stay__accom-badge-sticker { position: absolute; bottom: -8px; right: -12px; width: 34%; height: auto; z-index: 3; filter: drop-shadow(0 4px 8px rgba(17,17,17,.18)); }
-.stay__subline-photo { display: block; width: 200px; margin-top: 12px; background: #fff; padding: 6px; box-shadow: 0 10px 22px rgba(17,17,17,.16); transform: rotate(-2deg); transition: transform .15s ease; }
-.stay__subline-photo:hover { transform: rotate(0deg) scale(1.02); }
-.stay__subline-photo img { display: block; width: 100%; aspect-ratio: 4/3; object-fit: cover; }
-@media (min-width: 960px) { .stay__subline-photo { width: 260px; margin-top: 16px; } }
+.stay__subline-photo { display: block; width: 220px; margin-top: 12px; transition: transform .15s ease; }
+.stay__subline-photo:hover { transform: scale(1.03); }
+.stay__subline-photo img { display: block; width: 100%; height: auto; }
+@media (min-width: 960px) { .stay__subline-photo { width: 300px; margin-top: 16px; } }
 .stay__intro { margin-top: 16px; }
 @media (min-width: 960px) { .stay__intro { margin-top: 20px; } }
 
