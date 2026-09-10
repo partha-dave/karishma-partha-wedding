@@ -727,12 +727,17 @@ a { color: inherit; }
 /* ---------- Stay ---------- */
 .stay__grid { display: grid; gap: 18px; }
 @media (min-width: 960px) { .stay__grid { grid-template-columns: minmax(0,1.05fr) minmax(0,.95fr); gap: 32px; align-items: start; } }
-.stay__head-row { display: flex; align-items: center; gap: 12px; }
+.stay__head-row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
 @media (min-width: 960px) { .stay__head-row { gap: 18px; } }
 .stay__title { margin: 0; font-family: var(--font-display); text-transform: uppercase; letter-spacing: -.03em; line-height: .9; font-size: 46px; }
 @media (min-width: 960px) { .stay__title { font-size: 72px; } }
 .stay__bed-icon { width: 47px; height: 42px; }
 @media (min-width: 960px) { .stay__bed-icon { width: 67px; height: 60px; } }
+
+.stay__accom-badge { display: block; flex: none; margin-left: auto; transform: rotate(4deg); transition: transform .15s ease; }
+.stay__accom-badge:hover { transform: rotate(0deg) scale(1.03); }
+.stay__accom-badge img { display: block; width: 120px; height: auto; }
+@media (min-width: 960px) { .stay__accom-badge img { width: 168px; } }
 .stay__subline { margin-top: 10px; font-size: 26px; line-height: 1; border-bottom: 3px solid var(--ink); display: inline-block; padding-bottom: 6px; }
 @media (min-width: 960px) { .stay__subline { margin-top: 12px; font-size: 34px; } }
 .stay__intro { margin-top: 16px; }
