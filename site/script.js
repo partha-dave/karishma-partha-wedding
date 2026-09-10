@@ -1,6 +1,6 @@
 (function () {
   var FAQS = [
-    ["Where's the best place to stay?", "We'd love to have our nearest and dearest stay on site at Martinstown House with us over the wedding weekend. So do consider the Stables and Glamping. If those don't quite meet your needs, get in touch and we can allocate one of our pre-booked rooms. Take our quiz to help you decide."],
+    ["Where's the best place to stay?", "We'd love to have our nearest and dearest stay on site at Martinstown House with us over the wedding weekend. So do consider the Stables and Glamping. If those don't quite meet your needs, get in touch and we can allocate one of our pre-booked rooms. <a href=\"quiz.html\">Take our quiz</a> to help you decide."],
     ["I'm not staying at the venue. How do I get there?", "You'll need to pre-book a mini cab."],
     ["What time will the events finish at Martinstown House?", "There is no cut off time for any of the events. We expect all events to go on till the early hours!"],
     ["What time will the wedding day start?", "Exact timing TBC, but we expect it to be around midday."],
@@ -40,7 +40,7 @@
     var a = document.createElement("p");
     a.className = "faq-item__a";
     a.id = "faq-answer-" + i;
-    a.textContent = answer;
+    a.innerHTML = answer;
     a.hidden = true;
 
     button.addEventListener("click", function () {
