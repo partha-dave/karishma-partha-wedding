@@ -874,17 +874,35 @@ a { color: inherit; }
 .hotel-card__body .btn { margin-top: 14px; }
 @media (min-width: 960px) { .hotel-card__body .btn { margin-top: 18px; } }
 
-.rooms-reserved-bar { margin-top: 24px; background: var(--cream); border: 1px solid var(--line); padding: 18px; display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
-@media (min-width: 960px) { .rooms-reserved-bar { margin-top: 34px; padding: 22px 30px; flex-wrap: nowrap; gap: 24px; } }
+.rooms-reserved-bar { margin-top: 24px; background: var(--cream); border: 1px solid var(--line); padding: 22px 18px; display: flex; flex-direction: column; align-items: center; gap: 14px; }
+@media (min-width: 960px) { .rooms-reserved-bar { margin-top: 34px; padding: 22px 30px; flex-direction: row; align-items: center; flex-wrap: nowrap; gap: 24px; } }
 
-.rooms-reserved-bar__icon { flex: none; width: 72px; height: 72px; }
-@media (min-width: 960px) { .rooms-reserved-bar__icon { width: 92px; height: 92px; } }
+.rooms-reserved-bar__row { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 10px 14px; width: 100%; }
+@media (min-width: 960px) { .rooms-reserved-bar__row { flex-wrap: nowrap; align-items: center; gap: 24px; width: auto; flex: 1; } }
 
-.rooms-reserved-bar__text { flex: 1; min-width: 220px; }
-.rooms-reserved-bar__text h4 { margin: 0; font: 700 16px/1.2 var(--font-body); text-transform: uppercase; letter-spacing: .04em; }
-@media (min-width: 960px) { .rooms-reserved-bar__text h4 { font-size: 19px; } }
+.rooms-reserved-bar__content { display: contents; }
+@media (min-width: 960px) { .rooms-reserved-bar__content { display: block; flex: 1; min-width: 220px; } }
+
+.rooms-reserved-bar__heading { order: 1; flex-basis: 100%; display: flex; align-items: center; justify-content: center; gap: 8px; }
+@media (min-width: 960px) { .rooms-reserved-bar__heading { display: block; } }
+
+.rooms-reserved-bar__flourish { flex: none; color: var(--ink); opacity: .5; }
+.rooms-reserved-bar__flourish--right { transform: scaleX(-1); }
+@media (min-width: 960px) { .rooms-reserved-bar__flourish { display: none; } }
+
+.rooms-reserved-bar__squiggle { order: 2; flex-basis: 100%; display: block; margin: 0 auto; }
+@media (min-width: 960px) { .rooms-reserved-bar__squiggle { display: none; } }
+
+.rooms-reserved-bar__icon { order: 3; flex: none; width: 64px; height: 64px; }
+@media (min-width: 960px) { .rooms-reserved-bar__icon { order: 0; width: 92px; height: 92px; } }
+
+.rooms-reserved-bar__heading h4 { margin: 0; font: 700 16px/1.2 var(--font-body); text-transform: uppercase; letter-spacing: .04em; text-align: center; }
+@media (min-width: 960px) { .rooms-reserved-bar__heading h4 { font-size: 19px; text-align: left; } }
+
+.rooms-reserved-bar__text { order: 4; flex: 1; min-width: 0; }
 .rooms-reserved-bar__text p { margin: 6px 0 0; font-size: 13.5px; line-height: 1.5; }
-@media (min-width: 960px) { .rooms-reserved-bar__text p { margin-top: 8px; font-size: 15px; } }
+.rooms-reserved-bar__text p:first-child { margin-top: 0; }
+@media (min-width: 960px) { .rooms-reserved-bar__text p { margin-top: 8px; font-size: 15px; } .rooms-reserved-bar__text p:first-child { margin-top: 8px; } }
 .rooms-reserved-bar__text strong { font-weight: 700; }
 .rooms-reserved-bar__text a { font-weight: 700; text-decoration: underline; }
 .rooms-reserved-bar__heart { display: inline-block; width: 15px; height: auto; vertical-align: -2px; }
@@ -892,7 +910,7 @@ a { color: inherit; }
 .rooms-reserved-bar__divider { display: none; }
 @media (min-width: 960px) { .rooms-reserved-bar__divider { display: block; flex: none; width: 1px; align-self: stretch; background: var(--line); } }
 
-.rooms-reserved-bar__statement { flex: none; width: 100%; max-width: 240px; height: auto; margin: 4px auto 0; display: block; }
+.rooms-reserved-bar__statement { flex: none; width: 100%; max-width: 240px; height: auto; margin: 0 auto; display: block; }
 @media (min-width: 960px) { .rooms-reserved-bar__statement { width: 220px; margin: 0; } }
 
 /* ---------- FAQs ---------- */
