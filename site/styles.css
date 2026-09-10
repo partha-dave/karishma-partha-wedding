@@ -346,7 +346,8 @@ a { color: inherit; }
 
 .journey__photo { position: relative; background: #fff; padding: 8px; box-shadow: 0 10px 24px rgba(17,17,17,.14); }
 @media (min-width: 960px) { .journey__photo { padding: 10px; box-shadow: 0 10px 24px rgba(17,17,17,.14); } }
-.journey__photo .placeholder { aspect-ratio: 1/1; }
+.journey__photo .placeholder,
+.journey__photo img { display: block; width: 100%; aspect-ratio: 1/1; object-fit: cover; }
 .journey__photo .tape { top: -10px; left: 50%; margin-left: -26px; width: 52px; height: 18px; border: 0; opacity: .92; transform: rotate(-3deg); }
 @media (min-width: 960px) { .journey__photo .tape { top: -12px; margin-left: -32px; width: 64px; height: 22px; } }
 .journey__photo-caption { margin-top: 8px; min-height: 40px; font-size: 19px; line-height: 1.05; }
