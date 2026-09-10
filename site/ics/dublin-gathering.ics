@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Karishma and Partha Wedding//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:dublin-gathering@karishmapartha.wedding
+DTSTAMP:20270101T000000Z
+DTSTART;VALUE=DATE:20270813
+DTEND;VALUE=DATE:20270814
+SUMMARY:Informal gathering in Dublin
+LOCATION:Dublin (venue TBC)
+DESCRIPTION:Informal get-together in Dublin the night before heading to Kildare - completely optional and relaxed.
+END:VEVENT
+END:VCALENDAR

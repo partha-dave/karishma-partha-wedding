@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Karishma and Partha Wedding//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:wedding-reception@karishmapartha.wedding
+DTSTAMP:20270101T000000Z
+DTSTART;VALUE=DATE:20270815
+DTEND;VALUE=DATE:20270816
+SUMMARY:Karishma and Partha's Wedding Ceremony and Reception
+LOCATION:Martinstown House, Co. Kildare
+DESCRIPTION:Wedding ceremony followed by food, drinks, dancing and celebrations. Dress code: Indian.
+END:VEVENT
+END:VCALENDAR

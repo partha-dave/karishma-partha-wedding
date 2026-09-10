@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Karishma and Partha Wedding//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:sangeet@karishmapartha.wedding
+DTSTAMP:20270101T000000Z
+DTSTART;VALUE=DATE:20270814
+DTEND;VALUE=DATE:20270815
+SUMMARY:Sangeet
+LOCATION:Martinstown House, Co. Kildare
+DESCRIPTION:An evening of music, food and dancing to warm up for the wedding day. Dress code: Indo Western.
+END:VEVENT
+END:VCALENDAR

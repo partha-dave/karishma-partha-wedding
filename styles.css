@@ -125,6 +125,7 @@ a { color: inherit; }
 .btn--pink { background: var(--pink); }
 .btn--yellow { background: var(--yellow); font: 500 16px/1 var(--font-body); text-transform: none; letter-spacing: normal; }
 .btn--yellow-fill { background: var(--yellow); }
+.btn--blue-fill { background: var(--blue); }
 .stay-card__cta { justify-content: center; margin-top: 18px; }
 @media (min-width: 960px) { .stay-card__cta { margin-top: 22px; } }
 .btn--ghost {

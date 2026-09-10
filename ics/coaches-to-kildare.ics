@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Karishma and Partha Wedding//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:coaches-to-kildare@karishmapartha.wedding
+DTSTAMP:20270101T000000Z
+DTSTART;VALUE=DATE:20270814
+DTEND;VALUE=DATE:20270815
+SUMMARY:Coaches to Kildare
+LOCATION:Dublin (pickup TBC)
+DESCRIPTION:Coaches from Dublin to Kildare for close family and friends. Pick-up point and timings TBC.
+END:VEVENT
+END:VCALENDAR
