@@ -893,8 +893,8 @@ a { color: inherit; }
 .rooms-reserved-bar__squiggle { order: 2; flex-basis: 100%; display: block; margin: 0 auto; }
 @media (min-width: 960px) { .rooms-reserved-bar__squiggle { display: none; } }
 
-.rooms-reserved-bar__icon { order: 3; flex: none; width: 64px; height: 64px; }
-@media (min-width: 960px) { .rooms-reserved-bar__icon { order: 0; width: 92px; height: 92px; } }
+.rooms-reserved-bar__icon { display: none; }
+@media (min-width: 960px) { .rooms-reserved-bar__icon { display: block; order: 0; flex: none; width: 92px; height: 92px; } }
 
 .rooms-reserved-bar__heading h4 { margin: 0; font: 700 16px/1.2 var(--font-body); text-transform: uppercase; letter-spacing: .04em; text-align: center; }
 @media (min-width: 960px) { .rooms-reserved-bar__heading h4 { font-size: 19px; text-align: left; } }
