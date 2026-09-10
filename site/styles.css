@@ -738,8 +738,6 @@ a { color: inherit; }
 .stay__accom-badge:hover { transform: rotate(0deg) scale(1.03); }
 .stay__accom-badge-img { display: block; width: 170px; height: auto; }
 @media (min-width: 960px) { .stay__accom-badge-img { width: 240px; } }
-.stay__accom-badge-cta { display: block; width: 130px; height: auto; margin-top: -8px; }
-@media (min-width: 960px) { .stay__accom-badge-cta { width: 180px; margin-top: -12px; } }
 .stay__subline { margin-top: 10px; font-size: 26px; line-height: 1; border-bottom: 3px solid var(--ink); display: inline-block; padding-bottom: 6px; }
 @media (min-width: 960px) { .stay__subline { margin-top: 12px; font-size: 34px; } }
 .stay__intro { margin-top: 16px; }
@@ -1072,8 +1070,13 @@ a { color: inherit; }
 .quiz-hero__note-heart { display: inline-block; width: 18px; height: auto; vertical-align: -2px; margin-left: 2px; }
 .quiz-hero__squiggle { display: block; margin-top: 4px; }
 
-.quiz-hero__collage { position: relative; flex: none; width: 240px; margin: 0 auto; padding: 20px 0; }
-@media (min-width: 960px) { .quiz-hero__collage { width: 320px; margin: 0; } }
+.quiz-hero__collage-wrap { flex: none; width: 240px; margin: 0 auto; padding: 20px 0; }
+@media (min-width: 960px) { .quiz-hero__collage-wrap { width: 320px; margin: 0; } }
+
+.quiz-hero__collage { position: relative; }
+
+.quiz-hero__match-cta { display: block; width: 160px; height: auto; margin: 4px auto 0; }
+@media (min-width: 960px) { .quiz-hero__match-cta { width: 210px; } }
 
 .quiz-hero__badge { display: block; width: 100%; height: auto; position: relative; z-index: 2; }
 
