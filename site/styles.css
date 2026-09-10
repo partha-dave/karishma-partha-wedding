@@ -1077,9 +1077,8 @@ a { color: inherit; }
 
 .quiz-hero__sticker { position: absolute; width: 84px; height: auto; z-index: 3; filter: drop-shadow(0 6px 10px rgba(17,17,17,.18)); }
 @media (min-width: 960px) { .quiz-hero__sticker { width: 108px; } }
-.quiz-hero__sticker--green { top: -14px; left: -18px; transform: rotate(-12deg); }
-.quiz-hero__sticker--yellow { bottom: -10px; right: -14px; transform: rotate(9deg); }
-@media (min-width: 960px) { .quiz-hero__sticker--green { top: -18px; left: -26px; } .quiz-hero__sticker--yellow { bottom: -16px; right: -22px; } }
+.quiz-hero__sticker--yellow { width: 128px; bottom: -18px; right: -20px; transform: rotate(9deg); }
+@media (min-width: 960px) { .quiz-hero__sticker--yellow { width: 164px; bottom: -26px; right: -32px; } }
 
 .quiz-preview { margin-top: 24px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
 @media (min-width: 960px) { .quiz-preview { margin-top: 32px; gap: 22px; max-width: 640px; } }
