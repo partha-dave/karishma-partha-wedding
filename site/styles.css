@@ -571,12 +571,10 @@ a { color: inherit; }
 @media (min-width: 960px) { .poi__row { grid-template-columns: 52px minmax(0,1fr) auto; gap: 18px; } }
 .poi__dot { width: 42px; height: 42px; border-radius: 50%; display: grid; place-items: center; }
 @media (min-width: 960px) { .poi__dot { width: 48px; height: 48px; } }
-.poi__place { font: 500 16px/1.3 var(--font-body); text-decoration: none; }
+.poi__place { font: 700 16px/1.3 var(--font-body); text-decoration: underline; text-underline-offset: 3px; }
 @media (min-width: 960px) { .poi__place { font-size: 18px; } }
 .poi__time { font-size: 14px; color: var(--muted); }
 @media (min-width: 960px) { .poi__time { font-size: 15px; } }
-.poi__foot { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); }
-@media (min-width: 960px) { .poi__foot { margin-top: 20px; padding-top: 16px; font-size: 14px; } }
 .poi__starburst { position: absolute; bottom: -52px; left: 24px; transform: rotate(-10deg); color: var(--blue); display: none; }
 @media (min-width: 960px) { .poi__starburst { display: block; } }
 
@@ -736,7 +734,7 @@ a { color: inherit; }
 
 .stay__accom-badge { display: flex; flex-direction: column; align-items: center; flex: none; margin-left: auto; transform: rotate(4deg); transition: transform .15s ease; }
 .stay__accom-badge:hover { transform: rotate(0deg) scale(1.03); }
-.stay__accom-badge-img { display: block; width: 170px; height: auto; }
+.stay__accom-badge-img { display: block; width: clamp(96px, 34vw, 170px); height: auto; }
 @media (min-width: 960px) { .stay__accom-badge-img { width: 240px; } }
 .stay__subline { margin-top: 10px; font-size: 26px; line-height: 1; border-bottom: 3px solid var(--ink); display: inline-block; padding-bottom: 6px; }
 @media (min-width: 960px) { .stay__subline { margin-top: 12px; font-size: 34px; } }
