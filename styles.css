@@ -124,6 +124,9 @@ a { color: inherit; }
 }
 .btn--pink { background: var(--pink); }
 .btn--yellow { background: var(--yellow); font: 500 16px/1 var(--font-body); text-transform: none; letter-spacing: normal; }
+.btn--yellow-fill { background: var(--yellow); }
+.stay-card__cta { justify-content: center; margin-top: 18px; }
+@media (min-width: 960px) { .stay-card__cta { margin-top: 22px; } }
 .btn--ghost {
   background: rgba(255,255,255,.55);
   justify-content: center;
@@ -459,7 +462,6 @@ a { color: inherit; }
 }
 @media (min-width: 960px) {
   .ticket__place { display: block; margin-top: 10px; font-size: 15px; }
-  .ticket__place-arrow { margin-top: 16px; display: flex; justify-content: flex-end; }
 }
 
 .ticket__details { margin-top: 10px; display: grid; gap: 5px; }
@@ -827,37 +829,6 @@ a { color: inherit; }
 @media (min-width: 960px) { .hotels__subline { margin-top: 18px; font-size: 27px; } }
 .hotels__subline-heart { height: .62em; width: auto; display: inline-block; vertical-align: -0.06em; margin-left: 4px; }
 
-.hotels__polaroids { display: none; }
-@media (min-width: 960px) {
-  .hotels__polaroids { position: relative; flex: none; align-self: center; display: flex; align-items: flex-end; padding: 8px 58px 40px 4px; }
-}
-
-.hotel-polaroid { position: relative; width: 92px; flex: none; background: #fff; padding: 5px 5px 16px; box-shadow: 0 8px 16px rgba(17,17,17,.16); }
-.hotel-polaroid + .hotel-polaroid { margin-left: -20px; }
-.hotel-polaroid:nth-child(1) { transform: rotate(-6deg); z-index: 1; }
-.hotel-polaroid:nth-child(2) { transform: rotate(3deg); z-index: 2; margin-bottom: 16px; }
-.hotel-polaroid:nth-child(3) { transform: rotate(-3deg); z-index: 3; }
-@media (min-width: 960px) {
-  .hotel-polaroid { width: 140px; padding: 8px 8px 22px; }
-  .hotel-polaroid + .hotel-polaroid { margin-left: -32px; }
-  .hotel-polaroid:nth-child(2) { margin-bottom: 26px; }
-}
-.hotel-polaroid__tape { position: absolute; top: -8px; left: 50%; transform: translateX(-50%) rotate(-2deg); width: 42px; height: 15px; opacity: .92; }
-@media (min-width: 960px) { .hotel-polaroid__tape { width: 60px; height: 20px; top: -10px; } }
-.hotel-polaroid__photo { aspect-ratio: 4/5; display: grid; place-items: center; font: 8px/1.5 ui-monospace, Menlo, monospace; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); text-align: center; }
-@media (min-width: 960px) { .hotel-polaroid__photo { font-size: 11px; } }
-.hotel-polaroid__label { position: absolute; bottom: 2px; left: 10px; font-size: 14px; }
-@media (min-width: 960px) { .hotel-polaroid__label { font-size: 19px; bottom: 4px; left: 14px; } }
-
-.hotels__book-early {
-  position: absolute; right: -4px; bottom: -6px; z-index: 4;
-  width: 58px; height: 58px; border-radius: 50%; background: var(--pink);
-  display: grid; place-items: center; text-align: center;
-  font-size: 12px; line-height: 1.1; transform: rotate(8deg);
-  box-shadow: 0 6px 14px rgba(17,17,17,.18);
-}
-@media (min-width: 960px) { .hotels__book-early { width: 92px; height: 92px; font-size: 18px; right: -8px; bottom: -8px; } }
-
 .hotel-cards { margin-top: 26px; display: grid; gap: 16px; }
 @media (min-width: 960px) { .hotel-cards { margin-top: 40px; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 22px; } }
 
@@ -985,11 +956,12 @@ a { color: inherit; }
 .ask-panel__col--methods { display: grid; gap: 22px; }
 @media (min-width: 960px) { .ask-panel__col--methods { gap: 26px; } }
 .ask-panel__method { display: flex; align-items: center; gap: 16px; }
+.ask-panel__method > div { min-width: 0; }
 .ask-panel__icon { flex: none; width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; color: var(--ink); }
 @media (min-width: 960px) { .ask-panel__icon { width: 48px; height: 48px; } }
 .ask-panel__method-label { font: 700 11px/1 var(--font-body); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
 @media (min-width: 960px) { .ask-panel__method-label { font-size: 12px; } }
-.ask-panel__method-value { margin-top: 4px; font-size: 17px; }
+.ask-panel__method-value { margin-top: 4px; font-size: 17px; overflow-wrap: anywhere; }
 @media (min-width: 960px) { .ask-panel__method-value { font-size: 18px; } }
 
 .ask-panel__col--aside { display: flex; flex-direction: column; align-items: flex-start; gap: 18px; }
