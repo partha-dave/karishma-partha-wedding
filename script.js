@@ -1,12 +1,13 @@
 (function () {
   var FAQS = [
-    ["Who is invited to which events?", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."],
-    ["How do I RSVP?", "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."],
-    ["What should I wear?", "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."],
-    ["Can I bring children?", "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."],
-    ["Is there parking at the venue?", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."],
-    ["What happens at a Sangeet?", "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur."],
-    ["What if it rains?", "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit."]
+    ["Where's the best place to stay?", "We'd love to have our nearest and dearest stay on site at Martinstown House with us over the wedding weekend. So do consider the Stables and Glamping. If those don't quite meet your needs, get in touch and we can allocate one of our pre-booked rooms. Take our quiz to help you decide."],
+    ["I'm not staying at the venue. How do I get there?", "You'll need to pre-book a mini cab."],
+    ["What time will the events finish at Martinstown House?", "There is no cut off time for any of the events. We expect all events to go on till the early hours!"],
+    ["What time will the wedding day start?", "Exact timing TBC, but we expect it to be around midday."],
+    ["When shall I arrive in Ireland?", "We will be arriving in Dublin on Wednesday 11 August to settle in and to take care of any last minute details. We will let you know where we are staying once we have finalised our travel plans. We expect most guests to fly to Dublin on Thursday 12 or Friday 13 August but do what works best for you!"],
+    ["I'm interested in the Stables or Glamping, where can I get ready?", "Don't worry! Everyone staying in the glamping village will have access to hotel style bathrooms, full sized mirror, plug sockets and ironing facilities. There will also be a dedicated space in the main house with all the facilities you need to get ready comfortably."],
+    ["Can I bring my four legged friend?", "Unfortunately, Martinstown House does not allow pets."],
+    ["Have a question that hasn't been covered by the FAQs?", "Get in touch with us. Replies may be slower over the next month as we are in the process of moving house!"]
   ];
 
   var list = document.getElementById("faq-list");
