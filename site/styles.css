@@ -805,6 +805,29 @@ a { color: inherit; }
 .stay-card__list { margin-top: 12px; padding-left: 20px; display: grid; gap: 6px; font-size: 15px; line-height: 1.45; }
 @media (min-width: 960px) { .stay-card__list { margin-top: 16px; gap: 7px; font-size: 16px; } }
 
+.gallery { margin-top: 24px; }
+@media (min-width: 960px) { .gallery { margin-top: 36px; } }
+.gallery__kicker { display: block; font-size: 22px; }
+@media (min-width: 960px) { .gallery__kicker { font-size: 26px; } }
+.gallery__grid { margin-top: 12px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+@media (min-width: 960px) { .gallery__grid { margin-top: 16px; grid-template-columns: repeat(6, 1fr); gap: 14px; } }
+.gallery__item { display: block; padding: 0; border: 0; background: none; cursor: pointer; aspect-ratio: 1; overflow: hidden; }
+.gallery__item .placeholder,
+.gallery__item img { width: 100%; height: 100%; }
+.gallery__item img { object-fit: cover; display: block; }
+.gallery__item:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+
+.lightbox { position: fixed; inset: 0; z-index: 100; background: rgba(17,17,17,.92); display: flex; align-items: center; justify-content: center; padding: 20px; }
+.lightbox[hidden] { display: none; }
+.lightbox__stage { max-width: 100%; max-height: 100%; }
+.lightbox__stage img { display: block; max-width: 100%; max-height: 82vh; margin: 0 auto; }
+.lightbox__stage .placeholder { width: min(86vw, 520px); aspect-ratio: 1; }
+.lightbox__close { position: absolute; top: 18px; right: 18px; width: 40px; height: 40px; border: 0; background: rgba(255,255,255,.15); color: #fff; font-size: 22px; line-height: 1; cursor: pointer; }
+.lightbox__prev, .lightbox__next { position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border: 0; background: rgba(255,255,255,.15); color: #fff; font-size: 20px; cursor: pointer; }
+.lightbox__prev { left: 12px; }
+.lightbox__next { right: 12px; }
+@media (min-width: 960px) { .lightbox__prev { left: 28px; } .lightbox__next { right: 28px; } }
+
 .shared-panel { margin-top: 24px; background: var(--cream); border: 1px solid var(--line); padding: 22px 18px; }
 @media (min-width: 960px) { .shared-panel { margin-top: 36px; padding: 30px 28px; } }
 .shared-panel__head { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }

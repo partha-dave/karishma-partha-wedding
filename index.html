@@ -23,7 +23,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=48">
+<link rel="stylesheet" href="styles.css?v=49">
 </head>
 <body>
 
@@ -464,6 +464,18 @@
     </div>
   </div>
 
+  <div class="gallery">
+    <span class="hand gallery__kicker">Take a peek inside</span>
+    <div class="gallery__grid" id="stay-gallery">
+      <button type="button" class="gallery__item" data-alt="Photo 1"><span class="placeholder placeholder--center">Photo 1</span></button>
+      <button type="button" class="gallery__item" data-alt="Photo 2"><span class="placeholder placeholder--center">Photo 2</span></button>
+      <button type="button" class="gallery__item" data-alt="Photo 3"><span class="placeholder placeholder--center">Photo 3</span></button>
+      <button type="button" class="gallery__item" data-alt="Photo 4"><span class="placeholder placeholder--center">Photo 4</span></button>
+      <button type="button" class="gallery__item" data-alt="Photo 5"><span class="placeholder placeholder--center">Photo 5</span></button>
+      <button type="button" class="gallery__item" data-alt="Photo 6"><span class="placeholder placeholder--center">Photo 6</span></button>
+    </div>
+  </div>
+
   <div class="shared-panel">
     <div class="shared-panel__head">
       <h3>Shared by the Stables and Glamping</h3>
@@ -663,11 +675,19 @@
   </div>
 </section>
 
+<!-- ===================== GALLERY LIGHTBOX ===================== -->
+<div class="lightbox" id="lightbox" hidden>
+  <button type="button" class="lightbox__close" aria-label="Close">&times;</button>
+  <button type="button" class="lightbox__prev" aria-label="Previous photo">&larr;</button>
+  <div class="lightbox__stage" id="lightbox-stage"></div>
+  <button type="button" class="lightbox__next" aria-label="Next photo">&rarr;</button>
+</div>
+
 <!-- ===================== FOOTER ===================== -->
 <footer class="site-footer">
   <span>K + P</span><span>Good times ahead</span><span>2027</span>
 </footer>
 
-<script src="script.js?v=40"></script>
+<script src="script.js?v=41"></script>
 </body>
 </html>
