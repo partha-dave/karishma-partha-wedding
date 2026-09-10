@@ -734,10 +734,12 @@ a { color: inherit; }
 .stay__bed-icon { width: 47px; height: 42px; }
 @media (min-width: 960px) { .stay__bed-icon { width: 67px; height: 60px; } }
 
-.stay__accom-badge { display: block; flex: none; margin-left: auto; transform: rotate(4deg); transition: transform .15s ease; }
+.stay__accom-badge { display: flex; flex-direction: column; align-items: center; flex: none; margin-left: auto; transform: rotate(4deg); transition: transform .15s ease; }
 .stay__accom-badge:hover { transform: rotate(0deg) scale(1.03); }
-.stay__accom-badge img { display: block; width: 170px; height: auto; }
-@media (min-width: 960px) { .stay__accom-badge img { width: 240px; } }
+.stay__accom-badge-img { display: block; width: 170px; height: auto; }
+@media (min-width: 960px) { .stay__accom-badge-img { width: 240px; } }
+.stay__accom-badge-cta { display: block; width: 130px; height: auto; margin-top: -8px; }
+@media (min-width: 960px) { .stay__accom-badge-cta { width: 180px; margin-top: -12px; } }
 .stay__subline { margin-top: 10px; font-size: 26px; line-height: 1; border-bottom: 3px solid var(--ink); display: inline-block; padding-bottom: 6px; }
 @media (min-width: 960px) { .stay__subline { margin-top: 12px; font-size: 34px; } }
 .stay__intro { margin-top: 16px; }
