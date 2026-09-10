@@ -735,6 +735,8 @@ a { color: inherit; }
 @media (min-width: 960px) { .stay__bed-icon { width: 67px; height: 60px; } }
 .stay__subline { margin-top: 10px; font-size: 26px; line-height: 1; border-bottom: 3px solid var(--ink); display: inline-block; padding-bottom: 6px; }
 @media (min-width: 960px) { .stay__subline { margin-top: 12px; font-size: 34px; } }
+.stay__intro { margin-top: 16px; }
+@media (min-width: 960px) { .stay__intro { margin-top: 20px; } }
 
 .stay__notes { display: none; align-items: flex-start; gap: 22px; justify-content: flex-end; flex-wrap: wrap; }
 @media (min-width: 960px) { .stay__notes { display: flex; } }
