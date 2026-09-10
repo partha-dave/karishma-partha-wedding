@@ -736,10 +736,6 @@ a { color: inherit; }
 .stay__accom-badge:hover { transform: rotate(0deg) scale(1.03); }
 .stay__accom-badge-img { display: block; width: clamp(96px, 34vw, 170px); height: auto; }
 @media (min-width: 960px) { .stay__accom-badge-img { width: 240px; } }
-.stay__subline-photo { display: block; width: 220px; margin-top: 12px; transition: transform .15s ease; }
-.stay__subline-photo:hover { transform: scale(1.03); }
-.stay__subline-photo img { display: block; width: 100%; height: auto; }
-@media (min-width: 960px) { .stay__subline-photo { width: 300px; margin-top: 16px; } }
 .stay__intro { margin-top: 16px; }
 @media (min-width: 960px) { .stay__intro { margin-top: 20px; } }
 
