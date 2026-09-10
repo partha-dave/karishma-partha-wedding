@@ -886,6 +886,7 @@ a { color: inherit; }
 .rooms-reserved-bar__text p { margin: 6px 0 0; font-size: 13.5px; line-height: 1.5; }
 @media (min-width: 960px) { .rooms-reserved-bar__text p { margin-top: 8px; font-size: 15px; } }
 .rooms-reserved-bar__text strong { font-weight: 700; }
+.rooms-reserved-bar__text a { font-weight: 700; text-decoration: underline; }
 .rooms-reserved-bar__heart { display: inline-block; width: 15px; height: auto; vertical-align: -2px; }
 
 .rooms-reserved-bar__divider { display: none; }
