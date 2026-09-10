@@ -1055,22 +1055,31 @@ a { color: inherit; }
 .quiz-hero { max-width: var(--content-max); margin: 0 auto; padding: 28px var(--side) 0; }
 @media (min-width: 960px) { .quiz-hero { padding-top: 36px; } }
 
-.quiz-hero__top { display: flex; flex-direction: column; gap: 18px; }
+.quiz-hero__top { display: flex; flex-direction: column; gap: 28px; }
 @media (min-width: 960px) { .quiz-hero__top { flex-direction: row; align-items: center; justify-content: space-between; gap: 40px; } }
 
-.quiz-hero__title-wrap { position: relative; }
+.quiz-hero__intro-col { position: relative; }
+
 .quiz-hero__title { margin: 0; font-family: var(--font-display); text-transform: uppercase; letter-spacing: -.03em; line-height: .95; font-size: 40px; }
 @media (min-width: 960px) { .quiz-hero__title { font-size: 58px; max-width: 11ch; } }
 
-.quiz-hero__note-wrap { max-width: 360px; }
-@media (min-width: 960px) { .quiz-hero__note-wrap { padding-top: 6px; } }
+.quiz-hero__note-wrap { max-width: 360px; margin-top: 16px; }
+@media (min-width: 960px) { .quiz-hero__note-wrap { margin-top: 22px; } }
 .quiz-hero__note { margin: 0; font-size: 22px; line-height: 1.25; }
 @media (min-width: 960px) { .quiz-hero__note { font-size: 26px; } }
 .quiz-hero__note-heart { display: inline-block; width: 18px; height: auto; vertical-align: -2px; margin-left: 2px; }
 .quiz-hero__squiggle { display: block; margin-top: 4px; }
 
-.quiz-hero__badge { display: block; width: 220px; height: auto; margin: 20px auto 0; }
-@media (min-width: 960px) { .quiz-hero__badge { width: 300px; margin: -20px 0 0 auto; } }
+.quiz-hero__collage { position: relative; flex: none; width: 240px; margin: 0 auto; padding: 20px 0; }
+@media (min-width: 960px) { .quiz-hero__collage { width: 320px; margin: 0; } }
+
+.quiz-hero__badge { display: block; width: 100%; height: auto; position: relative; z-index: 2; }
+
+.quiz-hero__sticker { position: absolute; width: 84px; height: auto; z-index: 3; filter: drop-shadow(0 6px 10px rgba(17,17,17,.18)); }
+@media (min-width: 960px) { .quiz-hero__sticker { width: 108px; } }
+.quiz-hero__sticker--green { top: -14px; left: -18px; transform: rotate(-12deg); }
+.quiz-hero__sticker--yellow { bottom: -10px; right: -14px; transform: rotate(9deg); }
+@media (min-width: 960px) { .quiz-hero__sticker--green { top: -18px; left: -26px; } .quiz-hero__sticker--yellow { bottom: -16px; right: -22px; } }
 
 .quiz-preview { margin-top: 24px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
 @media (min-width: 960px) { .quiz-preview { margin-top: 32px; gap: 22px; max-width: 640px; } }
