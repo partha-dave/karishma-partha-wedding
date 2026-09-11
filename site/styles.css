@@ -1141,8 +1141,8 @@ a { color: inherit; }
   position: fixed;
   right: 16px;
   bottom: 16px;
-  width: 56px;
-  height: 56px;
+  width: 64px;
+  height: 64px;
   padding: 0;
   border: 0;
   background: none;
@@ -1156,4 +1156,4 @@ a { color: inherit; }
 .back-to-top.is-visible { opacity: 1; visibility: visible; transform: translateY(0); }
 .back-to-top img { display: block; width: 100%; height: 100%; filter: drop-shadow(0 4px 10px rgba(17,17,17,.25)); transition: transform .15s ease; }
 .back-to-top:hover img { transform: scale(1.06); }
-@media (min-width: 960px) { .back-to-top { right: 28px; bottom: 28px; width: 68px; height: 68px; } }
+@media (min-width: 960px) { .back-to-top { right: 28px; bottom: 28px; width: 76px; height: 76px; } }
