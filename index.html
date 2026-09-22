@@ -5,15 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
 <title>Karishma + Partha — Wedding</title>
-<meta name="description" content="All the details you need for our wedding celebrations in Bradford and Ireland. From events and travel to where to stay, it's all here!">
+<meta name="description" content="All the details you need for our wedding celebrations in Bradford and Ireland.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://karishmapartha.wedding/">
 <meta property="og:title" content="Karishma + Partha — Wedding">
-<meta property="og:description" content="All the details you need for our wedding celebrations in Bradford and Ireland. From events and travel to where to stay, it's all here!">
+<meta property="og:description" content="All the details you need for our wedding celebrations in Bradford and Ireland.">
 <meta property="og:image" content="https://karishmapartha.wedding/icons/couple-badge.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Karishma + Partha — Wedding">
-<meta name="twitter:description" content="All the details you need for our wedding celebrations in Bradford and Ireland. From events and travel to where to stay, it's all here!">
+<meta name="twitter:description" content="All the details you need for our wedding celebrations in Bradford and Ireland.">
 <meta name="twitter:image" content="https://karishmapartha.wedding/icons/couple-badge.png">
 <link rel="icon" href="icons/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16.png">
@@ -25,678 +25,164 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css?v=75">
+<style>
+  .gate-wrap {
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px var(--side);
+  }
+  .gate-card {
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+  }
+  .gate-badge { width: 96px; height: auto; margin: 0 auto 18px; display: block; }
+  .gate-title { font: 700 44px/1.05 var(--font-display); letter-spacing: .01em; margin: 0 0 10px; }
+  @media (min-width: 960px) { .gate-title { font-size: 54px; } }
+  .gate-note { font-family: var(--font-hand); font-weight: 700; font-size: 24px; color: var(--pink); margin: 0 0 28px; }
+  .gate-form { display: flex; flex-direction: column; gap: 12px; }
+  .gate-input {
+    width: 100%;
+    box-sizing: border-box;
+    font: 500 17px/1 var(--font-body);
+    padding: 16px 18px;
+    border: 2px solid var(--ink);
+    border-radius: 999px;
+    background: var(--cream);
+    text-align: center;
+    outline: none;
+  }
+  .gate-input:focus { border-color: var(--pink); }
+  .gate-submit {
+    width: 100%;
+    box-sizing: border-box;
+    font: 700 15px/1 var(--font-body);
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    padding: 16px 18px;
+    border: 0;
+    border-radius: 999px;
+    background: var(--pink);
+    color: var(--ink);
+    cursor: pointer;
+    transition: transform .12s ease;
+  }
+  .gate-submit:hover { transform: scale(1.02); }
+  .gate-error {
+    font: 500 14px/1.4 var(--font-body);
+    color: #c0335a;
+    min-height: 18px;
+    margin: 2px 0 0;
+  }
+  .gate-redirecting {
+    display: none;
+    font: 500 16px/1.4 var(--font-body);
+    color: var(--muted);
+  }
+  .gate-reset {
+    display: none;
+    margin-top: 18px;
+    font: 500 14px/1 var(--font-body);
+    color: var(--muted);
+    text-decoration: underline;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+  }
+  [hidden] { display: none !important; }
+</style>
 </head>
-<body>
+<body style="background:var(--cream)">
 
-<!-- reusable icon sprite -->
-<svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
-  <symbol id="icon-arrow" viewBox="0 0 100 100">
-    <path d="M12 50H84M65 30L85 50L65 70" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-  </symbol>
-  <symbol id="icon-starburst" viewBox="0 0 100 100">
-    <path d="M50 4C54 29 58 35 82 23C62 42 62 47 92 50C62 54 59 59 79 80C58 66 54 70 50 96C46 70 42 66 21 80C41 59 38 54 8 50C38 47 38 42 18 23C42 35 46 29 50 4Z" fill="currentColor"/>
-  </symbol>
-  <symbol id="icon-flower" viewBox="0 0 100 100">
-    <path d="M50 38C36 9 11 18 21 40C-3 42 5 69 29 62C25 88 55 94 59 68C78 88 98 65 76 51C99 33 80 10 59 34C58 15 44 16 50 38Z" fill="currentColor"/>
-  </symbol>
-  <symbol id="icon-pin" viewBox="0 0 32 32">
-    <path d="M16 2a9 9 0 0 0-9 9c0 6.6 9 19 9 19s9-12.4 9-19a9 9 0 0 0-9-9zm0 12.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4z" fill="currentColor"/>
-  </symbol>
-  <symbol id="icon-calendar" viewBox="0 0 32 32">
-    <rect x="4" y="7" width="24" height="21" rx="4" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
-    <path d="M4 13h24M10 4v5M22 4v5M16 18v6M13 21h6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
-  </symbol>
-  <symbol id="icon-plane-lines" viewBox="0 0 40 40">
-    <path d="M6 24L1 31M16 21L14 32M25 21L29 30" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-  </symbol>
-  <symbol id="icon-plane-solid" viewBox="0 0 24 24">
-    <path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-3 2v1.5l4-1 4 1V21l-3-2v-5.5l8 2.5z" fill="currentColor"/>
-  </symbol>
-  <symbol id="icon-car" viewBox="0 0 32 32">
-    <path d="M5 20v3M27 20v3" fill="none" stroke="#111" stroke-width="3.4" stroke-linecap="round"/>
-    <path d="M4 20v-4l2.6-5.4A2 2 0 0 1 8.4 9.5h15.2a2 2 0 0 1 1.8 1.1L28 16v4z" fill="none" stroke="#111" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M4 16h24" fill="none" stroke="#111" stroke-width="3.4" stroke-linecap="round"/>
-    <circle cx="9.5" cy="20" r="1.6" fill="#111"/>
-    <circle cx="22.5" cy="20" r="1.6" fill="#111"/>
-  </symbol>
-  <symbol id="icon-people" viewBox="0 0 32 32">
-    <circle cx="12" cy="10" r="4.4" fill="none" stroke="currentColor" stroke-width="2.3"/>
-    <path d="M4 27c0-5.6 3.4-9 8-9s8 3.4 8 9" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/>
-    <circle cx="23" cy="9" r="3.6" fill="none" stroke="currentColor" stroke-width="2"/>
-    <path d="M18.5 27c.3-4.6 2.6-7.4 6.3-7.4S31 22 31.2 26.4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-  </symbol>
-  <symbol id="icon-glass" viewBox="0 0 32 32">
-    <path d="M9 3h14l-1.6 12.4a5.4 5.4 0 0 1-10.8 0L9 3z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
-    <path d="M16 15.5V27M10.5 29h11" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
-  </symbol>
-  <symbol id="icon-fork" viewBox="0 0 32 32">
-    <path d="M8 3v9a2.5 2.5 0 0 0 5 0V3M10.5 12v17" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M23 3c-2.2 0-4 2.6-4 6.5S20.8 16 23 16v13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-  </symbol>
-  <symbol id="icon-golf" viewBox="0 0 32 32">
-    <path d="M9 29V3" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/>
-    <path d="M9 4l13 5.5L9 15V4z" fill="currentColor"/>
-    <ellipse cx="9" cy="29" rx="7" ry="2" fill="none" stroke="currentColor" stroke-width="2"/>
-  </symbol>
-  <symbol id="icon-shirt" viewBox="0 0 32 32">
-    <path d="M11 4L5 8l2.4 4L11 10v16h10V10l3.6 2L27 8l-6-4-3 2.6a4 4 0 0 1-4 0L11 4z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
-  </symbol>
-  <symbol id="icon-adults" viewBox="0 0 32 32">
-    <circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="2.3"/>
-    <text x="16" y="21" font-family="DM Sans, Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="currentColor">18+</text>
-  </symbol>
-  <symbol id="icon-coffee-fill" viewBox="0 0 32 32">
-    <path d="M6 10h16v9a7 7 0 0 1-7 7h-2a7 7 0 0 1-7-7v-9z" fill="currentColor"/>
-    <path d="M22 12.5h2.5a4.3 4.3 0 0 1 0 8.6H22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
-  </symbol>
-  <symbol id="icon-people-fill" viewBox="0 0 32 32">
-    <circle cx="12" cy="10" r="5" fill="currentColor"/>
-    <path d="M2 28c0-6.6 4.5-10.5 10-10.5s10 3.9 10 10.5" fill="currentColor"/>
-    <circle cx="23" cy="9" r="3.6" fill="currentColor" opacity=".8"/>
-    <path d="M17 27.5c.4-5 3-8 6.3-8s6.2 3.3 6.7 8" fill="currentColor" opacity=".8"/>
-  </symbol>
-  <symbol id="icon-mail" viewBox="0 0 24 24">
-    <rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  </symbol>
-  <symbol id="icon-phone" viewBox="0 0 24 24">
-    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  </symbol>
-  <symbol id="icon-chat" viewBox="0 0 24 24">
-    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="8" cy="12" r="1" fill="currentColor"/><circle cx="12" cy="12" r="1" fill="currentColor"/><circle cx="16" cy="12" r="1" fill="currentColor"/>
-  </symbol>
-</svg>
+<div class="gate-wrap">
+  <div class="gate-card">
+    <img class="gate-badge" src="icons/couple-badge.png" alt="Karishma + Partha Wedding 2027">
+    <h1 class="gate-title">Karishma + Partha</h1>
+    <p class="gate-note">Enter your password to see your wedding details ♥</p>
 
-<div class="top-band">JULY &amp; AUGUST 2027</div>
+    <p class="gate-redirecting" id="gate-redirecting">Taking you there now…</p>
 
-<!-- ===================== HERO ===================== -->
-<header class="section hero">
-  <div class="hero__grid">
-    <div class="hero__intro">
-      <div class="hero__title-wrap">
-        <svg class="hero__burst" width="44" height="44" aria-hidden="true"><use href="#icon-plane-lines"/></svg>
-        <h1 class="hero__title">Karishma<br>+ Partha</h1>
-      </div>
-      <p class="hero__lede">All the details you need for our wedding celebrations in Bradford and Ireland. From events and travel to where to stay, it's all here!</p>
+    <form class="gate-form" id="gate-form">
+      <input class="gate-input" id="gate-password" type="password" autocomplete="off" placeholder="Password" aria-label="Password">
+      <button class="gate-submit" type="submit">Enter</button>
+      <p class="gate-error" id="gate-error"></p>
+    </form>
 
-      <nav class="hero__nav" aria-label="Section links">
-        <a href="#events" class="hero__nav-btn hero__nav-btn--events">Events <svg class="icon-arrow" width="18" height="18" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
-        <a href="#schedule" class="hero__nav-btn hero__nav-btn--schedule">Ireland schedule <svg class="icon-arrow" width="18" height="18" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
-        <a href="#travel" class="hero__nav-btn hero__nav-btn--travel">Travel <svg class="icon-arrow" width="18" height="18" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
-        <a href="#faqs" class="hero__nav-btn hero__nav-btn--faqs">FAQs <svg class="icon-arrow" width="18" height="18" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
-        <a href="#stay" class="hero__nav-btn hero__nav-btn--stay">Accommodation <svg class="icon-arrow" width="18" height="18" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
-      </nav>
-
-      <div class="hero__tag-row">
-        <span class="hand hero__tag">We're getting married!</span>
-        <img class="hero__tag-heart" src="icons/heart.png" alt="" aria-hidden="true">
-      </div>
-    </div>
-
-    <div class="hero__photo">
-      <img class="hero__heart" src="icons/pinkheart.png" alt="" aria-hidden="true">
-      <div class="polaroid polaroid--hero">
-        <span class="tape tape--hero-1" aria-hidden="true"></span>
-        <span class="tape tape--hero-2" aria-hidden="true"></span>
-        <img class="polaroid--hero__photo" src="images/hero-couple.jpg?v=2" alt="Karishma and Partha">
-      </div>
-      <img class="hero__badge" src="icons/couple-badge.png" alt="" aria-hidden="true">
-    </div>
-  </div>
-</header>
-
-<!-- ===================== THE EVENTS ===================== -->
-<section class="section events" id="events">
-  <div class="events__head">
-    <h2 class="events__title">The events</h2>
-  </div>
-
-  <div class="ticket-row">
-    <div class="ticket ticket--pink">
-      <div class="ticket__date">Sat 31 July</div>
-      <img class="ticket__icon" src="icons/note.png" alt="" aria-hidden="true" style="width:40px;height:38px">
-      <div class="ticket__name">Jago</div>
-      <div class="ticket__place-row">
-        <span class="ticket__place">Cedar Court Hotel, Bradford</span>
-      </div>
-      <div class="ticket__details">
-        <div class="ticket__detail"><svg width="15" height="15" aria-hidden="true"><use href="#icon-calendar"/></svg>Time: 16:00</div>
-        <div class="ticket__detail"><svg width="15" height="15" aria-hidden="true"><use href="#icon-shirt"/></svg>Dress code: Traditional Indian</div>
-      </div>
-    </div>
-
-    <div class="ticket ticket--yellow">
-      <div class="ticket__date">Sat 14 Aug</div>
-      <img class="ticket__icon" src="icons/disco.png" alt="" aria-hidden="true" style="width:31px;height:40px">
-      <div class="ticket__name">Sangeet</div>
-      <div class="ticket__place-row">
-        <span class="ticket__place">Martinstown House,<br>Co. Kildare</span>
-      </div>
-      <div class="ticket__details">
-        <div class="ticket__detail"><svg width="15" height="15" aria-hidden="true"><use href="#icon-calendar"/></svg>Time: TBC</div>
-        <div class="ticket__detail"><svg width="15" height="15" aria-hidden="true"><use href="#icon-shirt"/></svg>Dress code: Indo-Western</div>
-      </div>
-    </div>
-
-    <div class="ticket ticket--purple">
-      <div class="ticket__date">Sun 15 Aug</div>
-      <img class="ticket__icon" src="icons/heart.png" alt="" aria-hidden="true" style="width:34px;height:38px">
-      <div class="ticket__name">Wedding</div>
-      <div class="ticket__place-row">
-        <span class="ticket__place">Martinstown House,<br>Co. Kildare</span>
-      </div>
-      <div class="ticket__details">
-        <div class="ticket__detail"><svg width="15" height="15" aria-hidden="true"><use href="#icon-calendar"/></svg>Time: TBC</div>
-        <div class="ticket__detail"><svg width="15" height="15" aria-hidden="true"><use href="#icon-shirt"/></svg>Dress code: Indian</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== THE WEDDING VENUE ===================== -->
-<section class="section venue">
-  <div class="venue__grid">
-    <div>
-      <div class="eyebrow" style="color:var(--ink)">The wedding venue</div>
-      <div class="venue__title-wrap">
-        <h2 class="venue__title">Martinstown<br>House</h2>
-        <svg class="venue__title-flower" width="38" height="38" aria-hidden="true"><use href="#icon-flower"/></svg>
-      </div>
-      <p class="hand venue__meta">The Curragh, County Kildare, Ireland</p>
-      <p class="venue__copy">Martinstown House is a family-operated country house set in the leafy landscape of the Curragh in County Kildare. It's set on a fully working farmyard that houses cattle, sheep, horses and two rescue donkeys, and the entire estate is a bird sanctuary.<br><br>We couldn’t imagine a better setting to spend our wedding weekend with all our favourite people — we hope you love it as much as we do.</p>
-
-    </div>
-
-    <div class="venue__photo-wrap">
-      <div class="venue__photo-tape" aria-hidden="true"></div>
-      <div class="venue__photo-frame">
-        <img class="venue__photo" src="images/martinstown-house.jpeg" alt="Martinstown House exterior">
-      </div>
-      <span class="venue__starburst" aria-hidden="true"><svg width="110" height="110" viewBox="0 0 100 100" style="display:block"><path d="M50 38C36 9 11 18 21 40C-3 42 5 69 29 62C25 88 55 94 59 68C78 88 98 65 76 51C99 33 80 10 59 34C58 15 44 16 50 38Z" fill="currentColor"/><circle cx="51" cy="52" r="8" fill="#FFFDF8" stroke="currentColor" stroke-width="4"/></svg></span>
-      <svg class="venue__sparks" width="36" height="36" aria-hidden="true"><use href="#icon-plane-lines"/></svg>
-    </div>
-  </div>
-
-  <div class="venue__grid" style="margin-top:0">
-    <div>
-      <div class="venue__map">
-        <iframe class="venue__map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2395.151962327751!2d-6.8219802000000005!3d53.1074638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485d7dd6881ced21%3A0x272b61d124017fb0!2sMartinstown%20House!5e0!3m2!1sen!2suk!4v1788895756223!5m2!1sen!2suk" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Martinstown House on Google Maps"></iframe>
-      </div>
-    </div>
-
-    <div class="poi">
-      <div class="poi__tape" aria-hidden="true"></div>
-      <div class="poi__panel">
-        <div class="poi__title-row">
-          <h3 class="poi__title">Points of interest</h3>
-        </div>
-        <div class="poi__list">
-          <div class="poi__row">
-            <span class="poi__dot" style="background:var(--pink)"><svg width="23" height="23" aria-hidden="true"><use href="#icon-pin"/></svg></span>
-            <a class="poi__place" href="https://www.thebicestercollection.com/kildare-village/en/" target="_blank" rel="noopener">Kildare Village Outlet</a>
-          </div>
-          <div class="poi__row">
-            <span class="poi__dot" style="background:var(--yellow)"><svg width="23" height="23" aria-hidden="true"><use href="#icon-pin"/></svg></span>
-            <a class="poi__place" href="https://www.irishtourism.com/national-stud-and-japanese-gardens" target="_blank" rel="noopener">Japanese Gardens</a>
-          </div>
-          <div class="poi__row">
-            <span class="poi__dot" style="background:var(--purple)"><svg width="23" height="23" aria-hidden="true"><use href="#icon-pin"/></svg></span>
-            <a class="poi__place" href="https://www.nationalparks.ie/wicklow/" target="_blank" rel="noopener">Wicklow Mountains National Park</a>
-          </div>
-        </div>
-      </div>
-      <span class="poi__starburst" aria-hidden="true"><svg width="52" height="52" aria-hidden="true"><use href="#icon-starburst"/></svg></span>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== WEDDING WEEKEND SCHEDULE ===================== -->
-<section class="section schedule" id="schedule">
-  <div class="schedule__grid">
-    <div>
-      <h2 class="schedule__title">Wedding<br>weekend schedule</h2>
-    </div>
-  </div>
-
-  <div class="schedule-cards">
-    <div class="schedule-card schedule-card--dublin">
-      <img class="schedule-card__icon" src="icons/ws-cocktail-t.png" alt="" aria-hidden="true" style="top:74px;right:14px;width:56px;height:60px">
-      <div class="schedule-card__head">
-        <span class="schedule-card__date">Fri 13 Aug 2027</span>
-        <span class="schedule-card__pill">Optional</span><span class="schedule-card__pill">PM</span>
-      </div>
-      <h3 class="schedule-card__title">Informal gathering in Dublin</h3>
-      <div class="schedule-card__place"><svg width="16" height="16" aria-hidden="true"><use href="#icon-pin"/></svg>Dublin · Location: TBC</div>
-      <p class="schedule-card__copy">We'll be in Dublin the night before heading to Kildare, so if you're around, come join us for a very informal get-together and ease yourself into the weekend. Completely optional, very relaxed and a good chance to mingle before the wedding shenanigans begin.</p>
-      <div class="schedule-card__photo">
-        <div class="schedule-card__photo-tape" aria-hidden="true"></div>
-        <img class="venue-photo" src="images/dublin.jpg" alt="Ha'penny Bridge, Dublin">
-        <div class="schedule-card__photo-caption">Dublin ♥︎</div>
-      </div>
-      <a href="ics/dublin-gathering.ics" class="btn btn--ghost btn--block"><svg width="20" height="20" aria-hidden="true"><use href="#icon-calendar"/></svg>Add to calendar <svg class="icon-arrow" width="18" height="18" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
-    </div>
-
-    <div style="display:grid;gap:18px">
-      <div class="schedule-card schedule-card--coach">
-        <img class="schedule-card__icon" src="icons/ws-bus-t.png" alt="" aria-hidden="true" style="top:52px;right:10px;width:74px;height:68px">
-        <div class="schedule-card__head">
-          <span class="schedule-card__date">Sat 14 Aug 2027</span>
-          <span class="schedule-card__pill">AM</span>
-        </div>
-        <h3 class="schedule-card__title">Coaches to Kildare</h3>
-        <div class="schedule-card__place"><svg width="16" height="16" aria-hidden="true"><use href="#icon-pin"/></svg>Dublin · pickup details TBC</div>
-        <p class="schedule-card__copy">We'll be arranging coaches from Dublin to Kildare on Saturday morning for close family and friends. If you're reading this, there'll be a seat for you! The pick-up point and timings will be confirmed closer to the date. Kavi will lead a headcount to make sure no one gets left behind. Don't be Kevin.</p>
-        <a href="ics/coaches-to-kildare.ics" class="btn btn--ghost btn--block"><svg width="20" height="20" aria-hidden="true"><use href="#icon-calendar"/></svg>Add to calendar <svg class="icon-arrow" width="18" height="18" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
-      </div>
-
-      <div class="schedule-card schedule-card--sangeet">
-        <img class="schedule-card__icon" src="icons/ws-disco-t.png" alt="" aria-hidden="true" style="top:44px;right:10px;width:75px;height:68px">
-        <div class="schedule-card__head">
-          <span class="schedule-card__date">Sat 14 Aug 2027</span>
-          <span class="schedule-card__pill">PM</span>
-        </div>
-        <h3 class="schedule-card__title">Sangeet</h3>
-        <div class="schedule-card__place"><svg width="16" height="16" aria-hidden="true"><use href="#icon-pin"/></svg>Martinstown House</div>
-        <div class="schedule-card__place"><svg width="16" height="16" aria-hidden="true"><use href="#icon-shirt"/></svg>Dress code: Indo-Western</div>
-        <p class="schedule-card__copy">We're warming up for the wedding day with an evening of music, food and dancing. <b>We've secured Priya Dharni for a one-night-only Ireland exclusive DJ set</b>, so expect bangers, chaos and absolutely no guarantees about what gets played.</p>
-        <a href="ics/sangeet.ics" class="btn btn--ghost btn--block"><svg width="20" height="20" aria-hidden="true"><use href="#icon-calendar"/></svg>Add to calendar <svg class="icon-arrow" width="18" height="18" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
-      </div>
-    </div>
-
-    <div class="schedule-card schedule-card--wedding">
-      <img class="schedule-card__icon" src="icons/double-hearts.png" alt="" aria-hidden="true" style="top:42px;right:8px;width:66px;height:66px">
-      <div class="schedule-card__head">
-        <span class="schedule-card__date">Sun 15 Aug 2027</span>
-      </div>
-      <h3 class="schedule-card__title">Wedding ceremony &amp; reception</h3>
-      <div class="schedule-card__place"><svg width="16" height="16" aria-hidden="true"><use href="#icon-pin"/></svg>Martinstown House</div>
-      <div class="schedule-card__place"><svg width="16" height="16" aria-hidden="true"><use href="#icon-shirt"/></svg>Dress code: Indian</div>
-      <p class="schedule-card__copy">The main event! Join us for our wedding ceremony, followed by plenty of food, drinks, dancing and celebrations. We've done all the planning (or will have by then!), so your only job is to turn up, have fun and keep the dance floor full!</p>
-      <div class="schedule-card__photo">
-        <div class="schedule-card__photo-tape" aria-hidden="true"></div>
-        <img class="venue-photo" src="images/martinstown-house-2.jpeg" alt="Martinstown House">
-        <div class="schedule-card__photo-caption">Martinstown House ♥︎</div>
-      </div>
-      <a href="ics/wedding-reception.ics" class="btn btn--ghost btn--block"><svg width="20" height="20" aria-hidden="true"><use href="#icon-calendar"/></svg>Add to calendar <svg class="icon-arrow" width="18" height="18" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== TRAVEL ===================== -->
-<section class="section travel" id="travel">
-  <div class="travel__head-row">
-    <h2 class="travel__title">Travel</h2>
-    <img class="travel__plane" src="icons/plane.png" alt="">
-    <svg class="icon-plane" width="28" height="28" aria-hidden="true"><use href="#icon-plane-lines"/></svg>
-  </div>
-  <div class="travel__subline hand">Getting there is part of the adventure.</div>
-
-  <div class="travel-tickets">
-    <div class="airport-ticket">
-      <span class="notch notch--l" aria-hidden="true"></span><span class="notch notch--r" aria-hidden="true"></span>
-
-      <div class="airport-ticket__top">
-        <div class="airport-ticket__label">Nearest airport</div>
-        <svg class="airport-ticket__lines" width="22" height="22" aria-hidden="true"><use href="#icon-plane-lines"/></svg>
-        <span class="airport-ticket__heart" aria-hidden="true">♥︎</span>
-        <h3 class="airport-ticket__title">Dublin Airport<br>(DUB)</h3>
-        <div class="airport-ticket__meta"><svg width="18" height="18" fill="#111" aria-hidden="true"><use href="#icon-pin"/></svg><span>Around an hour's drive to Kildare.</span></div>
-        <img class="airport-ticket__stamp" src="icons/postmark.png" alt="">
-      </div>
-
-      <div class="airport-ticket__stub">
-        <span class="notch notch--l" aria-hidden="true"></span><span class="notch notch--r" aria-hidden="true"></span>
-        <div class="airport-ticket__stub-row">
-          <div class="airport-ticket__stub-col">
-            <div class="airport-ticket__stub-label">Departing from</div>
-            <div class="airport-ticket__stub-code">HOME</div>
-            <div class="airport-ticket__stub-caption">Airport</div>
-          </div>
-          <svg class="airport-ticket__stub-plane" width="26" height="26" aria-hidden="true"><use href="#icon-plane-solid"/></svg>
-          <div class="airport-ticket__stub-col airport-ticket__stub-col--right">
-            <div class="airport-ticket__stub-label">Final destination</div>
-            <div class="airport-ticket__stub-code">Kildare</div>
-            <div class="airport-ticket__stub-caption">Martinstown House</div>
-          </div>
-        </div>
-        <a href="https://www.google.com/maps/dir/?api=1&amp;origin=Bradford%2C+UK&amp;destination=Martinstown+House%2C+Co.+Kildare%2C+Ireland&amp;travelmode=driving" target="_blank" rel="noopener" class="btn btn--yellow btn--block airport-ticket__cta" style="justify-content:center">Get directions <svg class="icon-arrow" width="20" height="20" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
-      </div>
-    </div>
-
-    <div class="flights-ticket">
-      <span class="notch notch--l" aria-hidden="true"></span><span class="notch notch--r" aria-hidden="true"></span>
-      <div class="flights-ticket__head">
-        <span class="flights-ticket__label">Getting there</span>
-        <svg class="icon-plane" width="20" height="20" aria-hidden="true"><use href="#icon-plane-lines"/></svg>
-      </div>
-      <div class="flights-ticket__list">
-        <a href="https://www.google.com/travel/flights?q=Flights%20from%20Leeds%20Bradford%20to%20Dublin" target="_blank" rel="noopener" class="flights-ticket__link"><svg width="18" height="18" aria-hidden="true"><use href="#icon-plane-solid"/></svg><span>Flights from Leeds Bradford</span><svg class="icon-arrow" width="18" height="18" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
-        <a href="https://www.google.com/travel/flights?q=Flights%20from%20Manchester%20to%20Dublin" target="_blank" rel="noopener" class="flights-ticket__link"><svg width="18" height="18" aria-hidden="true"><use href="#icon-plane-solid"/></svg><span>Flights from Manchester</span><svg class="icon-arrow" width="18" height="18" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
-        <a href="https://www.google.com/travel/flights?q=Flights%20from%20London%20to%20Dublin" target="_blank" rel="noopener" class="flights-ticket__link"><svg width="18" height="18" aria-hidden="true"><use href="#icon-plane-solid"/></svg><span>Flights from all London airports</span><svg class="icon-arrow" width="18" height="18" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
-      </div>
-      <div class="flights-ticket__foot">
-        <svg class="flights-ticket__barcode" width="140" height="34" viewBox="0 0 140 34" aria-hidden="true">
-          <rect x="0" y="0" width="2" height="34" fill="currentColor"/><rect x="5" y="0" width="4" height="34" fill="currentColor"/><rect x="12" y="0" width="2" height="34" fill="currentColor"/><rect x="17" y="0" width="3" height="34" fill="currentColor"/><rect x="23" y="0" width="2" height="34" fill="currentColor"/><rect x="28" y="0" width="5" height="34" fill="currentColor"/><rect x="36" y="0" width="2" height="34" fill="currentColor"/><rect x="41" y="0" width="3" height="34" fill="currentColor"/><rect x="47" y="0" width="2" height="34" fill="currentColor"/><rect x="52" y="0" width="4" height="34" fill="currentColor"/><rect x="59" y="0" width="2" height="34" fill="currentColor"/><rect x="64" y="0" width="2" height="34" fill="currentColor"/><rect x="69" y="0" width="5" height="34" fill="currentColor"/><rect x="77" y="0" width="2" height="34" fill="currentColor"/><rect x="82" y="0" width="3" height="34" fill="currentColor"/><rect x="88" y="0" width="2" height="34" fill="currentColor"/><rect x="93" y="0" width="4" height="34" fill="currentColor"/><rect x="100" y="0" width="2" height="34" fill="currentColor"/><rect x="105" y="0" width="3" height="34" fill="currentColor"/><rect x="111" y="0" width="2" height="34" fill="currentColor"/><rect x="116" y="0" width="5" height="34" fill="currentColor"/><rect x="124" y="0" width="2" height="34" fill="currentColor"/><rect x="129" y="0" width="3" height="34" fill="currentColor"/><rect x="135" y="0" width="2" height="34" fill="currentColor"/>
-        </svg>
-        <div class="flights-ticket__note hand">See you <u>there!</u> ♥︎</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== STAY ===================== -->
-<section class="section stay" id="stay">
-  <div class="stay__grid">
-    <div>
-      <div class="stay__head-row">
-        <h2 class="stay__title">Stay</h2>
-        <a class="stay__accom-badge" href="quiz.html">
-          <img class="stay__accom-badge-img" src="images/accom-badge.png" alt="Take our &quot;Where should I stay?&quot; quiz">
-        </a>
-      </div>
-      <p class="stay__intro">There is a range of accommodation options at the Wedding venue and in nearby towns. Find more details below and <a href="quiz.html">take our quiz</a> if you need help deciding what will work best for you.</p>
-    </div>
-  </div>
-
-  <div class="stay-cards">
-    <div class="stay-card stay-card--glamping">
-      <div class="stay-card__photo-wrap">
-        <div class="stay-card__photo-tape" aria-hidden="true"></div>
-        <div class="stay-card__photo">
-          <img src="images/glamping.jpg" alt="Glamping bell tents lit up at dusk">
-          <span class="stay-card__pill">At the venue</span>
-        </div>
-      </div>
-      <h3 class="stay-card__title">Glamping</h3>
-      <p class="stay-card__copy">Stay right in the heart of Martinstown House in the venue's India-inspired "Goa to Sleep" glamping village. Tucked amongst the trees, the bell tents are a fun and comfortable way to make a proper weekend of the wedding.</p>
-      <ul class="stay-card__list">
-        <li>15 fully furnished bell tents</li>
-        <li>Proper beds, luxury duvets, pillows and linen provided</li>
-        <li>Towels and extra blankets included</li>
-        <li>Lighting, USB charging and a heater in each tent</li>
-        <li>Right at the venue, close to the celebrations</li>
-        <li>There are 4 toilets and 2 showers shared by the Stables/Glamping guests</li>
-        <li><strong>Breakfast with everybody staying on site!</strong></li>
-      </ul>
-      <div class="stay-card__price-box">
-        <div class="stay-card__price-amount"><strong>£130</strong><span>per night</span></div>
-        <span class="stay-card__price-divider" aria-hidden="true"></span>
-        <div class="stay-card__price-details">
-          <div><svg width="20" height="20" aria-hidden="true"><use href="#icon-coffee-fill"/></svg><span>Breakfast included</span></div>
-          <div><svg width="20" height="20" aria-hidden="true"><use href="#icon-people-fill"/></svg><span>Based on two sharing</span></div>
-        </div>
-      </div>
-      <a href="https://martinstownhouse.com/wordpress/glamping/" target="_blank" rel="noopener" class="btn btn--blue-fill btn--block stay-card__cta">Find out more <svg class="icon-arrow" width="20" height="20" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
-    </div>
-
-    <div class="stay-card stay-card--stables">
-      <div class="stay-card__photo-wrap">
-        <div class="stay-card__photo-tape" aria-hidden="true"></div>
-        <div class="stay-card__photo">
-          <img src="images/stables.jpg" alt="Stables bedroom">
-          <span class="stay-card__pill">At the venue</span>
-        </div>
-      </div>
-      <h3 class="stay-card__title">Stables</h3>
-      <p class="stay-card__copy">For those who prefer four walls and a proper bedroom, the converted Stables offer a cosy place to stay right at Martinstown House, so you can enjoy the celebrations without having far to travel at the end of the night.</p>
-      <ul class="stay-card__list">
-        <li>Five bedrooms in the converted stable block</li>
-        <li>Proper beds, luxury duvets, pillows and linen provided</li>
-        <li>Towels and extra blankets included</li>
-        <li>Right at the venue, close to the celebrations</li>
-        <li>There are 4 toilets and 2 showers shared by the Stables/Glamping guests</li>
-        <li><strong>Breakfast with everybody staying on site!</strong></li>
-      </ul>
-      <div class="stay-card__price-box">
-        <div class="stay-card__price-amount"><strong>£130</strong><span>per night</span></div>
-        <span class="stay-card__price-divider" aria-hidden="true"></span>
-        <div class="stay-card__price-details">
-          <div><svg width="20" height="20" aria-hidden="true"><use href="#icon-coffee-fill"/></svg><span>Breakfast included</span></div>
-          <div><svg width="20" height="20" aria-hidden="true"><use href="#icon-people-fill"/></svg><span>Based on two sharing</span></div>
-        </div>
-      </div>
-      <a href="https://martinstownhouse.com/wordpress/glamping/" target="_blank" rel="noopener" class="btn btn--blue-fill btn--block stay-card__cta">Find out more <svg class="icon-arrow" width="20" height="20" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
-    </div>
-  </div>
-
-  <div class="gallery">
-    <span class="hand gallery__kicker">Take a peek inside</span>
-    <div class="gallery__grid" id="stay-gallery">
-      <button type="button" class="gallery__item" data-full="images/photo-gallery-1.jpg" data-alt="Twin beds inside a glamping bell tent, dressed in mandala-print throws"><img src="images/photo-gallery-1.jpg" alt="Twin beds inside a glamping bell tent, dressed in mandala-print throws"></button>
-      <button type="button" class="gallery__item" data-full="images/photo-gallery-2.jpg" data-alt="Twin beds in a Stables room with kilim-style bedspreads"><img src="images/photo-gallery-2.jpg" alt="Twin beds in a Stables room with kilim-style bedspreads"></button>
-      <button type="button" class="gallery__item" data-full="images/photo-gallery-3.jpg" data-alt="Cosy Stables bedroom with a double bed and sheepskin rug"><img src="images/photo-gallery-3.jpg" alt="Cosy Stables bedroom with a double bed and sheepskin rug"></button>
-      <button type="button" class="gallery__item" data-full="images/photo-gallery-4.jpg" data-alt="Glamping bell tent lit up in the evening, dappled light through the canvas"><img src="images/photo-gallery-4.jpg" alt="Glamping bell tent lit up in the evening, dappled light through the canvas"></button>
-      <button type="button" class="gallery__item" data-full="images/photo-gallery-5.jpg" data-alt="Double bed inside a glamping bell tent with a blue mandala-print cover"><img src="images/photo-gallery-5.jpg" alt="Double bed inside a glamping bell tent with a blue mandala-print cover"></button>
-      <button type="button" class="gallery__item" data-full="images/photo-gallery-6.jpg" data-alt="Ensuite shower room with tiled walls"><img src="images/photo-gallery-6.jpg" alt="Ensuite shower room with tiled walls"></button>
-    </div>
-  </div>
-
-  <div class="shared-panel">
-    <div class="shared-panel__head">
-      <h3>Shared by the Stables and Glamping</h3>
-      <span class="shared-panel__tag">At the venue</span>
-    </div>
-    <p class="shared-panel__copy">Guests staying in the Stables and Glamping area will have access to all the facilities within Martinstown House's accommodation village and the main building. Just settle in and enjoy being right at the heart of the weekend.</p>
-    <div class="amenities">
-      <div class="amenity"><img src="icons/am-showers-c.png" alt=""><span>Hot showers and toilets</span></div>
-      <div class="amenity"><img src="icons/am-breakfast-c.png" alt=""><span>Breakfast included</span></div>
-      <div class="amenity"><img src="icons/am-towels-c.png" alt=""><span>Towels and bedding provided</span></div>
-      <div class="amenity"><img src="icons/am-venue-c.png" alt=""><span>No need to pre-book any taxis</span></div>
-    </div>
-  </div>
-
-  <div class="rooms-reserved-bar">
-    <div class="rooms-reserved-bar__row">
-      <img class="rooms-reserved-bar__icon" src="images/house-icon.png" alt="" aria-hidden="true">
-      <div class="rooms-reserved-bar__content">
-        <div class="rooms-reserved-bar__heading">
-          <svg class="rooms-reserved-bar__flourish" width="28" height="28" aria-hidden="true"><use href="#icon-plane-lines"/></svg>
-          <h4>How do I book the Stables or Glamping?</h4>
-          <svg class="rooms-reserved-bar__flourish rooms-reserved-bar__flourish--right" width="28" height="28" aria-hidden="true"><use href="#icon-plane-lines"/></svg>
-        </div>
-        <svg class="rooms-reserved-bar__squiggle" width="150" height="14" viewBox="0 0 150 14" aria-hidden="true"><path d="M2 8c12-9 20 7 33 0s20-7 33 0 20 7 33 0 20-7 32 0" fill="none" stroke="#36C86B" stroke-width="4" stroke-linecap="round"/></svg>
-        <div class="rooms-reserved-bar__text">
-          <p>Fancy staying in the Stables or Glamping? Just let us know via the <a href="#rsvp">Just Ask</a> section below and we'll get you sorted. Spaces are limited, so it's first come, first served.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="hotels__quiz-cta">
-    <a href="quiz.html" class="btn btn--pink">Not sure where to stay? Take the quiz <svg class="icon-arrow" width="18" height="18" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
-  </div>
-
-  <div class="hotels">
-    <div class="hotels__head">
-      <div class="hotels__intro">
-        <h3 class="hotels__title">Nearby<br>Hotels</h3>
-        <p class="hotels__copy">If glamping or stables aren't quite your thing, there are plenty of lovely places to stay nearby. We've put together a few options that are all within easy reach of Martinstown House. <b>Just remember that transport to and from the venue will need to be arranged separately.</b></p>
-        <div class="hotels__subline hand">Rest and recuperate<img class="hotels__subline-heart" src="icons/heart.png" alt="" aria-hidden="true"></div>
-      </div>
-    </div>
-
-    <div class="hotel-cards">
-      <div class="hotel-card">
-        <div class="hotel-card__photo">
-          <img src="images/kildare-house-hotel.jpg" alt="Kildare House Hotel exterior">
-          <span class="hotel-card__time" style="background:var(--yellow)">15<b>mins</b><svg width="13" height="13" aria-hidden="true"><use href="#icon-car"/></svg></span>
-        </div>
-        <div class="hotel-card__body">
-          <h4 class="hotel-card__title">The Kildare House Hotel</h4>
-          <span class="hotel-card__place">Kildare Town</span>
-          <p class="hotel-card__copy">Nestled beside the renowned Kildare Village, a charming small family-run hotel awaits you.</p>
-          <div class="hotel-card__tags">
-            <span><svg width="18" height="18" aria-hidden="true"><use href="#icon-car"/></svg>Mid-range</span>
-            <span><svg width="18" height="18" aria-hidden="true"><use href="#icon-people"/></svg>Great for families</span>
-            <span><svg width="18" height="18" aria-hidden="true"><use href="#icon-coffee-fill"/></svg>Excellent breakfast</span>
-          </div>
-          <a href="https://www.kildarehousehotel.ie/" target="_blank" rel="noopener" class="btn btn--pink btn--block">Visit website <svg class="icon-arrow" width="18" height="18" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
-        </div>
-      </div>
-
-      <div class="hotel-card">
-        <div class="hotel-card__photo">
-          <img src="images/silken-thomas.jpg" alt="Silken Thomas exterior">
-          <span class="hotel-card__time" style="background:var(--blue-light)">15<b>mins</b><svg width="13" height="13" aria-hidden="true"><use href="#icon-car"/></svg></span>
-        </div>
-        <div class="hotel-card__body">
-          <h4 class="hotel-card__title">Silken Thomas</h4>
-          <span class="hotel-card__place">Kildare Town</span>
-          <p class="hotel-card__copy">The Silken Thomas is a family operated business. Located in the heart of Kildare Town, the renowned Silken Thomas has been a cornerstone of the local community for decades. </p>
-          <div class="hotel-card__tags">
-            <span><svg width="18" height="18" aria-hidden="true"><use href="#icon-car"/></svg>Mid-range</span>
-            <span><svg width="18" height="18" aria-hidden="true"><use href="#icon-people"/></svg>Great for couples</span>
-            <span><svg width="18" height="18" aria-hidden="true"><use href="#icon-fork"/></svg>Restaurant &amp; bar</span>
-          </div>
-          <a href="https://silkenthomas.com/" target="_blank" rel="noopener" class="btn btn--pink btn--block">Visit website <svg class="icon-arrow" width="18" height="18" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
-        </div>
-      </div>
-
-      <div class="hotel-card">
-        <div class="hotel-card__photo">
-          <img src="images/cunninghams.jpg" alt="Cunningham's exterior">
-          <span class="hotel-card__time" style="background:var(--yellow)">15<b>mins</b><svg width="13" height="13" aria-hidden="true"><use href="#icon-car"/></svg></span>
-        </div>
-        <div class="hotel-card__body">
-          <h4 class="hotel-card__title">The Rooms @ Cunningham's</h4>
-          <span class="hotel-card__place">Kildare Town</span>
-          <p class="hotel-card__copy">The Rooms @ Cunningham's are located in the Heart of Kildare Town. </p>
-          <div class="hotel-card__tags">
-            <span><svg width="18" height="18" aria-hidden="true"><use href="#icon-car"/></svg>Mid-range</span>
-            <span><svg width="18" height="18" aria-hidden="true"><use href="#icon-adults"/></svg>Adults only</span>
-            <span><svg width="18" height="18" aria-hidden="true"><use href="#icon-glass"/></svg>Bar on site</span>
-          </div>
-          <a href="https://www.booking.com/Share-k7ScGjP" target="_blank" rel="noopener" class="btn btn--pink btn--block">Visit website <svg class="icon-arrow" width="18" height="18" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="rooms-reserved-bar">
-      <div class="rooms-reserved-bar__row">
-        <img class="rooms-reserved-bar__icon" src="images/house-icon.png" alt="" aria-hidden="true">
-        <div class="rooms-reserved-bar__content">
-          <div class="rooms-reserved-bar__heading">
-            <svg class="rooms-reserved-bar__flourish" width="28" height="28" aria-hidden="true"><use href="#icon-plane-lines"/></svg>
-            <h4>Booking a hotel?</h4>
-            <svg class="rooms-reserved-bar__flourish rooms-reserved-bar__flourish--right" width="28" height="28" aria-hidden="true"><use href="#icon-plane-lines"/></svg>
-          </div>
-          <svg class="rooms-reserved-bar__squiggle" width="150" height="14" viewBox="0 0 150 14" aria-hidden="true"><path d="M2 8c12-9 20 7 33 0s20-7 33 0 20 7 33 0 20-7 32 0" fill="none" stroke="#36C86B" stroke-width="4" stroke-linecap="round"/></svg>
-          <div class="rooms-reserved-bar__text">
-            <p>If you would like to book one of these hotels, please let us know. We've kindly reserved a limited number of rooms for close family and friends and they'll be available on a <strong>first come, first served basis</strong>.</p>
-            <p>Bribes may be considered.&nbsp;<img class="rooms-reserved-bar__heart" src="icons/heart.png" alt="" aria-hidden="true"></p>
-          </div>
-        </div>
-      </div>
-      <span class="rooms-reserved-bar__divider" aria-hidden="true"></span>
-      <img class="rooms-reserved-bar__statement" src="images/cheeky-statement.png" alt="Want one? Be quick... or very persuasive!">
-    </div>
-  </div>
-</section>
-
-<!-- ===================== FAQS ===================== -->
-<section class="section faqs" id="faqs">
-  <div class="faqs__head">
-    <h2 class="faqs__title">FAQ<span class="faqs__title-s">s</span></h2>
-  </div>
-  <div class="faq-list" id="faq-list"></div>
-</section>
-
-<!-- ===================== JUST ASK ===================== -->
-<div class="rsvp-wrap" id="rsvp">
-  <div class="ask-panel">
-    <div class="ask-panel__col ask-panel__col--intro">
-      <div class="ask-panel__eyebrow-row">
-        <span class="ask-panel__eyebrow">Have a question?</span>
-        <svg class="ask-panel__lines" width="20" height="20" aria-hidden="true"><use href="#icon-plane-lines"/></svg>
-      </div>
-      <div class="ask-panel__title-row">
-        <h2 class="ask-panel__title">Just<br>Ask <img class="ask-panel__heart" src="icons/heart.png" alt="" aria-hidden="true"></h2>
-        <img class="ask-panel__badge ask-panel__badge--mobile" src="icons/couple-badge.png" alt="Karishma + Partha Wedding 2027">
-      </div>
-      <p class="ask-panel__copy">If you have any questions about the wedding, travel or anything else, we're here to help.</p>
-    </div>
-
-    <div class="ask-panel__col ask-panel__col--methods">
-      <div class="ask-panel__method">
-        <span class="ask-panel__icon" style="background:var(--pink)"><svg width="20" height="20" aria-hidden="true"><use href="#icon-mail"/></svg></span>
-        <div>
-          <div class="ask-panel__method-label">Email us</div>
-          <div class="ask-panel__method-value"><a href="mailto:karishma.partha2020@gmail.com">karishma.partha2020@gmail.com</a></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="ask-panel__col ask-panel__col--aside">
-      <img class="ask-panel__badge ask-panel__badge--desktop" src="icons/favicon-512.png" alt="K+P">
-    </div>
+    <button class="gate-reset" id="gate-reset" type="button">Not you? Enter a different password</button>
   </div>
 </div>
 
-<!-- ===================== OUR JOURNEY ===================== -->
-<section class="section journey">
-  <div class="journey__row">
-    <div class="journey__grid">
-      <div class="journey__photo">
-        <span class="tape" aria-hidden="true"></span>
-        <img src="images/journey-6.jpg?v=2" alt="Karishma and Partha on a university visit">
-      </div>
-      <div class="journey__photo">
-        <span class="tape" aria-hidden="true"></span>
-        <img src="images/journey-3.jpg?v=2" alt="Karishma and Partha dressed up by a lake">
-      </div>
-      <div class="journey__photo">
-        <span class="tape" aria-hidden="true"></span>
-        <img src="images/journey-4.jpg?v=2" alt="Karishma and Partha at sunset">
-      </div>
-      <div class="journey__photo">
-        <span class="tape" aria-hidden="true"></span>
-        <img src="images/journey-5.jpg?v=2" alt="Karishma and Partha out for the evening">
-      </div>
-      <div class="journey__photo">
-        <span class="tape" aria-hidden="true"></span>
-        <img src="images/journey-7.jpg" alt="Karishma and Partha on a hillside walk">
-      </div>
-      <div class="journey__photo">
-        <span class="tape" aria-hidden="true"></span>
-        <img src="images/journey-8.jpg" alt="Karishma and Partha celebrating a birthday">
-      </div>
-      <div class="journey__photo">
-        <span class="tape" aria-hidden="true"></span>
-        <img src="images/journey-1.jpg?v=2" alt="Karishma and Partha at the seaside">
-      </div>
-      <div class="journey__photo">
-        <span class="tape" aria-hidden="true"></span>
-        <img src="images/journey-2.jpg?v=2" alt="Karishma and Partha on a pier">
-      </div>
-    </div>
-  </div>
+<script>
+(function () {
+  var DESTINATIONS = {
+    "8078d899a37ff411404c220b749488ec0a91163ee3fc2266e61dd22e992641ac": "main/",
+    "e32731fbc905264465dd0e59e2a48fa3e9396696fa382092b0e00f927c1d1ee1": "kakubhens-tribe/",
+    "67b8f3c2fd1698dd799ec75e2ba71401a5fa4fc75c0fd4db09d5b36ee63849a3": "triple-famalam/"
+  };
+  var STORAGE_KEY = "kp-wedding-dest";
 
-  <div class="journey__foot">
-    <div class="journey__foot-left" style="display:flex;align-items:center;gap:22px">
-      <svg class="starburst" width="52" height="52" aria-hidden="true"><use href="#icon-starburst"/></svg>
-      <svg width="54" height="54" viewBox="0 0 100 100" aria-hidden="true" style="color:#F58BC1;display:block"><path d="M50 38C36 9 11 18 21 40C-3 42 5 69 29 62C25 88 55 94 59 68C78 88 98 65 76 51C99 33 80 10 59 34C58 15 44 16 50 38Z" fill="currentColor"/><circle cx="51" cy="52" r="8" fill="#FFD92F"/></svg>
-    </div>
-  </div>
-</section>
+  var form = document.getElementById("gate-form");
+  var input = document.getElementById("gate-password");
+  var error = document.getElementById("gate-error");
+  var resetBtn = document.getElementById("gate-reset");
+  var redirecting = document.getElementById("gate-redirecting");
 
-<!-- ===================== GALLERY LIGHTBOX ===================== -->
-<div class="lightbox" id="lightbox" hidden>
-  <button type="button" class="lightbox__close" aria-label="Close">&times;</button>
-  <button type="button" class="lightbox__prev" aria-label="Previous photo">&larr;</button>
-  <div class="lightbox__stage" id="lightbox-stage"></div>
-  <button type="button" class="lightbox__next" aria-label="Next photo">&rarr;</button>
-</div>
+  function sha256Hex(text) {
+    var enc = new TextEncoder().encode(text);
+    return crypto.subtle.digest("SHA-256", enc).then(function (buf) {
+      return Array.prototype.map.call(new Uint8Array(buf), function (b) {
+        return b.toString(16).padStart(2, "0");
+      }).join("");
+    });
+  }
 
-<!-- ===================== FOOTER ===================== -->
-<footer class="site-footer">
-  <span>K + P</span><span>Good times ahead</span><span>2027</span>
-</footer>
+  function goTo(dest) {
+    redirecting.style.display = "block";
+    form.hidden = true;
+    resetBtn.style.display = "none";
+    window.location.href = dest;
+  }
 
-<button type="button" id="back-to-top" class="back-to-top" aria-label="Back to top">
-  <img src="images/back-to-top.png" alt="">
-</button>
+  var validDests = Object.keys(DESTINATIONS).map(function (k) { return DESTINATIONS[k]; });
+  var saved = null;
+  try { saved = localStorage.getItem(STORAGE_KEY); } catch (e) {}
 
-<script src="script.js?v=42"></script>
+  if (saved && validDests.indexOf(saved) !== -1) {
+    resetBtn.style.display = "inline-block";
+    goTo(saved);
+  }
+
+  resetBtn.addEventListener("click", function () {
+    try { localStorage.removeItem(STORAGE_KEY); } catch (e) {}
+    redirecting.style.display = "none";
+    form.hidden = false;
+    resetBtn.style.display = "none";
+    error.textContent = "";
+    input.value = "";
+    input.focus();
+  });
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var value = input.value.trim();
+    if (!value) return;
+    error.textContent = "";
+    sha256Hex(value).then(function (hash) {
+      var dest = DESTINATIONS[hash];
+      if (dest) {
+        try { localStorage.setItem(STORAGE_KEY, dest); } catch (err) {}
+        goTo(dest);
+      } else {
+        error.textContent = "That password isn't quite right — please try again.";
+        input.select();
+      }
+    });
+  });
+})();
+</script>
+
 </body>
 </html>
