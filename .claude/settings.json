@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git fetch *)",
+      "Bash(git status*)",
+      "Bash(git log*)",
+      "Bash(git -C * fetch *)",
+      "Bash(git -C * status*)",
+      "Bash(git -C * log*)",
+      "Bash(git -C * diff*)",
+      "Bash(grep *)",
+      "Bash(curl -s http://localhost:*)"
+    ]
+  }
+}
