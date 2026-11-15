@@ -855,6 +855,11 @@ a { color: inherit; }
 
 .hotel-cards { margin-top: 26px; display: grid; gap: 16px; }
 @media (min-width: 960px) { .hotel-cards { margin-top: 40px; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 22px; } }
+@media (min-width: 960px) { .hotel-cards--single { grid-template-columns: 1fr; } }
+@media (min-width: 960px) { .hotel-cards--single .hotel-card { flex-direction: row; gap: 24px; } }
+@media (min-width: 960px) { .hotel-cards--single .hotel-card__photo { width: 280px; flex: none; } }
+@media (min-width: 960px) { .hotel-cards--single .hotel-card__photo img { aspect-ratio: 4/3; } }
+@media (min-width: 960px) { .hotel-cards--single .hotel-card__body { padding: 0 0 0 4px; } }
 
 .hotel-card { background: var(--cream); display: flex; gap: 14px; padding: 14px; }
 @media (min-width: 960px) { .hotel-card { flex-direction: column; gap: 0; padding: 0 0 22px; } }
