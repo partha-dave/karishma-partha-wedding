@@ -859,7 +859,7 @@ a { color: inherit; }
 @media (min-width: 960px) { .hotel-cards--single .hotel-card { flex-direction: row; gap: 24px; } }
 @media (min-width: 960px) { .hotel-cards--single .hotel-card__photo { width: 280px; flex: none; } }
 @media (min-width: 960px) { .hotel-cards--single .hotel-card__photo img { aspect-ratio: 4/3; } }
-@media (min-width: 960px) { .hotel-cards--single .hotel-card__body { padding: 0 0 0 4px; } }
+@media (min-width: 960px) { .hotel-cards--single .hotel-card__body { padding: 20px 28px 20px 4px; } }
 
 .hotel-card { background: var(--cream); display: flex; gap: 14px; padding: 14px; }
 @media (min-width: 960px) { .hotel-card { flex-direction: column; gap: 0; padding: 0 0 22px; } }
